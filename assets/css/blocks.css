@@ -175,17 +175,22 @@ aside.sidebar > *:not(.alignfull):not(.alignwide) {
 
 /* Site Title / Tagline / Logo */
 .wp-block-site-title a {
-  color: var(--wp--preset--color--white);
+	color: var(--wp--preset--color--white);
+	text-shadow: 1px 2px 0 var(--medium-gray);
+}
+
+.is-style-card .wp-block-site-title a {
+	color: var(--medium-gray);
 }
 
 .wp-block-site-title,
 .wp-block-site-tagline {
-  margin-top: 0.5rem;
-  margin-bottom: 0.25rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.25rem;
 }
 
-.wp-block-site-title a {
-	text-shadow: 1px 2px 0 var(--medium-gray);
+.is-style-card .wp-block-site-tagline {
+	color: var(--wp--preset--color--black);
 }
 
 .wp-block-site-logo {
@@ -1167,10 +1172,14 @@ pre.wp-block-verse {
 }
 
 /* Cover block */
+.wp-block-cover.is-style-rounded,
+.wp-block-cover.is-style-rounded-full,
 .wp-block-cover.is-style-rounded img,
 .wp-block-cover.is-style-rounded-full img,
 .wp-block-cover.is-style-rounded .has-background-dim,
 .wp-block-cover.is-style-rounded-full .has-background-dim,
+.wp-block-cover.is-style-rounded .wp-block-cover__image-background,
+.wp-block-cover.is-style-rounded-full .wp-block-cover__image-background
 .wp-block-cover.is-style-rounded .wp-block-cover__image-background.has-parallax,
 .wp-block-cover.is-style-rounded-full .wp-block-cover__image-background.has-parallax {
 	border-radius: 1em;

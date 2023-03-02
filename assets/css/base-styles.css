@@ -465,22 +465,26 @@ figcaption,
 
 /* Header */
 .site-header > .wp-block-group {
-  padding: 1.5em;
+	padding: 1.5em;
 }
 
 .site-header .is-style-mxs-header {
-  padding-top: 86px;
+	padding-top: 86px;
 }
 
 .is-style-search-header {
-  border-bottom-right-radius: 16px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  background: url(../images/spyglass-clipped.svg) top left no-repeat;
-  background-color: #ffffff;
+	border-bottom-right-radius: 16px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	background: url(../images/spyglass-clipped.svg) top left no-repeat;
+	background-color: #ffffff;
 	height: 80px;
 	text-align: center;
+}
+
+.is-style-card .is-style-mxs-header { /* For searchbar */
+	position: relative;
 }
 
 .admin-bar .is-style-search-header {
@@ -521,6 +525,11 @@ figcaption,
 .is-style-card a:hover,
 .is-style-card a:active {
   color: var(--wp--preset--color--link-alt-hover);
+}
+
+.is-style-card .header-hero a:hover,
+.is-style-card .header-hero a:active {
+  color: var(--wp--preset--color--white);
 }
 
 .is-style-card caption {

@@ -428,6 +428,14 @@ div.wp-block-button__link.is-style-outline:not(.has-text-color) {
   background-image: var(--wp--preset--gradient--light-violet-translucent) !important;
   color: var(--wp--preset--color--black);
 }
+
+.is-style-outline
+  div.wp-block-button__link.has-orange-translucent-gradient-background:hover,
+.is-style-outline
+  div.wp-block-button__link.orange-violet-translucent-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--orange-translucent) !important;
+  color: var(--wp--preset--color--black);
+}
 /* */
 
 /* Alignments */

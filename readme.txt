@@ -26,6 +26,9 @@ The theme offers four header styles including two with hero images.
 
 == Changelog ==
 
+= 1.0.8 March 2 2023 =
+More CSS fixes for hero pattern designs inside of card styled block.
+
 = 1.0.7 March 1 2023 =
 Added CSS Fixes for narrow columns in mobile when no sidebar pattern is placed inside a column; fixes for calendar.
 
