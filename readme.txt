@@ -26,6 +26,9 @@ The theme offers four header styles including two with hero images.
 
 == Changelog ==
 
+= 1.1 March 2023 =
+Introduced Style Variations to the theme; adjusted Navigation CSS to use the built in Submenu colors; cleaned up the styling in the Site Editor backend
+
 = 1.0.7 March 1 2023 =
 Added CSS Fixes for narrow columns in mobile when no sidebar pattern is placed inside a column; fixes for calendar.
 

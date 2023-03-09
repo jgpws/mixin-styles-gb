@@ -406,9 +406,9 @@ aside.sidebar > *:not(.alignfull):not(.alignwide) {
 	padding: 0.5em 1em;
 }
 
-.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+/*.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
 	color: var(--wp--preset--color--black);
-}
+}*/
 
 .wp-block-navigation.has-text-color .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
 	color: inherit;

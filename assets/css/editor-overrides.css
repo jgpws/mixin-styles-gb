@@ -21,6 +21,27 @@ pre code {
   background-color: transparent;
 }
 
+input[type=color],
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+select,
+textarea {
+  background-color: var(--almost-white);
+  border: 1px solid var(--wp--custom--color--border);
+  border-radius: 0.5em;
+}
+
 .wp-block-freeform.block-library-rich-text__tinymce blockquote {
   border-left: transparent;
 }
@@ -41,7 +62,7 @@ textarea.editor-post-title__input:focus {
 
 .is-style-mxs-header .is-style-search-header {
   position: absolute;
-  top: -186px !important;
+  top: -216px !important;
 }
 
 .site-header > .wp-block-group.is-style-mxs-header {
@@ -71,20 +92,24 @@ textarea.editor-post-title__input:focus {
 
 @media (min-width: 600px) {
   .is-style-mxs-header .is-style-search-header {
-    top: -16px !important;
+    top: -126px !important;
   }
 
   .site-header > .wp-block-group.is-style-mxs-header {
     padding-top: 1em;
   }
 }
+
+@media (min-width: 1024px) {
+	.is-style-mxs-header .is-style-search-header {
+		top: -16px !important;
+	}
+}
 /* */
 
 /* Navigation / Header Navigation */
 .wp-block-navigation:where(.has-background),
-.wp-block-navigation:where(.has-background)
-  .wp-block-navigation
-  .wp-block-page-list,
+.wp-block-navigation:where(.has-background) .wp-block-navigation .wp-block-page-list,
 .wp-block-navigation:where(.has-background) .wp-block-navigation__container {
   gap: 0;
 }
@@ -116,35 +141,22 @@ textarea.editor-post-title__input:focus {
   background-color: var(--wp--preset--color--black) !important;
 }
 
-.is-style-tabs.wp-block-navigation.has-accent-1-background-color,
-.is-style-tabs.wp-block-navigation.has-accent-2-background-color,
-.is-style-tabs.wp-block-navigation.has-accent-3-background-color,
-.is-style-tabs.wp-block-navigation.has-accent-4-background-color,
-.is-style-tabs.wp-block-navigation.has-accent-5-background-color,
-.is-style-tabs.wp-block-navigation.has-accent-6-background-color,
-.is-style-tabs.wp-block-navigation.has-accent-7-background-color,
-.is-style-tabs.wp-block-navigation.has-accent-8-background-color,
-.is-style-tabs.wp-block-navigation.has-text-dark-background-color,
-.is-style-tabs.wp-block-navigation.has-text-light-background-color {
-  background-color: transparent !important;
-}
-
-.is-style-wide-tab.wp-block-navigation.has-accent-1-background-color,
-.is-style-wide-tab.wp-block-navigation.has-accent-2-background-color,
-.is-style-wide-tab.wp-block-navigation.has-accent-3-background-color,
-.is-style-wide-tab.wp-block-navigation.has-accent-4-background-color,
-.is-style-wide-tab.wp-block-navigation.has-accent-5-background-color,
-.is-style-wide-tab.wp-block-navigation.has-accent-6-background-color,
-.is-style-wide-tab.wp-block-navigation.has-accent-7-background-color,
-.is-style-wide-tab.wp-block-navigation.has-accent-8-background-color,
-.is-style-wide-tab.wp-block-navigation.has-text-dark-background-color,
-.is-style-wide-tab.wp-block-navigation.has-text-light-background-color {
+.wp-block-navigation.has-background.has-accent-1-background-color,
+.wp-block-navigation.has-background.has-accent-2-background-color,
+.wp-block-navigation.has-background.has-accent-3-background-color,
+.wp-block-navigation.has-background.has-accent-4-background-color,
+.wp-block-navigation.has-background.has-accent-5-background-color,
+.wp-block-navigation.has-background.has-accent-6-background-color,
+.wp-block-navigation.has-background.has-accent-7-background-color,
+.wp-block-navigation.has-background.has-accent-8-background-color,
+.wp-block-navigation.has-background.has-text-dark-background-color,
+.wp-block-navigation.has-background.has-text-light-background-color {
   background-color: transparent !important;
 }
 
 @media (min-width: 600px) {
   .site-header > .wp-block-group .wp-block-navigation:last-child {
-    margin-bottom: calc(-1.5em - 1px);
+    margin-bottom: calc(-0.5em - 1px);
   }
 
   .is-style-wide-tab .wp-block-navigation-item .wp-block-navigation__container {
