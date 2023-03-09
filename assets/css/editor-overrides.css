@@ -168,12 +168,6 @@ textarea.editor-post-title__input:focus {
   }
 }
 
-@media (min-width: 768px) {
-  .is-style-mxs-header .wp-block-navigation {
-    width: auto;
-  }
-}
-
 @media (min-width: 1366px) {
   .wp-block-post-navigation-link:first-child {
     border-top-right-radius: 0;
