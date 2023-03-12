@@ -1,8 +1,8 @@
 /* --- Button block color overrides --- */
 
 /* Accent 1- Blue */
-.is-style-outline a.wp-block-button__link.has-accent-1-background-color:hover,
-.is-style-outline a.wp-block-button__link.has-accent-1-background-color:focus {
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-1-background-color:hover,
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-1-background-color:focus {
   background-color: var(--wp--preset--color--accent-1) !important;
   border-color: var(--wp--preset--color--foreground);
   color: var(--wp--preset--color--white);
@@ -18,8 +18,8 @@
 }
 
 /* Accent 2- Purple */
-.is-style-outline a.wp-block-button__link.has-accent-2-background-color:hover,
-.is-style-outline a.wp-block-button__link.has-accent-2-background-color:focus {
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-2-background-color:hover,
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-2-background-color:focus {
   background-color: var(--wp--preset--color--accent-2) !important;
   border-color: var(--wp--preset--color--foreground);
   color: var(--wp--preset--color--white);
@@ -35,8 +35,8 @@
 }
 
 /* Accent 3- Magenta */
-.is-style-outline a.wp-block-button__link.has-accent-3-background-color:hover,
-.is-style-outline a.wp-block-button__link.has-accent-3-background-color:focus {
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-3-background-color:hover,
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-3-background-color:focus {
   background-color: var(--wp--preset--color--accent-3) !important;
   border-color: var(--wp--preset--color--foreground);
   color: var(--wp--preset--color--white);
@@ -52,8 +52,8 @@
 }
 
 /* Accent 4- Orange */
-.is-style-outline a.wp-block-button__link.has-accent-4-background-color:hover,
-.is-style-outline a.wp-block-button__link.has-accent-4-background-color:focus {
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-4-background-color:hover,
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-4-background-color:focus {
   background-color: var(--wp--preset--color--accent-4) !important;
   border-color: var(--wp--preset--color--foreground);
   color: var(--wp--preset--color--black);
@@ -69,8 +69,8 @@
 }
 
 /* Accent 5- Yellow */
-.is-style-outline a.wp-block-button__link.has-accent-5-background-color:hover,
-.is-style-outline a.wp-block-button__link.has-accent-5-background-color:focus {
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-5-background-color:hover,
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-5-background-color:focus {
   background-color: var(--wp--preset--color--accent-5) !important;
   border-color: var(--wp--preset--color--foreground);
   color: var(--wp--preset--color--black);
@@ -86,8 +86,8 @@
 }
 
 /* Accent 6- Khaki */
-.is-style-outline a.wp-block-button__link.has-accent-6-background-color:hover,
-.is-style-outline a.wp-block-button__link.has-accent-6-background-color:focus {
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-6-background-color:hover,
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-6-background-color:focus {
   background-color: var(--wp--preset--color--accent-6) !important;
   border-color: var(--wp--preset--color--foreground);
   color: var(--wp--preset--color--black);
@@ -103,8 +103,8 @@
 }
 
 /* Accent 7- Tan */
-.is-style-outline a.wp-block-button__link.has-accent-7-background-color:hover,
-.is-style-outline a.wp-block-button__link.has-accent-7-background-color:focus {
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-7-background-color:hover,
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-7-background-color:focus {
   background-color: var(--wp--preset--color--accent-7) !important;
   border-color: var(--wp--preset--color--foreground);
   color: var(--wp--preset--color--black);
@@ -120,8 +120,8 @@
 }
 
 /* Accent 8- Sandstone */
-.is-style-outline a.wp-block-button__link.has-accent-8-background-color:hover,
-.is-style-outline a.wp-block-button__link.has-accent-8-background-color:focus {
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-8-background-color:hover,
+.is-style-outline a.wp-block-button__link:not(.has-text-color).has-accent-8-background-color:focus {
   background-color: var(--wp--preset--color--accent-8) !important;
   border-color: var(--wp--preset--color--foreground);
   color: var(--wp--preset--color--black);

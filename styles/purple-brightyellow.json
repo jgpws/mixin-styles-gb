@@ -73,6 +73,76 @@
         }
       ]
     },
+    "blocks": {
+    	"core/button": {
+    	  "color": {
+    	    "palette": [
+    	      {
+    	        "slug": "accent-1",
+    	        "color": "#2040c0",
+    	        "name": "Accent 1"
+    	      },
+    	      {
+    	        "slug": "accent-2",
+    	        "color": "#cd00cd",
+    	        "name": "Accent 2"
+    	      },
+    	      {
+    	        "slug": "accent-3",
+    	        "color": "#d5c9f8",
+    	        "name": "Accent 3"
+    	      },
+    	      {
+    	        "slug": "accent-4",
+    	        "color": "#fec8e5",
+    	        "name": "Accent 4"
+    	      },
+    	      {
+    	        "slug": "accent-5",
+    	        "color": "#f8fe03",
+    	        "name": "Accent 5"
+    	      },
+    	      {
+    	        "slug": "text-dark",
+    	        "color": "#191919",
+    	        "name": "Text- dark"
+    	      },
+    	      {
+    	        "slug": "text-light",
+    	        "color": "#ffffff",
+    	        "name": "Text- light"
+    	      }
+    	    ],
+    	    "gradients": [
+    	      {
+    	        "slug": "blue-translucent",
+    	        "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(32, 64, 192, 0.5) 100%)",
+    	        "name": "Blue- translucent"
+    	      },
+    	      {
+    	        "slug": "magenta-translucent",
+    	        "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(205, 0, 205, 0.5) 100%)",
+    	        "name": "Magenta- translucent"
+    	      },
+    	      {
+    	        "slug": "light-blue-translucent",
+    	        "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(207, 217, 249, 0.5) 100%)",
+    	        "name": "Light Blue- translucent"
+    	      },
+    	      {
+    	        "slug": "soft-pink-translucent",
+    	        "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(254, 200, 229, 0.5) 100%)",
+    	        "name": "Soft Pink- translucent"
+    	      },
+    	      {
+    	        "slug": "bright-yellow-translucent",
+    	        "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(248, 254, 3) 100%)",
+    	        "name": "Bright Yellow- translucent"
+    	      }
+    	    ]
+    	  }
+    	}
+    },
     "custom": {
       "gradient": {
         "light-to-dark": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(248, 254, 3, 0.5) 100%)",

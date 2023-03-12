@@ -156,3 +156,64 @@
 .is-style-card .is-style-outline a.wp-block-button__link.has-orange-translucent-gradient-background:focus {
   border-color: var(--wp--preset--color--black);
 }
+
+/* - Purple Bright Yellow color scheme - */
+/* Blue */
+.is-style-outline a.wp-block-button__link.has-blue-translucent-gradient-background:hover,
+.is-style-outline a.wp-block-button__link.has-blue-translucent-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--blue-translucent) !important;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .is-style-outline a.wp-block-button__link.has-blue-translucent-gradient-background:hover,
+.is-style-card .is-style-outline a.wp-block-button__link.has-blue-translucent-gradient-background:focus {
+  border-color: var(--wp--preset--color--black);
+}
+
+/* Magenta */
+.is-style-outline a.wp-block-button__link.has-magenta-translucent-gradient-background:hover,
+.is-style-outline a.wp-block-button__link.has-magenta-translucent-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--magenta-translucent) !important;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .is-style-outline a.wp-block-button__link.has-magenta-translucent-gradient-background:hover,
+.is-style-card .is-style-outline a.wp-block-button__link.has-magenta-translucent-gradient-background:focus {
+  border-color: var(--wp--preset--color--black);
+}
+
+/* Light Blue */
+.is-style-outline a.wp-block-button__link.has-light-blue-translucent-gradient-background:hover,
+.is-style-outline a.wp-block-button__link.has-light-blue-translucent-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--light-blue-translucent) !important;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .is-style-outline a.wp-block-button__link.has-light-blue-translucent-gradient-background:hover,
+.is-style-card .is-style-outline a.wp-block-button__link.has-light-blue-translucent-gradient-background:focus {
+  border-color: var(--wp--preset--color--black);
+}
+
+/* Soft Pink */
+.is-style-outline a.wp-block-button__link.has-soft-pink-translucent-gradient-background:hover,
+.is-style-outline a.wp-block-button__link.has-soft-pink-translucent-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--soft-pink-translucent) !important;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .is-style-outline a.wp-block-button__link.has-soft-pink-translucent-gradient-background:hover,
+.is-style-card .is-style-outline a.wp-block-button__link.has-soft-pink-translucent-gradient-background:focus {
+  border-color: var(--wp--preset--color--black);
+}
+
+/* Bright Yellow */
+.is-style-outline a.wp-block-button__link.has-bright-yellow-translucent-gradient-background:hover,
+.is-style-outline a.wp-block-button__link.has-bright-yellow-translucent-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--bright-yellow-translucent) !important;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .is-style-outline a.wp-block-button__link.has-bright-yellow-translucent-gradient-background:hover,
+.is-style-card .is-style-outline a.wp-block-button__link.has-bright-yellow-translucent-gradient-background:focus {
+  border-color: var(--wp--preset--color--black);
+}

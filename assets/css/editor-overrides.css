@@ -438,8 +438,48 @@ div.wp-block-button__link.is-style-outline:not(.has-text-color) {
 .is-style-outline
   div.wp-block-button__link.has-orange-translucent-gradient-background:hover,
 .is-style-outline
-  div.wp-block-button__link.orange-violet-translucent-gradient-background:focus {
+  div.wp-block-button__link.orange-translucent-gradient-background:focus {
   background-image: var(--wp--preset--gradient--orange-translucent) !important;
+  color: var(--wp--preset--color--black);
+}
+
+.is-style-outline
+  div.wp-block-button__link.has-blue-translucent-gradient-background:hover,
+.is-style-outline
+  div.wp-block-button__link.has-blue-translucent-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--blue-translucent) !important;
+  color: var(--wp--preset--color--black);
+}
+
+.is-style-outline
+  div.wp-block-button__link.has-magenta-translucent-gradient-background:hover,
+.is-style-outline
+  div.wp-block-button__link.has-magenta-translucent-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--magenta-translucent) !important;
+  color: var(--wp--preset--color--black);
+}
+
+.is-style-outline
+  div.wp-block-button__link.has-light-blue-translucent-gradient-background:hover,
+.is-style-outline
+  div.wp-block-button__link.has-light-blue-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--light-blue-translucent) !important;
+  color: var(--wp--preset--color--black);
+}
+
+.is-style-outline
+  div.wp-block-button__link.has-soft-pink-translucent-gradient-background:hover,
+.is-style-outline
+  div.wp-block-button__link.has-soft-pink-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--soft-pink-translucent) !important;
+  color: var(--wp--preset--color--black);
+}
+
+.is-style-outline
+  div.wp-block-button__link.has-bright-yellow-translucent-gradient-background:hover,
+.is-style-outline
+  div.wp-block-button__link.has-bright-yellow-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--bright-yellow-translucent) !important;
   color: var(--wp--preset--color--black);
 }
 /* */
