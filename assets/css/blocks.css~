@@ -447,7 +447,7 @@ aside.sidebar > *:not(.alignfull):not(.alignwide) {
 .wp-block-navigation .current-menu-item .wp-block-navigation-item__content:active,
 .wp-block-navigation .current-menu-item .wp-block-navigation-item__content:focus,
 .wp-block-navigation .current-menu-item .wp-block-navigation-item__content:hover {
-	background-color: var(--almost-white) !important;
+	background-color: var(--almost-white);
 	color: var(--dark-gray) !important;
 }
 
