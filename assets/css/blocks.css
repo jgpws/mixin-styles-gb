@@ -549,11 +549,6 @@ aside.sidebar > *:not(.alignfull):not(.alignwide) {
 	padding: 4px 0.5em 0 0.5em;
 }
 
-.is-style-tabs.wp-block-navigation:not(.has-text-color) .wp-block-navigation-item__content,
-.is-style-wide-tab.wp-block-navigation:not(.has-text-color) .wp-block-navigation-item__content {
-	color: var(--wp--preset--color--white);
-}
-
 .is-style-tabs.wp-block-navigation .wp-block-navigation-item__content,
 .is-style-wide-tab.wp-block-navigation .wp-block-navigation-item__content:focus,
 .is-style-wide-tab.wp-block-navigation .wp-block-navigation-item__content:hover {
@@ -562,6 +557,7 @@ aside.sidebar > *:not(.alignfull):not(.alignwide) {
 		rgba(255, 255, 255, 0) 100%
 	);
 	background-color: var(--wp--preset--color--tertiary);
+	color: var(--wp--custom--color--tab-fg);
 }
 
 .is-style-tabs.wp-block-navigation .is-menu-open .wp-block-navigation-item__content,
@@ -695,6 +691,7 @@ aside.sidebar > *:not(.alignfull):not(.alignwide) {
 	
 	.wp-block-navigation.is-vertical .has-child :where(.wp-block-navigation__submenu-container) .wp-block-navigation__submenu-container {
 		left: 0 !important;
+		top: 100%;
 	}
 }
 

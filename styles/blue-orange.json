@@ -221,6 +221,9 @@
       }
     },
     "custom": {
+    	"color": {
+    	  "tab-fg": "#191919"
+    	},
       "gradient": {
         "light-to-dark": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 183, 4, 0.5) 100%)",
     	  "dark-to-light": "linear-gradient(to bottom, rgba(255, 183, 4, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)"
