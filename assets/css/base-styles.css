@@ -269,8 +269,9 @@ figcaption,
 }
 
 .main {
+	padding-top: var(--wp--style--root--padding-top);
+	padding-bottom: var(--wp--style--root--padding-bottom);
 	overflow-x: hidden;
-	padding: 1em 1.5em;
 }
 
 .is-style-card .main {
@@ -823,11 +824,6 @@ img.alignright {
 
 img.aligncenter {
   margin-bottom: 1em;
-}
-
-.alignfull {
-	transform: translate(-1.5em);
-	width: calc(100% + 3em);
 }
 
 .alignwide {

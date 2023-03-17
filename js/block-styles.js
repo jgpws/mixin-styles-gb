@@ -59,14 +59,6 @@ wp.domReady( () => {
 		{
 			name: 'mxs-header',
 			label: 'Mixin Styles Header',
-		},
-		{
-			name: 'flex-horizontal',
-			label: 'Flex Container- Horizontal',
-		},
-		{
-			name: 'entry-meta',
-			label: 'Entry Meta- Horizontal',
 		}
 	] );
 

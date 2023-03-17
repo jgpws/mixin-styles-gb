@@ -26,6 +26,9 @@ The theme offers four header styles including two with hero images.
 
 == Changelog ==
 
+= 1.0.10 March 16 2023 =
+Adjusted the structure of block templates; removed two block styles, etc.
+
 = 1.0.9 March 13 2023 =
 Restored styling for the new comments block, associated template changes, etc.
 

@@ -4,18 +4,21 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"85%","className":"is-style-card content-column"} -->
-<div class="wp-block-column is-style-card content-column" style="flex-basis:85%"><!-- wp:group {"tagName":"main","className":"main"} -->
-<main class="wp-block-group main"><!-- wp:post-title {"level":1} /-->
+<div class="wp-block-column is-style-card content-column" style="flex-basis:85%"><!-- wp:group {"tagName":"main","className":"main","layout":{"type":"default"}} -->
+<main class="wp-block-group main"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:post-title {"level":1} /-->
 
-<!-- wp:group {"className":"is-style-entry-meta"} -->
-<div class="wp-block-group is-style-entry-meta"><!-- wp:post-author /--></div>
+<!-- wp:group {"className":"entry-meta","layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"top"}} -->
+<div class="wp-block-group entry-meta"><!-- wp:post-author /--></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:post-featured-image {"align":"left"} /-->
 
 <!-- wp:post-content {"layout":{"inherit":true}} /-->
 
-<!-- wp:comments -->
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:comments -->
 <div class="wp-block-comments"><!-- wp:comments-title /-->
 
 <!-- wp:comment-template -->
@@ -49,7 +52,8 @@
 <!-- /wp:comments-pagination -->
 
 <!-- wp:post-comments-form /--></div>
-<!-- /wp:comments --></main>
+<!-- /wp:comments --></div>
+<!-- /wp:group --></main>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
