@@ -2,18 +2,6 @@
 
 wp.domReady( () => {
 
-	wp.blocks.registerBlockStyle( 'core/column', [
-		{
-			name: 'default',
-			label: 'Default',
-			isDefault: true,
-		},
-		{
-			name: 'card',
-			label: 'Column- Card Style',
-		}
-	] );
-
 	wp.blocks.registerBlockStyle( 'core/columns', [
 		{
 			name: 'default',
@@ -75,6 +63,34 @@ wp.domReady( () => {
 		{
 			name: 'wide-tab',
 			label: 'Wide Tab',
+		}
+	] );
+	
+	wp.blocks.registerBlockStyle( 'core/post-featured-image', [
+		{
+			name: 'default',
+			label: 'Thumbnail- 300px',
+			isDefault: true,
+		},
+		{
+			name: 'medium',
+			label: 'Medium- 600px'
+		},
+		{
+			name: 'full-width',
+			label: 'Full- Image Width'
+		}
+	] );
+	
+	wp.blocks.registerBlockStyle( 'core/query', [
+		{
+			name: 'default',
+			label: 'Default',
+			isDefault: true,
+		},
+		{
+			name: 'card',
+			label: 'Card Style'
 		}
 	] );
 
