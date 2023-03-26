@@ -43,10 +43,6 @@ wp.domReady( () => {
 		{
 			name: 'card',
 			label: 'Card Style',
-		},
-		{
-			name: 'mxs-header',
-			label: 'Mixin Styles Header',
 		}
 	] );
 

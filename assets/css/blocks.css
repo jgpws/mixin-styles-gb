@@ -1264,6 +1264,13 @@ pre.wp-block-verse {
 	background-color: var(--black-12pcnt);
 }
 
+.wp-block-post-featured-image.alignfull img {
+  border-radius: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .wp-block-post-featured-image a {
 	border: none;
 }
@@ -1495,8 +1502,8 @@ body .is-layout-flow > .alignright {
 
 .wp-block-cover.is-style-rounded.alignfull,
 .wp-block-cover.is-style-rounded-full.alignfull {
-	transform: translate(0);
-	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .wp-block-post-featured-image.is-style-default.alignwide,
@@ -1537,13 +1544,6 @@ body .is-layout-flow > .alignright {
 
 .wp-block-post-featured-image.alignfull {
   max-width: none;
-}
-
-.wp-block-post-featured-image.alignfull img {
-  border-radius: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .wp-block-image .alignleft {

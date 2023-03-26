@@ -26,6 +26,9 @@ The theme offers four header styles including two with hero images.
 
 == Changelog ==
 
+= 1.0.12 March 25 2023 =
+Changed class name in the Header- hero pattern; removed ref attribute from the navigation block code.
+
 = 1.0.11 March 22 2023 =
 Adjusted Post Featured Image block to work with the Site Editor; introduced three featured image styles- Thumbnail, Medium and Full; removed the Card styling from Columns and applied to Group/Query blocks.
 
