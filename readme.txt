@@ -26,6 +26,9 @@ The theme offers four header styles including two with hero images.
 
 == Changelog ==
 
+= 1.0.13 March 27 2023 =
+Adjusted the Posts- No sidebar pattern to use a new structure.
+
 = 1.0.12 March 25 2023 =
 Changed class name in the Header- hero pattern; removed ref attribute from the navigation block code.
 
