@@ -8,19 +8,6 @@ aside.sidebar > *:not(.alignfull):not(.alignwide) {
 	padding-right: 1rem;
 }
 
-.wp-block-button,
-.wp-block-buttons,
-.wp-block-calendar,
-.wp-block-cover,
-.wp-block-embed,
-.wp-block-image,
-.wp-block-media-text,
-.wp-block-navigation,
-.wp-block-pullquote {
-	margin-top: 2em;
-	margin-bottom: 2em;
-}
-
 /* ---- Header ---- */
 /* Template parts */
 .header-vertical {
@@ -220,10 +207,16 @@ body .is-layout-flow .wp-block-site-tagline {
 }
 
 .mxs-header .wp-block-navigation,
-.header-hero .wp-block-navigation {
+.header-hero-title-inside .wp-block-navigation {
 	margin-left: 1.5em;
 	margin-right: 1.5em;
 	width: calc(100% - 3em);
+}
+
+.mxs-header.header-hero .wp-block-navigation {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--wp--style--global--content-size);
 }
 
 .wp-block-navigation a {
@@ -302,7 +295,7 @@ body .is-layout-flow .wp-block-site-tagline {
 }
 
 .mxs-header .wp-block-navigation__responsive-container-open,
-.header-hero .wp-block-navigation__responsive-container-open {
+.header-hero-title-inside .wp-block-navigation__responsive-container-open {
 	border-radius: 0.75em 0.75em 0 0;
 }
 
@@ -712,7 +705,7 @@ body .is-layout-flow .wp-block-site-tagline {
 }
 
 @media ( min-width: 1024px) {
-	.mxs-header .wp-block-navigation {
+	.mxs-header:not(.header-hero) .wp-block-navigation {
 		width: calc(75% - 4.5em);
 	}
 	
@@ -727,7 +720,7 @@ body .is-layout-flow .wp-block-site-tagline {
 }
 
 @media ( min-width: 1366px) {
-  .mxs-header .wp-block-navigation {
+  .mxs-header:not(.header-hero) .wp-block-navigation {
     width: calc(85% - 4.5em);
   }
 }

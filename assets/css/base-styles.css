@@ -542,8 +542,8 @@ figcaption,
   color: var(--wp--preset--color--link-alt-hover);
 }
 
-.is-style-card .header-hero a:hover,
-.is-style-card .header-hero a:active {
+.is-style-card .header-hero-title-inside a:hover,
+.is-style-card .header-hero-title-inside a:active {
   color: var(--wp--preset--color--white);
 }
 

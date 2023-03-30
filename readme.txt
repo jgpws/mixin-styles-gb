@@ -26,6 +26,9 @@ The theme offers four header styles including two with hero images.
 
 == Changelog ==
 
+= 1.0.14 March 29 2023 =
+Added updated entry meta Row block to the Posts- No sidebar pattern; moved patterns into Patterns directory; updated queries to five posts per page.
+
 = 1.0.13 March 27 2023 =
 Adjusted the Posts- No sidebar pattern to use a new structure.
 

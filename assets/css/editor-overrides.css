@@ -111,6 +111,7 @@ textarea.editor-post-title__input:focus {
 }
 
 .is-style-tabs .wp-block-navigation-item.has-background,
+.is-style-wide-tab .wp-block-navigation-item,
 .is-style-wide-tab .wp-block-navigation-item.has-background {
   background-color: transparent !important;
 }
