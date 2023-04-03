@@ -54,7 +54,7 @@ textarea.editor-post-title__input:focus {
 
 .mxs-header .is-style-search-header {
   position: absolute;
-  top: -186px !important;
+  top: -200px !important;
 }
 
 .site-header > .wp-block-group.mxs-header {
@@ -84,21 +84,28 @@ textarea.editor-post-title__input:focus {
 
 @media (min-width: 600px) {
   .mxs-header .is-style-search-header {
-    top: -16px !important;
+    top: -102px !important;
   }
 
   .site-header > .wp-block-group.mxs-header {
     padding-top: 1em;
   }
 }
+
+@media (min-width: 1024px) {
+	.mxs-header .is-style-search-header {
+		top: -16px !important;
+	}
+}
 /* */
 
 /* Navigation / Header Navigation */
-.wp-block-navigation:where(.has-background),
-.wp-block-navigation:where(.has-background)
-  .wp-block-navigation
-  .wp-block-page-list,
-.wp-block-navigation:where(.has-background) .wp-block-navigation__container {
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container,
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container,
+.wp-block-navigation,
+.wp-block-navigation .wp-block-page-list,
+.wp-block-navigation__container.is-layout-flex,
+.wp-block-navigation__responsive-container-content {
   gap: 0;
 }
 
@@ -158,7 +165,7 @@ textarea.editor-post-title__input:focus {
 
 @media (min-width: 600px) {
   .site-header > .wp-block-group .wp-block-navigation:last-child {
-    margin-bottom: calc(-1.5em - 1px);
+    margin-bottom: calc(-0.5em - 1px);
   }
 
   .is-style-wide-tab .wp-block-navigation-item .wp-block-navigation__container {
@@ -515,6 +522,16 @@ div.wp-block-button__link.is-style-outline:not(.has-text-color) {
   .is-layout-constrained > .alignright,
   .is-layout-flow > .alignright {
     margin-inline-end: 20% !important;
+  }
+  
+  .is-layout-flow > .is-style-search-header.alignleft,
+  .is-layout-constrained > .is-style-search-header.alignleft {
+    margin-inline-start: 0 !important;
+  }
+  
+  .is-layout-flow > .is-style-search-header.alignright,
+  .is-layout-constrained > .is-style-search-header.alignright {
+    margin-inline-end: 0 !important;
   }
 	
   .wp-block-post-featured-image.alignleft {
