@@ -143,13 +143,12 @@ a {
 }
 
 pre {
-  background-color: var(--white-6pcnt);
-  font-family: var(--monospace-font);
-  font-size: 1em;
+	background-color: var(--white-6pcnt);
+	font-family: var(--monospace-font);
+	font-size: 1em;
 	margin: 1em auto;
-  overflow: auto;
+	overflow: auto;
 	padding: 1em;
-  width: 75%;
 }
 
 code,
