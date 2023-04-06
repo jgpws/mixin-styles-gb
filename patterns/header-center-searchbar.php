@@ -22,5 +22,3 @@
 	<!-- wp:navigation {"className":"is-style-default","layout":{"type":"flex","orientation":"horizontal","justifyContent":"center"},"fontSize":"normal"} /-->
 </div>
 <!-- /wp:group -->
- 
-
