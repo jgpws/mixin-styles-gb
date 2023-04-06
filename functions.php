@@ -1,7 +1,5 @@
 <?php
 
-//require_once ( get_theme_file_path( '/inc/editor-palette.php' ) );
-
 if ( ! function_exists( 'mixin_styles_gb_setup' ) ) :
   /**
    * Sets up theme defaults and registers support for various WordPress features.
@@ -57,8 +55,18 @@ if ( ! function_exists( 'mixin_styles_gb_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'mixin_styles_gb_setup' );
 
-// Add block pattern functions
-require_once get_template_directory() . '/inc/block-patterns.php';
+// Add block pattern categories
+function mixin_styles_gb_register_block_pattern_cats() {
+	if( function_exists( 'register_block_pattern_category' ) ) {
+   	// Add new block pattern category for this theme.
+   	register_block_pattern_category(
+      	'mixin-styles-gb',
+      	array( 'label' => esc_html__( 'Mixin Styles- GB', 'mixin-styles-gb' ) )
+   	);
+   }
+}
+
+add_action( 'init', 'mixin_styles_gb_register_block_pattern_cats' );
 
 function mixin_styles_gb_block_styles() {
 	wp_enqueue_script( 'mixin-styles-gb-block-styles', get_theme_file_uri( '/js/block-styles.js' ), array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ), filemtime( get_template_directory() . '/js/blocks-styles.js' ) );

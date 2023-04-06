@@ -26,11 +26,39 @@ The theme offers four header styles including two with hero images.
 
 == Changelog ==
 
-= 1.1 March 2023 =
+= 1.1 April 2023 =
 Introduced Style Variations to the theme; adjusted Navigation CSS to use the built in Submenu colors; cleaned up the styling in the Site Editor backend
 
+= 1.0.16 April 6 2023 =
+CSS adjustments for the Navigation block, pre tag.
+
+= 1.0.15 April 5 2023 =
+Removed absolute positioning from the Header templates for search bar. Replaced with CSS Grid structure; removed some Header template parts, as Patterns can be used.
+
+= 1.0.14 March 29 2023 =
+Added updated entry meta Row block to the Posts- No sidebar pattern; moved patterns into Patterns directory; updated queries to five posts per page.
+
+= 1.0.13 March 27 2023 =
+Adjusted the Posts- No sidebar pattern to use a new structure.
+
+= 1.0.12 March 25 2023 =
+Changed class name in the Header- hero pattern; removed ref attribute from the navigation block code.
+
+= 1.0.11 March 22 2023 =
+Adjusted Post Featured Image block to work with the Site Editor; introduced three featured image styles- Thumbnail, Medium and Full; removed the Card styling from Columns and applied to Group/Query blocks.
+
+= 1.0.10 March 16 2023 =
+Adjusted the structure of block templates; removed two block styles, etc.
+
+= 1.0.9 March 13 2023 =
+Restored styling for the new comments block, associated template changes, etc.
+
+= 1.0.8 March 2 2023 =
+More CSS fixes for hero pattern designs inside of card styled block.
+>>>>>>> main
+
 = 1.0.7 March 1 2023 =
-Added CSS Fixes for narrow columns in mobile when no sidebar pattern is placed inside a column; fixes for calendar.
+Added CSS Fixes for narrow columns in mobile when the No Sidebar pattern is placed inside a column; fixes for calendar.
 
 = 1.0.6 May 26 2022 =
 Added theme URL.
