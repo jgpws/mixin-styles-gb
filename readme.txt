@@ -26,6 +26,9 @@ The theme offers four header styles including two with hero images.
 
 == Changelog ==
 
+= 1.0.15 April 5 2023 =
+Removed absolute positioning from the Header templates for search bar. Replaced with CSS Grid structure; removed some Header template parts, as Patterns can be used.
+
 = 1.0.14 March 29 2023 =
 Added updated entry meta Row block to the Posts- No sidebar pattern; moved patterns into Patterns directory; updated queries to five posts per page.
 
@@ -48,7 +51,7 @@ Restored styling for the new comments block, associated template changes, etc.
 More CSS fixes for hero pattern designs inside of card styled block.
 
 = 1.0.7 March 1 2023 =
-Added CSS Fixes for narrow columns in mobile when no sidebar pattern is placed inside a column; fixes for calendar.
+Added CSS Fixes for narrow columns in mobile when the No Sidebar pattern is placed inside a column; fixes for calendar.
 
 = 1.0.6 May 26 2022 =
 Added theme URL.

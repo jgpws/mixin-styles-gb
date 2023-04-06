@@ -566,16 +566,6 @@
       "area": "header"
     },
     {
-    	"name": "header-hero",
-    	"title": "Header- Hero",
-    	"area": "header"
-    },
-    {
-      "name": "header-hero-title-inside",
-      "title": "Header- Hero (Title Inside)",
-      "area": "header"
-    },
-    {
       "name": "header-vertical",
       "title": "Header- Vertical",
       "area": "header"
