@@ -26,6 +26,9 @@ The theme offers four header styles including two with hero images.
 
 == Changelog ==
 
+= 1.0.16 April 6 2023 =
+CSS adjustments for the Navigation block, pre tag.
+
 = 1.0.15 April 5 2023 =
 Removed absolute positioning from the Header templates for search bar. Replaced with CSS Grid structure; removed some Header template parts, as Patterns can be used.
 
