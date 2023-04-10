@@ -29,6 +29,9 @@ The theme offers four header styles including two with hero images.
 = 1.1 April 2023 =
 Introduced Style Variations to the theme; adjusted Navigation CSS to use the built in Submenu colors; cleaned up the styling in the Site Editor backend
 
+= 1.0.17 April 9 2023 =
+CSS adjustments for Navigation when a Page List is used.
+
 = 1.0.16 April 6 2023 =
 CSS adjustments for the Navigation block, pre tag.
 
