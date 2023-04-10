@@ -55,7 +55,6 @@ Restored styling for the new comments block, associated template changes, etc.
 
 = 1.0.8 March 2 2023 =
 More CSS fixes for hero pattern designs inside of card styled block.
->>>>>>> main
 
 = 1.0.7 March 1 2023 =
 Added CSS Fixes for narrow columns in mobile when the No Sidebar pattern is placed inside a column; fixes for calendar.
