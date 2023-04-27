@@ -3,16 +3,15 @@
 	background-color: var(--almost-white) !important;
 }
 
-.is-style-outline a.wp-block-button__link.has-background {
+.is-style-outline .wp-block-button__link.has-background {
   background-color: transparent !important;
   background-image: none !important;
 }
 
-.is-style-outline a.wp-block-button__link.has-background:hover,
-.is-style-outline a.wp-block-button__link.has-background:focus {
+.is-style-outline .wp-block-button__link.has-background:hover,
+.is-style-outline .wp-block-button__link.has-background:focus {
   background-image: var(--white-to-black-gradient) !important;
   background-color: var(--almost-white) !important;
-  color: var(--wp--preset--color--black);
 }
 
 /* Color overrides for the Cover block */

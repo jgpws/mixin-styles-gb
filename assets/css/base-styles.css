@@ -478,11 +478,15 @@ figcaption,
 }
 
 /* Header */
-.site-header > .wp-block-group {
+.site-header > .wp-block-group:not(.mxs-header) {
 	padding: 1.5em;
 }
 
-.site-header .mxs-header {
+.site-header > .wp-block-group.header-hero-title-inside {
+	padding-bottom: 0;
+}
+
+.mxs-header {
 	display: grid;
 	grid-template-columns: minmax(320px, 1fr);
 	grid-template-rows: 1fr auto auto;
@@ -509,14 +513,20 @@ figcaption,
 	border-bottom-right-radius: 16px;
 	background: url(../images/spyglass-clipped.svg) top left no-repeat;
 	background-color: #ffffff;
-	grid-row: 1 / 2;
 	height: 80px;
 	text-align: center;
+}
+
+.wp-block-search {
 	width: 240px;
 }
 
-.is-style-search-header.wp-block-search__button-inside,
-.is-style-search-header.wp-block-search__button-outside {
+.mxs-header .wp-block-search {
+	grid-row: 1 / 2;
+}
+
+.wp-block-search.wp-block-search__button-inside,
+.wp-block-search.wp-block-search__button-outside {
   width: 280px;
 }
 
@@ -528,6 +538,12 @@ figcaption,
 	grid-row: 4 / 5;
 }
 
+@media (min-width: 600px) {
+	.site-header > .wp-block-group.header-hero-title-inside {
+		padding-bottom: 1.5em;
+	}
+}
+
 @media (min-width: 768px) {
 	.mxs-header-searchbar-center .mxs-title-panel {
 		flex-wrap: nowrap;
@@ -535,15 +551,15 @@ figcaption,
 }
 
 @media (min-width: 1024px) {
-  .site-header .mxs-header {
+  .mxs-header {
   	 grid-template-columns: calc(75% - 0.5em) auto;
   }
   
-  .site-header .mxs-header-searchbar-left {
+  .mxs-header-searchbar-left {
     grid-template-columns: auto calc(75% - 0.5em);
   }
   
-  .site-header .mxs-header-searchbar-center {
+  .mxs-header-searchbar-center {
     grid-template-columns: auto var(--wp--style--global--content-size) auto;
   }
   
@@ -561,15 +577,15 @@ figcaption,
     grid-row: 2 / 3;
   }
   
-  .mxs-header .is-style-search-header {
+  .mxs-header .wp-block-search {
     grid-row: 1 / 2;
   }
   
-  .mx-header-left-searchbar .is-style-search-header {
+  .mx-header-left-searchbar .wp-block-search {
     grid-column: 1 / 2;
   }
   
-  .mxs-header-searchbar-center .is-style-search-header {
+  .mxs-header-searchbar-center .wp-block-search {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
   }
@@ -598,15 +614,15 @@ figcaption,
 }
 
 @media (min-width: 1366px) {
-  .site-header .mxs-header {
+  .mxs-header {
     grid-template-columns: calc(85% - 0.5em) auto;
   }
   
-  .site-header .mxs-header-searchbar-left {
+  .mxs-header-searchbar-left {
     grid-template-columns: auto calc(85% - 0.5em);
   }
   
-  .site-header .mxs-header-searchbar-center {
+  .mxs-header-searchbar-center {
     grid-template-columns: auto var(--wp--style--global--content-size) auto;
   }
 }
@@ -944,15 +960,25 @@ img.aligncenter {
   border-bottom-right-radius: 0px;
 }
 
-body .is-layout-flow > .is-style-search-header.alignleft,
-body .is-layout-constrained > .is-style-search-header.alignleft {
-  margin-inline-start: 0;
+.is-layout-flow > .wp-block-search.alignleft,
+.is-layout-constrained > .wp-block-search.alignleft {
+  margin-inline-start: 1.5em;
 }
 
-body .is-layout-flow > .is-style-search-header.alignright,
-body .is-layout-constrained > .is-style-search-header.alignright {
-  margin-inline-end: 0;
+.is-layout-flow > .is-style-search-header.alignleft,
+.is-layout-constrained > .is-style-search-header.alignleft {
+	margin-inline-start: 0;
+}
+
+.is-layout-flow > .wp-block-search.alignright,
+.is-layout-constrained > .wp-block-search.alignright {
   justify-self: end;
+  margin-inline-end: 1.5em;
+}
+
+.is-layout-flow > .is-style-search-header.alignright,
+.is-layout-constrained > .is-style-search-header.alignright {
+	margin-inline-end: 0;
 }
 
 .is-style-search-header.aligncenter {
@@ -960,8 +986,8 @@ body .is-layout-constrained > .is-style-search-header.alignright {
 }
 
 @media (min-width: 1024px) {
-  body .is-layout-flow > .is-style-search-header.alignright,
-  body .is-layout-flow > .is-layout-constrained .is-style-search-header.alignright {
+  .mxs-header.is-layout-flow > .wp-block-search.alignright,
+  .mxs-header.is-layout-flow > .is-layout-constrained .wp-block-search.alignright {
     grid-column: 1 / 3;
   }
 }

@@ -82,5 +82,8 @@ function mixin_styles_gb_scripts() {
   wp_enqueue_style( 'mixin-styles-bg-nav-color-overrides', get_theme_file_uri( '/assets/css/block-navigation-colors.css' ), array( 'mixin-styles-gb-blocks' ), filemtime( get_template_directory() . '/assets/css/block-navigation-colors.css' ) );
   wp_enqueue_style( 'mixin-styles-gb-button-color-overrides', get_theme_file_uri( '/assets/css/block-button-colors.css' ), array( 'mixin-styles-gb-blocks' ), filemtime( get_template_directory() . '/assets/css/block-button-colors.css' ) );
   wp_enqueue_style( 'mixin-styles-gb-button-gradient-overrides', get_theme_file_uri( '/assets/css/block-button-gradients.css' ), array( 'mixin-styles-gb-blocks' ), filemtime( get_template_directory() . '/assets/css/block-button-gradients.css' ) );
+  
+  // Scripts
+  wp_enqueue_script( 'mixin-styles-gb-scripts', get_theme_file_uri( '/js/mixin-styles-gb-scripts.js' ), array(), filemtime( get_template_directory() . '/js/mixin-styles-gb-scripts.js' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'mixin_styles_gb_scripts' );

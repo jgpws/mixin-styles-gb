@@ -162,44 +162,44 @@
     	    ],
     	    "gradients": [
     	      {
-    	        "slug": "blue",
+    	        "slug": "blue-translucent",
     	        "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(32, 64, 192, 0.5) 100%)",
-    	        "name": "Blue"
+    	        "name": "Blue- translucent"
     	      },
     	      {
-    	        "slug": "purple",
+    	        "slug": "purple-translucent",
     	        "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(130, 11, 187, 0.5) 100%)",
-    	        "name": "Purple"
+    	        "name": "Purple- translucent"
     	      },
     	      {
-    	        "slug": "magenta",
+    	        "slug": "magenta-translucent",
     	        "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(205, 0, 205, 0.5) 100%)",
-    	        "name": "Magenta"
+    	        "name": "Magenta- translucent"
     	      },
     	      {
-    	        "slug": "deep-orange",
+    	        "slug": "deep-orange-translucent",
     	        "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(235, 135, 13, 0.5) 100%)",
-    	        "name": "Deep Orange"
+    	        "name": "Deep Orange- translucent"
     	      },
     	      {
-    	        "slug": "yellow",
+    	        "slug": "yellow-translucent",
     	        "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 224, 0, 0.5) 100%)",
-    	        "name": "Yellow"
+    	        "name": "Yellow- translucent"
     	      },
     	      {
-    	        "slug": "khaki",
+    	        "slug": "khaki-translucent",
     	        "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(189, 183, 107, 0.5) 100%)",
-    	        "name": "Khaki"
+    	        "name": "Khaki- translucent"
     	      },
     	      {
-    	        "slug": "tan",
+    	        "slug": "tan-translucent",
     	        "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(210, 180, 140, 0.5) 100%)",
-    	        "name": "Tan"
+    	        "name": "Tan- translucent"
     	      },
     	      {
-    	        "slug": "sandstone",
+    	        "slug": "sandstone-translucent",
     	        "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(167, 141, 132, 0.5) 100%)",
-    	        "name": "Sandstone"
+    	        "name": "Sandstone- translucent"
     	      }
     	    ]
     	  }
@@ -379,7 +379,15 @@
     	  "hoverBg": "var(--wp--preset--color--background)",
     	  "hoverFg": "var(--wp--preset--color--foreground)",
     	  "postTitleHover": "var(--wp--preset--color--background)",
-    	  "tab-fg": "#ffffff"
+    	  "tab-fg": "#ffffff",
+    	  "accent-1-fg": "#ffffff",
+    	  "accent-2-fg": "#ffffff",
+    	  "accent-3-fg": "#ffffff",
+    	  "accent-4-fg": "#000000",
+    	  "accent-5-fg": "#000000",
+    	  "accent-6-fg": "#000000",
+    	  "accent-7-fg": "#000000",
+    	  "accent-8-fg": "#000000"
     	},
     	"gradient": {
     	  "light-to-dark": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%)",
