@@ -1,0 +1,158 @@
+/* Shared styles */
+.is-style-wide-tab .is-menu-open .wp-block-navigation__container,
+.is-style-wide-tab.has-background
+  .is-menu-open
+  .wp-block-navigation__container {
+  background-color: transparent;
+}
+
+.is-style-card .is-style-wide-tab .wp-block-navigation__container {
+  background-color: var(--wp--custom--color--opacity-12-base);
+}
+
+.is-style-tabs,
+.is-style-wide-tab {
+  .wp-block-navigation-item__content {
+    border-radius: 10px 10px 0 0;
+    height: 30px;
+    padding: 4px 0.5em 0 0.5em;
+  }
+
+  .open-on-click .wp-block-navigation__submenu-icon {
+    color: currentColor;
+    height: auto;
+    margin-left: 0 !important;
+    min-width: 44px;
+    padding-left: 16px;
+  }
+
+  .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+    background-image: none;
+    background-color: transparent;
+    height: auto;
+    padding: 0.5em 1em;
+  }
+
+  .wp-block-navigation__submenu-container .wp-block-navigation-item__content,
+  &.is-vertical
+    .wp-block-navigation__submenu-container
+    .wp-block-navigation-item__content {
+    border-radius: 0;
+  }
+
+  .has-modal-open
+    .wp-block-navigation__submenu-container
+    .wp-block-navigation-item__content {
+    padding: 0.25em 0.5em;
+  }
+}
+
+@media (min-width: 600px) {
+  .is-style-tabs .wp-block-navigation-item__content,
+  .is-style-wide-tab .wp-block-navigation-item__content {
+    margin: 0;
+  }
+}
+
+.is-style-tabs .wp-block-navigation-item__content,
+.is-style-wide-tab .wp-block-navigation-item__content:focus,
+.is-style-wide-tab .wp-block-navigation-item__content:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-color: var(--wp--preset--color--tertiary);
+}
+
+.is-style-tabs:not(.is-responsive) {
+  .wp-block-navigation-item__content,
+  .wp-block-navigation-item__content {
+    margin: 0;
+  }
+}
+
+.is-style-tabs:not(.has-text-color) .wp-block-navigation-item__content,
+.is-style-wide-tab:not(.has-text-color)
+  .wp-block-navigation-item__content:active,
+.is-style-wide-tab:not(.has-text-color)
+  .wp-block-navigation-item__content:focus,
+.is-style-wide-tab:not(.has-text-color)
+  .wp-block-navigation-item__content:hover {
+  color: var(--wp--custom--color--tab-fg);
+}
+
+.is-style-tabs:not(.has-text-color),
+.is-style-wide-tab:not(.has-text-color) {
+  .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+    color: var(--wp--preset--color--black);
+
+    &:focus,
+    &:hover {
+      color: var(--wp--custom--color--hover-fg);
+    }
+  }
+
+  .is-menu-open
+    .wp-block-navigation__submenu-container
+    .wp-block-navigation-item__content {
+    &:focus,
+    &:hover {
+      color: var(--wp--preset--color--black);
+    }
+  }
+}
+
+.is-style-tabs .is-menu-open .wp-block-navigation-item__content,
+.is-style-wide-tab .is-menu-open .wp-block-navigation-item__content,
+.is-style-wide-tab .is-menu-open .wp-block-navigation-item__content:focus,
+.is-style-wide-tab .is-menu-open .wp-block-navigation-item__content:hover {
+  background: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+.is-style-tabs.is-vertical,
+.is-style-wide-tab.is-vertical {
+  .wp-block-navigation__container {
+    height: auto;
+  }
+
+  .wp-block-navigation__submenu-container,
+  .wp-block-navigation__submenu-container {
+    margin-left: 25%;
+    top: 100%;
+  }
+
+  .is-menu-open .wp-block-navigation__submenu-container,
+  .is-menu-open .wp-block-navigation__submenu-container {
+    margin-left: 0;
+  }
+
+  .wp-block-navigation-item__content {
+    height: auto;
+    padding: 0.25em 0.5em;
+  }
+
+  .wp-block-navigation-item__content {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.is-style-wide-tab.is-vertical .wp-block-navigation__container,
+.is-style-wide-tab.is-vertical .wp-block-page-list,
+.is-style-wide-tab.is-vertical .wp-block-navigation__submenu-container,
+.is-style-tabs.is-vertical .wp-block-navigation__submenu-container {
+  border-radius: 0 16px 16px 0;
+}
+
+.is-style-wide-tab.is-vertical.items-justified-right,
+.is-style-tabs.is-vertical.items-justified-right {
+  .wp-block-navigation__submenu-container {
+    margin-right: 0;
+  }
+
+  .wp-block-navigation-item__content {
+    border-radius: 10px 0 0 10px;
+  }
+}

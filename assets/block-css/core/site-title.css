@@ -1,0 +1,31 @@
+/* ---- Site Title ---- */
+
+.wp-block-site-title {
+  color: var(--wp--custom--color--site-title-fg);
+}
+
+.wp-block-site-title a {
+  text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.wp-block-site-title a:where(:not(.wp-element-button)):hover,
+.wp-block-site-title a:where(:not(.wp-element-buttton)):focus {
+  color: var(--wp--preset--color--foreground);
+}
+
+.is-light .wp-block-site-title a:where(:not(.wp-element-button)):hover,
+.is-light .wp-block-site-title a:where(:not(.wp-element-button)):focus {
+  color: var(--wp--preset--color--black);
+}
+
+.is-style-card .wp-block-site-title a {
+  color: var(--medium-gray);
+}
+
+body .is-layout-flow .wp-block-site-tagline {
+  margin-block-start: 0.5rem;
+}
+
+.is-style-card .wp-block-site-tagline {
+  color: var(--wp--preset--color--black);
+}

@@ -1,52 +1,52 @@
 {
   "version": 2,
-  "title": "Blue/Orange",
+  "title": "Orange/Teal",
   "settings": {
     "color": {
       "palette": [
         {
           "slug": "background",
-          "color": "#2040c0",
+          "color": "#ff870d",
           "name": "Background"
         },
         {
           "slug": "foreground",
-          "color": "#ffffff",
+          "color": "#000000",
           "name": "Foreground"
         },
         {
           "slug": "primary",
-          "color": "#2040c0",
+          "color": "#0d7f9f",
           "name": "Primary"
         },
         {
           "slug": "secondary",
-          "color": "#d1d9f9",
+          "color": "#ffdfbe",
           "name": "Secondary"
         },
         {
           "slug": "tertiary",
-          "color": "#ffb704",
+          "color": "#0d7f9f",
           "name": "Tertiary"
         },
         {
           "slug": "link",
-          "color": "#c9effa",
+          "color": "#12236a",
           "name": "Link"
         },
         {
           "slug": "link-hover",
-          "color": "#c5aff3",
+          "color": "#033b14",
           "name": "Link Hover"
         },
         {
           "slug": "link-alt",
-          "color": "#0f90b5",
+          "color": "#1d39ad",
           "name": "Link Alt"
         },
         {
           "slug": "link-alt-hover",
-          "color": "#511dc1",
+          "color": "#067227",
           "name": "Link Alt Hover"
         }
       ],
@@ -57,19 +57,19 @@
           "name": "Gray"
         },
         {
-          "slug": "orange",
-          "gradient": "linear-gradient(to bottom, #ffffff 0%, #ffb704 100%)",
-          "name": "Orange"
-        },
-        {
           "slug": "teal",
           "gradient": "linear-gradient(to bottom, #ffffff 0%, #0d7f9f 100%)",
           "name": "Teal"
         },
         {
-          "slug": "violet",
-          "gradient": "linear-gradient(to bottom, #ffffff 0%, #4811ae 100%)",
-          "name": "Violet"
+          "slug": "magenta",
+          "gradient": "linear-gradient(to bottom, #ffffff 0%, #cd00cd 100%)",
+          "name": "Magenta"
+        },
+        {
+          "slug": "yellow",
+          "gradient": "linear-gradient(to bottom, #ffffff 0%, #ffe000 100%)",
+          "name": "Yellow"
         }
       ]
     },
@@ -79,28 +79,28 @@
           "palette": [
             {
               "slug": "accent-1",
-              "color": "#0d7f9f",
-              "name": "Teal (Accent 1)"
+              "color": "#cd00cd",
+              "name": "Magenta (Accent 1)"
             },
             {
               "slug": "accent-2",
-              "color": "#4811ae",
-              "name": "Violet (Accent 2)"
+              "color": "#ffe000",
+              "name": "Yellow (Accent 2)"
             },
             {
               "slug": "accent-3",
-              "color": "#c9effa",
-              "name": "Light Teal (Accent 3)"
+              "color": "#d2d9f7",
+              "name": "Pastel Blue (Accent 3)"
             },
             {
               "slug": "accent-4",
-              "color": "#c5aff3",
-              "name": "Light Violet (Accent 4)"
+              "color": "#cafcd9",
+              "name": "Pastel Green (Accent 4)"
             },
             {
               "slug": "accent-5",
-              "color": "#ffb704",
-              "name": "Orange (Accent 5)"
+              "color": "#0d7f9f",
+              "name": "Teal (Accent 5)"
             },
             {
               "slug": "text-dark",
@@ -116,28 +116,28 @@
           "gradients": [
             {
               "slug": "translucent-1",
-              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(13, 127, 159, 0.5) 100%)",
-              "name": "Teal (Translucent 1)"
+              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(205, 0, 205, 0.5) 100%)",
+              "name": "Magenta (Translucent 1)"
             },
             {
               "slug": "translucent-2",
-              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(72, 17, 174, 0.5) 100%)",
-              "name": "Violet (Translucent 2)"
+              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 224, 0, 0.5) 100%)",
+              "name": "Yellow (Translucent 2)"
             },
             {
               "slug": "translucent-3",
-              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(201, 239, 250, 0.5) 100%)",
-              "name": "Light Teal (Translucent 3)"
+              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(210, 217, 247, 0.5) 100%)",
+              "name": "Pastel Blue (Translucent 3)"
             },
             {
               "slug": "translucent-4",
-              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(197, 175, 243, 0.5) 100%)",
-              "name": "Light Violet (Translucent 4)"
+              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(202, 252, 217, 0.5) 100%)",
+              "name": "Pastel Green (Translucent 4)"
             },
             {
               "slug": "translucent-5",
-              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 183, 4, 0.5) 100%)",
-              "name": "Orange (Translucent 5)"
+              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(13, 127, 159, 0.5) 100%)",
+              "name": "Teal (Translucent 5)"
             }
           ]
         }
@@ -147,28 +147,28 @@
           "palette": [
             {
               "slug": "accent-1",
-              "color": "#0d7f9f",
-              "name": "Teal (Accent 1)"
+              "color": "#cd00cd",
+              "name": "Magenta (Accent 1)"
             },
             {
               "slug": "accent-2",
-              "color": "#4811ae",
-              "name": "Violet (Accent 2)"
+              "color": "#ffe000",
+              "name": "Yellow (Accent 2)"
             },
             {
               "slug": "accent-3",
-              "color": "#ffb704",
-              "name": "Orange (Accent 3)"
+              "color": "#0d7f9f",
+              "name": "Teal (Accent 3)"
             },
             {
               "slug": "accent-4",
-              "color": "#c9effa",
-              "name": "Light Teal (Accent 4)"
+              "color": "#d2d9f7",
+              "name": "Pastel Blue (Accent 4)"
             },
             {
               "slug": "accent-5",
-              "color": "#c5aff3",
-              "name": "Light Violet (Accent 5)"
+              "color": "#cafcd9",
+              "name": "Pastel Green (Accent 5)"
             },
             {
               "slug": "text-dark",
@@ -188,23 +188,28 @@
           "palette": [
             {
               "slug": "accent-1",
-              "color": "#0d7f9f",
-              "name": "Teal (Accent 1)"
+              "color": "#cd00cd",
+              "name": "Magenta (Accent 1)"
             },
             {
               "slug": "accent-2",
-              "color": "#4811ae",
-              "name": "Violet (Accent 2)"
+              "color": "#ffe000",
+              "name": "Yellow (Accent 2)"
             },
             {
               "slug": "accent-3",
-              "color": "#c9effa",
-              "name": "Light Teal (Accent 3)"
+              "color": "#d2d9f7",
+              "name": "Pastel Blue (Accent 3)"
             },
             {
               "slug": "accent-4",
-              "color": "#c5aff3",
-              "name": "Light Violet (Accent 4)"
+              "color": "#cafcd9",
+              "name": "Pastel Green (Accent 4)"
+            },
+            {
+              "slug": "accent-5",
+              "color": "#0d7f9f",
+              "name": "Teal (Accent 5)"
             },
             {
               "slug": "text-dark",
@@ -222,12 +227,20 @@
     },
     "custom": {
       "color": {
-        "tab-fg": "#191919",
+        "border": "var(--wp--preset--color--primary)",
+        "hoverBg": "var(--wp--preset--color--primary)",
+        "hoverFg": "var(--wp--preset--color--white)",
+        "opacity75bg": "rgba(0, 0, 0, 0.75)",
+        "postTitleHover": "var(--wp--preset--color--primary)",
+        "heading-fg": "#404040",
+        "site-title-fg": "#074556",
+        "gallery-caption-bg": "rgba(0, 0, 0, 0.5)",
+        "gallery-caption-fg": "#ffffff",
         "accent-3-fg": "#000000"
       },
       "gradient": {
-        "light-to-dark": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 183, 4, 0.5) 100%)",
-        "dark-to-light": "linear-gradient(to bottom, rgba(255, 183, 4, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)"
+        "light-to-dark": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(13, 127, 159, 0.5) 100%)",
+        "dark-to-light": "linear-gradient(to bottom, rgba(13, 127, 159, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)"
       }
     }
   }

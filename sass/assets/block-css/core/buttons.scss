@@ -1,0 +1,181 @@
+/* ---- Buttons ---- */
+
+/* Default styles */
+.wp-block-buttons {
+  .wp-block-button {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.wp-block-button.is-style-outline {
+  .wp-block-button__link {
+    /* Temporary- for bug in Block Editor */
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+  }
+}
+
+.is-style-outline > .wp-block-button__link:not(.has-text-color),
+.wp-block-button__link.is-style-outline:not(.has-text-color) {
+  color: var(--wp--preset--color--white);
+}
+
+.is-style-card .is-style-outline > .wp-block-button__link:not(.has-text-color),
+.is-style-card .wp-block-button__link.is-style-outline:not(.has-text-color) {
+  color: var(--wp--preset--color--black);
+}
+
+.wp-block-button,
+.wp-block-button.is-style-outline {
+  .wp-block-button__link.is-style-outline:not(.has-text-color):focus,
+  .wp-block-button__link.is-style-outline:not(.has-text-color):hover {
+    color: var(--wp--preset--color--black);
+  }
+}
+
+/* Button block overrides for colors and gradients */
+.wp-block-button__link[class*="gradient-background"] {
+  background-color: var(--almost-white) !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link.has-background {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+.is-style-outline .wp-block-button__link.has-background:hover,
+.is-style-outline .wp-block-button__link.has-background:focus {
+  background-image: var(--white-to-black-gradient) !important;
+}
+
+/* Button block color overrides */
+
+// Use @each map to loop over each button color
+
+$buttonColorsDefault: (
+  "Blue": "accent-1",
+  "Purple": "accent-2",
+  "Magenta": "accent-3",
+  "Orange": "accent-4",
+  "Yellow": "accent-5",
+  "Khaki": "accent-6",
+  "Tan": "accent-7",
+  "Sandstone": "accent-8",
+);
+
+@each $title, $colorValue in $buttonColorsDefault {
+  /* Accent Color- #{$title} */
+
+  .is-style-outline
+    .wp-block-button__link.has-#{$colorValue}-background-color:hover,
+  .is-style-outline
+    .wp-block-button__link.has-#{$colorValue}-background-color:focus {
+    background-color: var(--wp--preset--color--#{$colorValue}) !important;
+  }
+
+  .is-style-outline
+    .wp-block-button__link:not(.has-text-color).has-#{$colorValue}-background-color:hover,
+  .is-style-outline
+    .wp-block-button__link:not(.has-text-color).has-#{$colorValue}-background-color:focus {
+    border-color: var(--wp--preset--color--foreground);
+    color: var(--wp--custom--color--#{$colorValue}-fg);
+
+    .is-style-card & {
+      border-color: var(--wp--preset--color--black);
+    }
+  }
+
+  .is-style-outline .wp-block-button__link.has-#{$colorValue}-color {
+    border-color: var(--wp--preset--color--#{$colorValue}) !important;
+  }
+}
+
+/* Text dark */
+.is-style-outline .wp-block-button__link.has-text-dark-background-color:hover,
+.is-style-outline .wp-block-button__link.has-text-dark-background-color:focus {
+  background-color: var(--wp--preset--color--text-dark) !important;
+}
+
+.is-style-outline
+  .wp-block-button__link:not(.has-text-color).has-text-dark-background-color:hover,
+.is-style-outline
+  .wp-block-button__link:not(.has-text-color).has-text-dark-background-color:focus {
+  border-color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--white);
+}
+
+.is-style-card
+  .is-style-outline
+  .wp-block-button__link:not(.has-text-color).has-text-dark-background-color:hover,
+.is-style-card
+  .is-style-outline
+  .wp-block-button__link:not(.has-text-color).has-text-dark-background-color:focus {
+  border-color: var(--wp--preset--color--black);
+}
+
+/* Text light */
+.is-style-outline .wp-block-button__link.has-text-light-background-color:hover,
+.is-style-outline .wp-block-button__link.has-text-light-background-color:focus {
+  background-color: var(--wp--preset--color--text-light) !important;
+}
+
+.is-style-outline
+  .wp-block-button__link:not(.has-text-color).has-text-light-background-color:hover,
+.is-style-outline
+  .wp-block-button__link:not(.has-text-color).has-text-light-background-color:focus {
+  border-color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--black);
+}
+
+.is-style-card
+  .is-style-outline
+  .wp-block-button__link:not(.has-text-color).has-text-light-background-color:hover,
+.is-style-card
+  .is-style-outline
+  .wp-block-button__link:not(.has-text-color).has-text-light-background-color:focus {
+  border-color: var(--wp--preset--color--black);
+}
+
+/* --- Button block gradient overrides --- */
+
+/* Navigation color titles refer to the standard color scheme
+ * defined in theme.json
+ */
+
+// Use @each map to loop over each button gradient
+
+$buttonGradientsDefault: (
+  "Blue": "translucent-1",
+  "Purple": "translucent-2",
+  "Magenta": "translucent-3",
+  "Deep Orange": "translucent-4",
+  "Yellow": "translucent-5",
+  "Khaki": "translucent-6",
+  "Tan": "translucent-7",
+  "Sandstone": "translucent-8",
+);
+
+@each $title, $gradientValue in $buttonGradientsDefault {
+  /* #{$title} (translucent) */
+
+  .is-style-outline
+    .wp-block-button__link.has-#{$gradientValue}-gradient-background:hover,
+  .is-style-outline
+    .wp-block-button__link.has-#{$gradientValue}-gradient-background:focus {
+    background-image: var(--wp--preset--gradient--#{$gradientValue}) !important;
+  }
+
+  .is-style-outline
+    .wp-block-button__link:not(.has-text-color).has-#{$gradientValue}-gradient-background:hover,
+  .is-style-outline
+    .wp-block-button__link:not(.has-text-color).has-#{$gradientValue}-gradient-background:focus {
+    border-color: var(--wp--preset--color--foreground);
+
+    .is-style-card & {
+      border-color: var(--wp--preset--color--black);
+    }
+  }
+}

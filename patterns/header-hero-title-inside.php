@@ -9,9 +9,9 @@
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"className":"is-style-default header-hero-title-inside","layout":{"inherit":true}} -->
 <div class="wp-block-group is-style-default header-hero-title-inside">
-	<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/bg_concircles_rby.png' ) ); ?>","id":11904,"isRepeated":true,"dimRatio":50,"overlayColor":"accent-3","contentPosition":"top center","isDark":false,"align":"full","className":"is-style-rounded-full"} -->
+	<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/bg_concircles_rby.png' ) ); ?>","id":11904,"isRepeated":true,"dimRatio":70,"overlayColor":"accent-3","contentPosition":"top center","isDark":false,"align":"full","className":"is-style-rounded-full"} -->
 	<div class="wp-block-cover alignfull is-light is-repeated has-custom-content-position is-position-top-center is-style-rounded-full" style="background-image:url(<?php echo esc_url( get_theme_file_uri( 'assets/images/bg_concircles_rby.png' ) ); ?>)">
-		<span aria-hidden="true" class="has-accent-3-background-color wp-block-cover__gradient-background has-background-dim"></span>
+		<span aria-hidden="true" class="has-accent-3-background-color wp-block-cover__gradient-background has-background-dim-70 has-background-dim"></span>
 		<div class="wp-block-cover__inner-container">
 			<!-- wp:columns -->
 			<div class="wp-block-columns">
@@ -19,7 +19,7 @@
 				<div class="wp-block-column" style="flex-basis:66.66%">
 					<!-- wp:site-title /-->
 
-					<!-- wp:site-tagline {"textColor":"white"} /-->
+					<!-- wp:site-tagline /-->
 				</div>
 				<!-- /wp:column -->
 

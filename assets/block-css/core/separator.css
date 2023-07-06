@@ -1,0 +1,14 @@
+/* ---- Separator block ---- */
+
+.wp-block-separator {
+	max-width: none !important;
+}
+
+.wp-block-separator.is-style-default {
+	width: var(--wp--custom--widths--default);
+}
+
+.wp-block-separator.is-style-wide {
+	border-bottom-width: 2px;
+	width: 80%;
+}

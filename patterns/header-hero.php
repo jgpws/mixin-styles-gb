@@ -13,15 +13,15 @@
 	<div class="wp-block-group mxs-title-panel">
 		<!-- wp:site-title /-->
 
-		<!-- wp:site-tagline {"textColor":"white"} /-->
+		<!-- wp:site-tagline /-->
 	</div>
 	<!-- /wp:group -->
 
 	<!-- wp:search {"label":"Search","placeholder":"Enter Your Query...","buttonText":"Search","buttonPosition":"no-button","align":"right","className":"is-style-search-header"} /-->
 
-	<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/bg_dots_ovg.png' ) ); ?>","isRepeated":true,"dimRatio":50,"overlayColor":"accent-3","focalPoint":{"x":"0.50","y":0.5},"isDark":false,"className":"is-style-rounded"} -->
+	<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/bg_dots_ovg.png' ) ); ?>","isRepeated":true,"dimRatio":70,"overlayColor":"accent-3","focalPoint":{"x":"0.50","y":0.5},"isDark":false,"className":"is-style-rounded"} -->
 	<div class="wp-block-cover is-light is-repeated is-style-rounded">
-		<span aria-hidden="true" class="wp-block-cover__background has-accent-3-background-color has-background-dim"></span>
+		<span aria-hidden="true" class="wp-block-cover__background has-accent-3-background-color has-background-dim-70 has-background-dim"></span>
 		<div role="img" class="wp-block-cover__image-background is-repeated" style="background-position:50% 50%;background-image:url(<?php echo esc_url( get_theme_file_uri( 'assets/images/bg_dots_ovg.png' ) ); ?>)"></div>
 		<div class="wp-block-cover__inner-container">
 			<!-- wp:paragraph {"align":"center","placeholder":"Write title…","textColor":"white","fontSize":"large"} -->

@@ -1,0 +1,132 @@
+/* ---- Navigation block color overrides ---- */
+.wp-site-blocks .wp-block-navigation.has-background {
+  background-color: transparent !important;
+}
+
+.is-style-tabs .wp-block-navigation-item.has-background,
+.is-style-wide-tab .wp-block-navigation-item.has-background {
+  background-color: transparent !important;
+}
+
+.is-style-tabs.has-background .wp-block-navigation__container {
+  background-color: transparent;
+  gap: 0;
+}
+
+.is-style-wide-tab.has-background .wp-block-navigation__container {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.is-style-tab.has-background .wp-block-navigation-item {
+  background-color: transparent !important;
+}
+
+.is-style-tabs
+  .wp-block-navigation__submenu-container.has-background
+  .wp-block-navigation-item__content {
+  background-color: transparent; /* Remove top level tab bg from submenus */
+}
+
+.is-style-tabs
+  .wp-block-navigation__submenu-container.has-text-color
+  .wp-block-navigation-item__content {
+  color: inherit;
+}
+
+/* Navigation color titles refer to the standard color scheme
+ * defined in theme.json
+ */
+
+// Use @each map to loop over each navigation item color
+
+$navColorsDefault: (
+  "Blue": "accent-1",
+  "Purple": "accent-2",
+  "Magenta": "accent-3",
+  "Orange": "accent-4",
+  "Yellow": "accent-5",
+  "Khaki": "accent-6",
+  "Tan": "accent-7",
+  "Sandstone": "accent-8"
+);
+
+@each $title, $colorValue in $navColorsDefault {
+  /* Accent Color- #{$title} */
+  .is-style-tabs.has-#{$colorValue}-background-color
+    .wp-block-navigation__responsive-container-open {
+    background-color: var(--wp--preset--color--#{$colorValue});
+  }
+
+  .has-#{$colorValue}-background-color
+    .wp-block-navigation__responsive-container.is-menu-open {
+    background-color: var(--wp--preset--color--#{$colorValue});
+  }
+  
+  .has-child
+    .wp-block-navigation__submenu-container.has-#{$colorValue}-background-color {
+    background-color: var(--wp--preset--color--#{$colorValue});
+  }
+
+  .wp-block-navigation.has-background
+    .wp-block-navigation__submenu-container.has-#{$colorValue}-color,
+  .wp-block-navigation:not(.has-background)
+    .wp-block-navigation__submenu-container.has-#{$colorValue}-color {
+    color: var(--wp--preset--color--#{$colorValue});
+  }
+  
+  .is-style-tabs.has-#{$colorValue}-background-color .wp-block-navigation-item__content,
+  .is-style-wide-tab.has-#{$colorValue}-background-color
+    .wp-block-navigation-item__content:focus,
+  .is-style-wide-tab.has-#{$colorValue}-background-color
+    .wp-block-navigation-item__content:hover {
+    background-color: var(--wp--preset--color--#{$colorValue});
+  }
+  
+  @media (min-width: 600px) {
+    .wp-block-navigation__responsive-container
+      .wp-block-navigation-link.has-#{$colorValue}-color {
+      color: var(--wp--preset--color--#{$colorValue});
+    }
+  }
+}
+
+/* Light and Dark (text) */
+.has-child
+  .wp-block-navigation__submenu-container.has-text-dark-background-color,
+.has-child
+  .wp-block-navigation__submenu-container.has-text-light-background-color {
+  background-color: var(--wp--preset--color--secondary);
+}
+
+.wp-block-navigation.has-background
+  .wp-block-navigation__submenu-container.has-text-dark-color,
+.wp-block-navigation:not(.has-background)
+  .wp-block-navigation__submenu-container.has-text-dark-color {
+  color: var(--wp--preset--color--text-dark);
+}
+
+.wp-block-navigation.has-background
+  .wp-block-navigation__submenu-container.has-text-light-color,
+.wp-block-navigation:not(.has-background)
+  .wp-block-navigation__submenu-container.has-text-light-color {
+  color: var(--wp--preset--color--text-light);
+}
+
+.is-style-tabs.has-text-dark-background-color
+  .wp-block-navigation__submenu-container,
+.is-style-tabs.has-text-light-background-color
+  .wp-block-navigation__submenu-container {
+  background-color: var(--wp--preset--color--secondary);
+}
+
+@media (min-width: 600px) {
+  .wp-block-navigation__responsive-container
+    .wp-block-navigation-link.has-text-dark-color {
+    color: var(--wp--preset--color--text-dark);
+  }
+
+  .wp-block-navigation__responsive-container
+    .wp-block-navigation-link.has-text-light-color {
+    color: var(--wp--preset--color--text-light);
+  }
+}

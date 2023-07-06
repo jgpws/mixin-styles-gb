@@ -24,10 +24,12 @@ Custom templates include a page with a left-side fixed vertical header, a page w
 
 The theme offers four header styles including two with hero images.
 
+Version 1.1 includes nine new color Style Variations.
+
 == Changelog ==
 
-= 1.1 April 2023 =
-Introduced Style Variations to the theme; adjusted Navigation CSS to use the built in Submenu colors; cleaned up the styling in the Site Editor backend
+= 1.1 June 2023 =
+MAJOR UPDATE: Introduced Style Variations to the theme; adjusted Navigation CSS to use the built in Submenu colors; cleaned up the styling in the Site Editor backend; Introduced per block CSS loading; buttons now use generic gradient slugs; increased brightness for Cover blocks in the Hero patterns.
 
 = 1.0.17 April 9 2023 =
 CSS adjustments for Navigation when a Page List is used.
@@ -124,15 +126,10 @@ License: CC0 1.0 Universal (CC0 1.0)
 
 Images for theme screenshot:
 
-Bell on wharf in San Francisco, Credit Jonathon Coombes
+Palette Brush 파레트 붓 물감 CC0photo, Credit CC0photo
 License: CC0 1.0 Universal (CC0 1.0)
-License URL: http://www.burningwell.org/
-Source: http://www.burningwell.org/gallery/Objects/100_5478
-
-Boats and reflections, Royal Perth Yacht Club, Credit Gallery Administrator (Burning Well)
-License: CC0 1.0 Universal (CC0 1.0)
-License URL: http://www.burningwell.org/
-http://www.burningwell.org/gallery/Landscapes/ocean/dsc03149
+License URL: https://creativecommons.org/publicdomain/zero/1.0/?ref=openverse
+Source: https://www.flickr.com/photos/137346712@N07/22690689018
 
 == Notes ==
 All images in the assets/images folder are licenced under the CC0 Creative Commons license.
