@@ -237,6 +237,10 @@
         "accent-1-fg": "#000000",
         "accent-2-fg": "#000000",
         "accent-4-fg": "#ffffff"
+      },
+      "gradient": {
+        "light-to-dark": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(167, 152, 132, 0.5) 100%)",
+        "dark-to-light": "linear-gradient(to bottom, rgba(167, 152, 132, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)"
       }
     }
   },

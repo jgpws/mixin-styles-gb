@@ -28,6 +28,9 @@ Version 1.1 includes nine new color Style Variations.
 
 == Changelog ==
 
+= 1.1.1 July 07 2023 =
+Added missing gradient override in tan.json and sandstone.json variations.
+
 = 1.1 July 06 2023 =
 MAJOR UPDATE: Introduced Style Variations to the theme; adjusted Navigation CSS to use the built in Submenu colors; cleaned up the styling in the Site Editor backend; Introduced per block CSS loading; buttons now use generic gradient slugs; increased brightness for Cover blocks in the Hero patterns.
 

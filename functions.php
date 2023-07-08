@@ -74,9 +74,9 @@ add_action( 'enqueue_block_editor_assets', 'mixin_styles_gb_block_styles' );
 function mixin_styles_gb_scripts() {
   // Stylesheets
   wp_enqueue_style( 'mixin-styles-gb-style', get_stylesheet_uri() );
-  wp_enqueue_style( 'mixin-styles-gb-base', get_theme_file_uri( '/assets/css/theme/base-styles.css' ), array(), filemtime( get_template_directory() . '/assets/css/theme/base-styles.css' ) );
-  wp_enqueue_style( 'mixin-styles-gb-layout', get_theme_file_uri( '/assets/css/theme/layout.css' ), array(), filemtime( get_template_directory() . '/assets/css/theme/layout.css' ) );
-  wp_enqueue_style( 'mixin-styles-gb-blocks', get_theme_file_uri( '/assets/css/theme/blocks.css' ), array(), filemtime( get_template_directory() . '/assets/css/theme/blocks.css' ) );
+  wp_enqueue_style( 'mixin-styles-gb-base', get_theme_file_uri( '/assets/css/theme/base-styles.min.css' ), array(), filemtime( get_template_directory() . '/assets/css/theme/base-styles.css' ) );
+  wp_enqueue_style( 'mixin-styles-gb-layout', get_theme_file_uri( '/assets/css/theme/layout.min.css' ), array(), filemtime( get_template_directory() . '/assets/css/theme/layout.css' ) );
+  wp_enqueue_style( 'mixin-styles-gb-blocks', get_theme_file_uri( '/assets/css/theme/blocks.min.css' ), array(), filemtime( get_template_directory() . '/assets/css/theme/blocks.css' ) );
   
   // Scripts
   wp_enqueue_script( 'mixin-styles-gb-scripts', get_theme_file_uri( '/js/mixin-styles-gb-scripts.js' ), array(), filemtime( get_template_directory() . '/js/mixin-styles-gb-scripts.js' ), true );
