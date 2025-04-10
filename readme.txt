@@ -2,9 +2,9 @@
 
 Contributors: jgpws
 Tags: block-patterns, block-styles, blog, custom-colors, custom-menu, featured-images, full-site-editing, left-sidebar, one-column, right-sidebar, sticky-post, two-columns, wide-blocks
-Requires at least: 5.9
+Requires at least: 6.2
 Requires PHP: 7.4
-Tested up to: 5.9
+Tested up to: 6.7
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
