@@ -278,14 +278,14 @@ figcaption,
   max-width: 100%;
 }
 
-.is-style-card a {
+.is-style-card a:not(.wp-element-button):not(.wp-block-navigation-item__content):not(.post-page-numbers) {
   border-bottom: 1px solid var(--wp--custom--color--opacity-12-base);
   color: var(--wp--preset--color--link-alt);
   padding-bottom: 0.125em;
 }
 
-.is-style-card a:hover,
-.is-style-card a:active {
+.is-style-card a:not(.wp-element-button):not(.wp-block-navigation-item__content):not(.post-page-numbers):hover,
+.is-style-card a:not(.wp-element-button):not(.wp-block-navigation-item__content):not(.post-page-numbers):active {
   color: var(--wp--preset--color--link-alt-hover);
 }
 

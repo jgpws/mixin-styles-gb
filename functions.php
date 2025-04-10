@@ -87,6 +87,13 @@ add_action( 'wp_enqueue_scripts', 'mixin_styles_gb_scripts' );
  * Enqueue per block stylesheets.
  * see Exploring Per-Block Stylesheets in Block Themes by Nick Diego
  * https://wpengine.com/builders/per-block-stylesheets/
+ *
+ * For development purposes, please remove the .min part of each .css reference in both foreach statements.
+ * This is in order to see changes made to the theme.
+ * Run 'npm run develop' on the command line from the location
+ * the theme is installed to make css/JavaScript changes.
+ * Then run 'npm run produce' to re-minify each file.
+ * Afterwards, restore the .min the each foreach statement.
  */
 function mixin_styles_gb_enqueue_block_styles() {
 	
@@ -100,7 +107,7 @@ function mixin_styles_gb_enqueue_block_styles() {
 	
 		$block_styles = glob( dirname( __FILE__ ) . '/assets/block-css/' . $block_namespace . '/*.css' );
 		$block_styles = array_map(
-			function( $styles_path ) { return basename( $styles_path, '.css' ); },
+			function( $styles_path ) { return basename( $styles_path, '.min.css' ); },
 			$block_styles
 		);
 		
