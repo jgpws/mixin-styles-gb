@@ -44,10 +44,10 @@ if ( ! function_exists( 'mixin_styles_gb_setup' ) ) :
      * Enqueue editor styles.
      */
 		add_editor_style( array(
-      './assets/css/theme/base-styles.css',
-      './assets/css/theme/layout.css',
-      './assets/css/theme/blocks.css',
-      './assets/css/editor-overrides.css',
+      './assets/css/theme/base-styles.min.css',
+      './assets/css/theme/layout.min.css',
+      './assets/css/theme/blocks.min.css',
+      './assets/css/editor-overrides.min.css',
     ) );
   }
 endif;

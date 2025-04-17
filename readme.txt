@@ -28,6 +28,9 @@ Version 1.1 includes nine new color Style Variations.
 
 == Changelog ==
 
+= 1.1.3 April 16 2025 =
+More CSS adjustments for links in the Card style.
+
 = 1.1.2 April 10 2025 =
 Fixed Navigation design for WordPress 6.7, removing double borders on nav menus. Changed all buttons to use theme.json for background and hover colors. Adjusted Outline button style.
 

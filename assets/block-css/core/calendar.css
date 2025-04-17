@@ -68,12 +68,15 @@
   justify-content: space-around;
 }
 
-.is-style-card .wp-calendar-nav a {
+.is-style-card .wp-calendar-nav a,
+.is-style-card .sidebar .wp-calendar-nav a {
   border-bottom: transparent;
   color: var(--wp--preset--color--link);
 }
 
 .is-style-card .wp-calendar-nav a:hover,
-.is-style-card .wp-calendar-nav a:active {
+.is-style-card .wp-calendar-nav a:active,
+.is-style-card .sidebar .wp-calendar-nav a:hover,
+.is-style-card .sidebar .wp-calendar-nav a:active {
   color: var(--wp--preset--color--link-hover);
 }
