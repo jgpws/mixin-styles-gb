@@ -12,7 +12,7 @@ The theme offers four header styles including two with hero images.
 
 ## Installation Instructions
 
-* Click the **Clone or download** button, then from the dropdown, **Download ZIP**
+* Click the **Code** button, then from the dropdown, **Download ZIP**
 * This will likely download to a Downloads or My Downloads folder on your computer
 * Login to WordPress
 * In the WordPress dashboard, click **Themes** under the **Appearance** menu item
