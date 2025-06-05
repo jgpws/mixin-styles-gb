@@ -8,23 +8,7 @@
   }
 }
 
-.wp-block-button.is-style-outline {
-  .wp-block-button__link {
-    /* Temporary- for bug in Block Editor */
-    padding-top: 0.5rem;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-  }
-}
-
-.is-style-outline > .wp-block-button__link:not(.has-text-color),
-.wp-block-button__link.is-style-outline:not(.has-text-color) {
-  color: var(--wp--preset--color--white);
-}
-
-.is-style-card .is-style-outline > .wp-block-button__link:not(.has-text-color),
-.is-style-card .wp-block-button__link.is-style-outline:not(.has-text-color) {
+.is-style-card .wp-block-button__link:not(.has-text-color) {
   color: var(--wp--preset--color--black);
 }
 

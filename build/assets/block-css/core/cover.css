@@ -1,0 +1,84 @@
+/* ---- Cover block ---- */
+.wp-block-cover.is-light h1:not(.has-text-color),
+.wp-block-cover.is-light h2:not(.has-text-color),
+.wp-block-cover.is-light h3:not(.has-text-color),
+.wp-block-cover.is-light h4:not(.has-text-color),
+.wp-block-cover.is-light h5:not(.has-text-color),
+.wp-block-cover.is-light h6:not(.has-text-color) {
+  color: var(--dark-gray) !important;
+}
+
+.wp-block-cover.is-style-rounded,
+.wp-block-cover.is-style-rounded-full,
+.wp-block-cover.is-style-rounded img,
+.wp-block-cover.is-style-rounded-full img,
+.wp-block-cover.is-style-rounded .has-background-dim,
+.wp-block-cover.is-style-rounded-full .has-background-dim,
+.wp-block-cover.is-style-rounded .wp-block-cover__image-background,
+.wp-block-cover.is-style-rounded-full .wp-block-cover__image-background,
+.wp-block-cover.is-style-rounded .wp-block-cover__image-background.has-parallax,
+.wp-block-cover.is-style-rounded-full .wp-block-cover__image-background.has-parallax {
+  border-radius: 1em;
+}
+
+.wp-block-cover.is-style-rounded-full.is-position-top-center .wp-block-cover__inner-container,
+.wp-block-cover.is-style-rounded-full.is-position-bottom-center .wp-block-cover__inner-container {
+  width: 100%;
+}
+
+.wp-block-cover.is-style-rounded-full.is-position-top-left .wp-block-cover__inner-container,
+.wp-block-cover.is-style-rounded-full.is-position-center-left .wp-block-cover__inner-container,
+.wp-block-cover.is-style-rounded-full.is-position-bottom-left .wp-block-cover__inner-container,
+.wp-block-cover.is-style-rounded-full.is-position-top-right .wp-block-cover__inner-container,
+.wp-block-cover.is-style-rounded-full.is-position-center-right .wp-block-cover__inner-container,
+.wp-block-cover.is-style-rounded-full.is-position-bottom-right .wp-block-cover__inner-container {
+  width: 50%;
+}
+
+.header-hero .wp-block-cover {
+  margin-block-start: 0;
+}
+
+.header-hero-title-inside .wp-block-cover:not(.is-style-rounded):not(.is-style-rounded-full).alignfull {
+  margin-left: -1.5em;
+  margin-right: -1.5em;
+  margin-top: calc((1.5em + var(--wp--style--root--padding-top)) * -1);
+}
+
+.header-hero .wp-block-cover.is-style-rounded,
+.header-hero .wp-block-cover.is-style-rounded-full {
+  margin: 0 1.5em;
+}
+
+/* Color overrides */
+.wp-block-cover .has-accent-1-background-color {
+  background-color: var(--wp--preset--color--accent-1);
+}
+
+.wp-block-cover .has-accent-2-background-color {
+  background-color: var(--wp--preset--color--accent-2);
+}
+
+.wp-block-cover .has-accent-3-background-color {
+  background-color: var(--wp--preset--color--accent-3);
+}
+
+.wp-block-cover .has-accent-4-background-color {
+  background-color: var(--wp--preset--color--accent-4);
+}
+
+.wp-block-cover .has-accent-5-background-color {
+  background-color: var(--wp--preset--color--accent-5);
+}
+
+.wp-block-cover .has-accent-6-background-color {
+  background-color: var(--wp--preset--color--accent-6);
+}
+
+.wp-block-cover .has-accent-7-background-color {
+  background-color: var(--wp--preset--color--accent-7);
+}
+
+.wp-block-cover .has-accent-8-background-color {
+  background-color: var(--wp--preset--color--accent-8);
+}

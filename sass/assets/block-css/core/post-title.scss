@@ -1,0 +1,27 @@
+
+/* ---- Post Title ---- */
+
+.wp-block-post-title a {
+  color: var(--wp--custom--color--heading-fg);
+  padding-bottom: 0;
+}
+
+.wp-block-post-title a:hover,
+.wp-block-post-title a:active {
+  color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .wp-block-post-title a {
+  color: var(--medium-gray);
+}
+
+.is-style-card .wp-block-post-title a:hover,
+.is-style-card .wp-block-post-title a:active {
+  color: var(--wp--custom--color--post-title-hover);
+}
+
+@media (min-width: 1366px) {
+  .sticky .wp-block-post-title {
+    margin-left: calc(10% - 0.5em);
+  }
+}

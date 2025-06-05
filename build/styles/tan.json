@@ -1,0 +1,257 @@
+{
+  "version": 2,
+  "title": "Tan",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "background",
+          "color": "#d2b48c",
+          "name": "Background"
+        },
+        {
+          "slug": "foreground",
+          "color": "#191919",
+          "name": "Foreground"
+        },
+        {
+          "slug": "primary",
+          "color": "#734f1f",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#f1e2cd",
+          "name": "Secondary"
+        },
+        {
+          "slug": "tertiary",
+          "color": "#e9d0ae",
+          "name": "Tertiary"
+        },
+        {
+          "slug": "link",
+          "color": "#543a17",
+          "name": "Link"
+        },
+        {
+          "slug": "link-hover",
+          "color": "#4e3009",
+          "name": "Link Hover"
+        },
+        {
+          "slug": "link-alt",
+          "color": "#734f1f",
+          "name": "Link Alt"
+        },
+        {
+          "slug": "link-alt-hover",
+          "color": "#4a3009",
+          "name": "Link Alt Hover"
+        }
+      ],
+      "gradients": [
+        {
+          "slug": "gray",
+          "gradient": "linear-gradient(to bottom, #ffffff 0%, #808080 100%)",
+          "name": "Gray"
+        },
+        {
+          "slug": "subtle-blue",
+          "gradient": "linear-gradient(to bottom, #ffffff 0%, #5d7587 100%)",
+          "name": "Subtle Blue"
+        },
+        {
+          "slug": "subtle-gold",
+          "gradient": "linear-gradient(to bottom, #ffffff 0%, #d2c08c 100%)",
+          "name": "Subtle Gold"
+        },
+        {
+          "slug": "subtle-copper",
+          "gradient": "linear-gradient(to bottom, #ffffff 0%, #d2a08c 100%)",
+          "name": "Subtle Copper"
+        }
+      ]
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "palette": [
+            {
+              "slug": "accent-1",
+              "color": "#d2c08c",
+              "name": "Subtle Gold (Accent 1)"
+            },
+            {
+              "slug": "accent-2",
+              "color": "#d2a08c",
+              "name": "Subtle Copper (Accent 2)"
+            },
+            {
+              "slug": "accent-3",
+              "color": "#734f1f",
+              "name": "Dark Orange (Accent 3)"
+            },
+            {
+              "slug": "accent-4",
+              "color": "#4e3009",
+              "name": "Darker Orange (Accent 4)"
+            },
+            {
+              "slug": "accent-5",
+              "color": "#5d7587",
+              "name": "Subtle Blue (Accent 5)"
+            },
+            {
+              "slug": "text-dark",
+              "color": "#191919",
+              "name": "Text- dark"
+            },
+            {
+              "slug": "text-light",
+              "color": "#ffffff",
+              "name": "Text- light"
+            }
+          ],
+          "gradients": [
+            {
+              "slug": "translucent-1",
+              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(210, 192, 140, 0.5) 100%)",
+              "name": "Subtle Gold (Translucent 1)"
+            },
+            {
+              "slug": "translucent-2",
+              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(210, 160, 140, 0.5) 100%)",
+              "name": "Subtle Copper (Translucent 2)"
+            },
+            {
+              "slug": "translucent-3",
+              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(115, 79, 31, 0.5) 100%)",
+              "name": "Dark Orange (Translucent 3)"
+            },
+            {
+              "slug": "translucent-4",
+              "gradient": "linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(78, 48, 9, 0.5) 100%)",
+              "name": "Darker Orange (Translucent 4)"
+            },
+            {
+              "slug": "translucent-5",
+              "gradient": "linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(93, 117, 135, 0.5) 100%)",
+              "name": "Subtle Blue (Translucent 5)"
+            }
+          ]
+        }
+      },
+      "core/cover": {
+        "color": {
+          "palette": [
+            {
+              "slug": "accent-1",
+              "color": "#d2c08c",
+              "name": "Subtle Gold (Accent 1)"
+            },
+            {
+              "slug": "accent-2",
+              "color": "#d2a08c",
+              "name": "Subtle Copper (Accent 2)"
+            },
+            {
+              "slug": "accent-3",
+              "color": "#5d7587",
+              "name": "Subtle Blue (Accent 3)"
+            },
+            {
+              "slug": "accent-4",
+              "color": "#734f1f",
+              "name": "Dark Orange (Accent 4)"
+            },
+            {
+              "slug": "accent-5",
+              "color": "#4e3009",
+              "name": "Darker Orange (Accent 5)"
+            },
+            {
+              "slug": "text-dark",
+              "color": "#191919",
+              "name": "Text- dark"
+            },
+            {
+              "slug": "text-light",
+              "color": "#ffffff",
+              "name": "Text- light"
+            }
+          ]
+        }
+      },
+      "core/navigation": {
+        "color": {
+          "palette": [
+            {
+              "slug": "accent-1",
+              "color": "#d2c08c",
+              "name": "Subtle Gold (Accent 1)"
+            },
+            {
+              "slug": "accent-2",
+              "color": "#d2a08c",
+              "name": "Subtle Copper (Accent 2)"
+            },
+            {
+              "slug": "accent-3",
+              "color": "#734f1f",
+              "name": "Dark Orange (Accent 3)"
+            },
+            {
+              "slug": "accent-4",
+              "color": "#4e3009",
+              "name": "Darker Orange (Accent 4)"
+            },
+            {
+              "slug": "accent-5",
+              "color": "#5d7587",
+              "name": "Subtle Blue (Accent 5)"
+            },
+            {
+              "slug": "text-dark",
+              "color": "#191919",
+              "name": "Text- dark"
+            },
+            {
+              "slug": "text-light",
+              "color": "#ffffff",
+              "name": "Text- light"
+            }
+          ]
+        }
+      }
+    },
+    "custom": {
+      "color": {
+        "border": "var(--wp--preset--color--primary)",
+        "postTitleHover": "var(--wp--preset--color--primary)",
+        "opacity6bg": "rgba(0, 0, 0, 0.0625)",
+        "opacity12bg": "rgba(0, 0, 0, 0.125)",
+        "opacity25bg": "rgba(0, 0, 0, 0.25)",
+        "opacity75bg": "rgba(0, 0, 0, 0.75)",
+        "heading-fg": "#404040",
+        "site-title-fg": "var(--wp--preset--color--primary)",
+        "tab-fg": "#000000",
+        "gallery-caption-bg": "rgba(0, 0, 0, 0.5)",
+        "gallery-caption-fg": "#ffffff",
+        "accent-1-fg": "#000000",
+        "accent-2-fg": "#000000",
+        "accent-4-fg": "#ffffff",
+        "accent-5-fg": "#ffffff"
+      },
+      "gradient": {
+        "light-to-dark": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(210, 192, 140, 0.5) 100%)",
+        "dark-to-light": "linear-gradient(to bottom, rgba(210, 192, 140, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)"
+      }
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--eb-garamond)"
+    }
+  }
+}

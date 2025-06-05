@@ -1,0 +1,17 @@
+.wp-block-comment-template ol {
+  padding-left: 1rem;
+}
+
+.is-style-card .wp-block-comments a {
+  color: var(--wp--preset--color--link-alt);
+}
+.is-style-card .wp-block-comments a:hover, .is-style-card .wp-block-comments a:focus {
+  color: var(--wp--preset--color--link-alt-hover);
+}
+
+.wp-block-comments input[type=submit] {
+  border: 1px solid var(--wp--preset--color--background);
+  border-radius: 0.5em;
+  color: var(--wp--preset--color--black);
+  padding: 0.5em;
+}

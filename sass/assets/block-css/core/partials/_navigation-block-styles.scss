@@ -78,10 +78,13 @@
 
 /* Wide Tab */
 .is-style-wide-tab {
-  .wp-block-navigation__container,
-  .wp-block-page-list {
+  .wp-block-navigation__container {
     background-color: var(--wp--custom--color--opacity-12-bg);
     border-radius: 16px 16px 0 0;
+  }
+  
+  .wp-block-navigation__container > .wp-block-page-list {
+    background-color: transparent;
   }
 
   ul.wp-block-navigation__container {
