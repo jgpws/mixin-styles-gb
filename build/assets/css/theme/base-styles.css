@@ -231,11 +231,11 @@ figcaption,
 }
 
 @media (min-width: 800px) {
-	.post,
-	.entry-content,
-	.wp-block-post-excerpt {
-		clear: none;
-	}
+  .post,
+  .entry-content,
+  .wp-block-post-excerpt {
+    clear: none;
+  }
 }
 
 .wp-caption,
@@ -250,12 +250,22 @@ figcaption,
   color: var(--wp--preset--color--link-alt);
 }
 
-.is-style-card .wp-block-post-content a:not(.wp-element-button):not(.wp-block-button__link):not(.wp-block-navigation-item__content):not(.post-page-numbers):hover,
-.is-style-card .wp-block-post-content a:not(.wp-element-button):not(.wp-block-button__link):not(.wp-block-navigation-item__content):not(.post-page-numbers):active,
-.error404 .is-style-card a:not(.wp-element-button):not(.wp-block-button__link):not(.wp-block-navigation-item__content):hover,
-.error404 .is-style-card a:not(.wp-element-button):not(.wp-block-button__link):not(.wp-block-navigation-item__content):active,
-.sidebar.is-style-card a:not(.wp-element-button):not(.wp-block-button__link):not(.wp-block-navigation-item__content):hover,
-.sidebar.is-style-card a:not(.wp-element-button):not(.wp-block-button__link):not(.wp-block-navigation-item__content):active,
+.is-style-card
+  .wp-block-post-content
+  a:not(.wp-element-button):not(.wp-block-button__link):not(.wp-block-navigation-item__content):not(.post-page-numbers):hover,
+.is-style-card
+  .wp-block-post-content
+  a:not(.wp-element-button):not(.wp-block-button__link):not(.wp-block-navigation-item__content):not(.post-page-numbers):active,
+.error404
+  .is-style-card
+  a:not(.wp-element-button):not(.wp-block-button__link):not(.wp-block-navigation-item__content):hover,
+.error404
+  .is-style-card
+  a:not(.wp-element-button):not(.wp-block-button__link):not(.wp-block-navigation-item__content):active,
+.sidebar.is-style-card
+  a:not(.wp-element-button):not(.wp-block-button__link):not(.wp-block-navigation-item__content):hover,
+.sidebar.is-style-card
+  a:not(.wp-element-button):not(.wp-block-button__link):not(.wp-block-navigation-item__content):active,
 .is-style-card .entry-meta a:hover,
 .is-style-card .entry-meta a:active {
   color: var(--wp--preset--color--link-alt-hover);

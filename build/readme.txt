@@ -2,10 +2,10 @@
 
 Contributors: jgpws
 Tags: block-patterns, block-styles, blog, custom-colors, custom-menu, featured-images, full-site-editing, left-sidebar, one-column, right-sidebar, sticky-post, two-columns, wide-blocks
-Requires at least: 6.2
+Requires at least: 6.5
 Requires PHP: 7.4
 Tested up to: 6.7
-Stable tag: 1.0
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,13 +20,19 @@ Mixin' Styles- GB is a full site editing blog theme.
 
 Sporting rounded corners on several elements, Mixin' Styles- GB supports single columns and sidebar layouts via a collection of templates and patterns.
 
-Custom templates include a page with a left-side fixed vertical header, a page with no sidebar and a no sidebar pattern for posts.
+Custom templates include a page with a left-side fixed vertical header, a page with no sidebar and a no sidebar block variation.
 
 The theme offers four header styles including two with hero images.
 
-Version 1.1 includes nine new color Style Variations.
+Choose from nine color styles and seven additional fonts.
 
 == Changelog ==
+
+= 1.2.2 June 10 2025 =
+Removed ref attributes from the header files. Default nav menu wasn't showing up.
+
+= 1.2.1 June 06 2025 =
+Bug fix: Error in block-variations.js caused the file to not execute; fixed const redeclare issue.
 
 = 1.2 June 05 2025 =
 Added new Google fonts, used Google font replacements for the theme's fonts; fixed user selected submenu styles for the Page List block; removed Block Styles for posts layouts in favor of Block Variations; removed Posts- No Sidebar pattern, replaced with general Posts pattern; Added font size definitions in theme.json; adjusted line heights accordingly.
@@ -135,6 +141,47 @@ License: CC0 1.0 Universal (CC0 1.0)
 
 spyglass-clipped.svg, Jason Gonzalez
 License: CC0 1.0 Universal (CC0 1.0)
+
+Font credits:
+Jura
+Copyright 2019 The Jura Project Authors (https://github.com/ossobuffo/jura)
+Source: http://www.danieljohnson.name
+License: This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+
+Source Code Pro
+© 2010 - 2020 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’.
+Source: http://www.adobe.com/type
+License: This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL. This Font Software is distributed on an ‘AS IS’ BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.
+
+Source Sans 3
+© 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’
+Source: http://www.adobe.com/type
+License: This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL. This Font Software is distributed on an ‘AS IS’ BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.
+
+Poppins
+Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
+Source: https://indiantypefoundry.com
+License: This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+
+Playfair Display
+Copyright 2017 The Playfair Display Project Authors (https://github.com/clauseggers/Playfair-Display), with Reserved Font Name "Playfair Display".
+Source: http://www.forthehearts.net
+License: This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+
+EB Garamond
+Copyright 2017 The EB Garamond Project Authors (https://github.com/octaviopardo/EBGaramond12)
+Source: http://georgduffner.at/
+License: This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+
+Noticia Text
+Copyright (c) 2011 JM Sole (info@jmsole.cl), with Reserved Font Name "Noticia Text".
+License: This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+
+Birthstone
+Copyright 2019 The Birthstone Project Authors (https://github.com/googlefonts/birthstone)
+Source: www.typesetit.com
+License: This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+
 
 Images for theme screenshot:
 

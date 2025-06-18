@@ -239,8 +239,8 @@
 			"radius": true
 		},
 		"color": {
-      "defaultPalette": false,
-      "defaultGradients": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
 			"gradients": [
 				{
 					"gradient": "linear-gradient(to bottom, #ffffff 0%, #808080 100%)",

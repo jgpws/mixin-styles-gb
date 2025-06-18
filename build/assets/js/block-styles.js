@@ -1,8 +1,5 @@
 /* Block styles */
 
-// Use __() for translation
-const { __ } = wp.i18n;
-
 wp.domReady( () => {
 
 	wp.blocks.registerBlockStyle( 'core/cover', [
