@@ -15,6 +15,16 @@
           "name": "Foreground"
         },
         {
+          "color": "#f5f5f5",
+          "name": "Card Background",
+          "slug": "card"
+        },
+        {
+          "color": "#191919",
+          "name": "Card Foreground",
+          "slug": "card-text"
+        },
+        {
           "slug": "primary",
           "color": "#4811ae",
           "name": "Primary"
@@ -30,22 +40,22 @@
           "name": "Tertiary"
         },
         {
-          "slug": "link",
+          "slug": "mxs-link",
           "color": "#8c04a8",
           "name": "Link"
         },
         {
-          "slug": "link-hover",
+          "slug": "mxs-link-hover",
           "color": "#172caf",
           "name": "Link Hover"
         },
         {
-          "slug": "link-alt",
+          "slug": "mxs-link-alt",
           "color": "#8c04a8",
           "name": "Link Alt"
         },
         {
-          "slug": "link-alt-hover",
+          "slug": "mxs-link-alt-hover",
           "color": "#172caf",
           "name": "Link Alt Hover"
         }

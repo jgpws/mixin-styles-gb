@@ -70,18 +70,34 @@
   }
 }
 
-.is-style-card .wp-block-search__button-inside .wp-block-search__inside-wrapper,
+.mxs-light-bg .wp-block-search__button-inside .wp-block-search__inside-wrapper,
 .is-style-search-header.wp-block-search__button-inside
   .wp-block-search__inside-wrapper {
   border-color: var(--wp--custom--color--border);
 }
 
-.is-style-search-header {
+.is-style-search-header,
+.is-style-search-header-dark-bg {
   border-bottom-right-radius: 16px;
-  background: url(../../images/spyglass-clipped.svg) top left no-repeat;
-  background-color: #ffffff;
-  height: 80px;
+  height: fit-content;
+  padding-bottom: 6px;
   text-align: center;
+
+  .wp-block-search__label {
+    color: var(--wp--preset--color--card-text);
+  }
+
+  .wp-block-search__input,
+  .wp-block-search__button {
+    margin: 0 0.5em;
+  }
+
+  .wp-block-search__button {
+    background: var(--wp--custom--gradient--light-to-dark);
+    background-color: var(--almost-white);
+    color: var(--wp--preset--color--black);
+    font-size: 1rem;
+  }
 
   .wp-block-search__inside-wrapper {
     align-items: stretch;
@@ -97,10 +113,6 @@
     min-height: 32px;
   }
 
-  .wp-block-search__label {
-    color: var(--wp--preset--color--black);
-  }
-
   .wp-block-search__label ~ .wp-block-search__inside-wrapper {
     margin-top: 12px;
     min-height: auto;
@@ -112,26 +124,34 @@
     margin-top: 0;
   }
 
-  .wp-block-search__input,
-  .wp-block-search__button {
-    border-color: var(--wp--custom--color--border);
-    margin: 0 0.5em;
-  }
-
-  .wp-block-search__button {
-    background: var(--wp--custom--gradient--light-to-dark);
-    background-color: var(--almost-white);
-    color: var(--wp--preset--color--black);
-    font-size: 1rem;
-  }
-
   &.wp-block-search__button-inside {
     padding: 0.25em 0.5em;
   }
 }
 
+.is-style-search-header {
+  background: url(../../images/spyglass-clipped.svg) top left no-repeat;
+  background-color: var(--wp--preset--color--card);
+
+  .wp-block-search__input,
+  .wp-block-search__button {
+    border-color: var(--wp--custom--color--border);
+  }
+
+  &-dark-bg {
+    background: url(../../images/spyglass-clipped-white.svg) top left no-repeat;
+    background-color: var(--wp--preset--color--card) !important;
+
+    .wp-block-search__input,
+    .wp-block-search__button {
+      border-color: var(--wp--preset--color--white);
+    }
+  }
+}
+
 /* Alignments */
-.is-style-search-header.alignright {
+.is-style-search-header.alignright,
+.is-style-search-header-dark-bg.alignright {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 0px;
 }
@@ -142,7 +162,8 @@
     margin-inline-start: 1.5em;
   }
 
-  > .is-style-search-header.alignleft {
+  > .is-style-search-header.alignleft,
+  > .is-style-search-header-dark-bg.alignleft {
     margin-inline-start: 0;
   }
 
@@ -151,11 +172,13 @@
     margin-inline-end: 1.5em;
   }
 
-  > .is-style-search-header.alignright {
+  > .is-style-search-header.alignright,
+  > .is-style-search-header-dark-bg.alignright {
     margin-inline-end: 0;
   }
 }
 
-.is-style-search-header.aligncenter {
+.is-style-search-header.aligncenter,
+.is-style-search-header-dark-bg.aligncenter {
   border-bottom-left-radius: 16px;
 }

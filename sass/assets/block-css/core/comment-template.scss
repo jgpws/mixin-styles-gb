@@ -4,7 +4,7 @@
 
 .is-style-card .wp-block-comments a {
   color: var(--wp--preset--color--link-alt);
-  
+
   &:hover,
   &:focus {
     color: var(--wp--preset--color--link-alt-hover);
@@ -14,6 +14,7 @@
 .wp-block-comments input[type="submit"] {
   border: 1px solid var(--wp--preset--color--background);
   border-radius: 0.5em;
-  color: var(--wp--preset--color--black);
+  color: var(--wp--custom--color--card-fg-dark);
   padding: 0.5em;
 }
+

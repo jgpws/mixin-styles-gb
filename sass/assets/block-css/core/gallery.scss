@@ -13,20 +13,27 @@
 
 .wp-block-gallery .wp-block-image a img {
   border: 1px solid var(--wp--custom--color--opacity-25-bg);
+
+  .mxs-light-bg & {
+    border-color: rgba(0, 0, 0, 0.25);
+  }
+
+  .mxs-dark-bg & {
+    border-color: rgba(255, 255, 255, 0.25);
+  }
 }
 
 .wp-block-gallery .wp-block-image a img:hover,
 .wp-block-gallery .wp-block-image a:focus img {
   border-color: var(--wp--custom--color--opacity-75-bg);
-}
 
-.is-style-card .wp-block-gallery .wp-block-image a img {
-  border: 1px solid var(--wp--custom--color--opacity-25-base);
-}
+  .mxs-light-bg & {
+    border-color: rgba(0, 0, 0, 0.75);
+  }
 
-.is-style-card .wp-block-gallery .wp-block-image a img:hover,
-.is-style-card .wp-block-gallery .wp-block-image a:focus img {
-  border-color: var(--wp--custom--color--opacity-75-base);
+  .mxs-dark-bg & {
+    border-color: rgba(255, 255, 255, 0.75);
+  }
 }
 
 .wp-block-gallery .wp-block-image:not(.is-style-rounded) figcaption {
@@ -49,13 +56,14 @@
     100% -
       (
         var(--wp--style--root--padding-left) +
-        var(--wp--style--root--padding-right)
+          var(--wp--style--root--padding-right)
       )
   );
 }
 
 /* Remove blur on figcaption */
-.wp-block-gallery.has-nested-images figure.wp-block-image:has(figcaption)::before {
+.wp-block-gallery.has-nested-images
+  figure.wp-block-image:has(figcaption)::before {
   backdrop-filter: none;
 }
 
@@ -67,4 +75,8 @@
   .wp-block-gallery.alignright {
     margin-right: 20% !important;
   }
+}
+
+.entry-content:has(.wp-block-gallery.alignfull, .wp-block-gallery.alignwide) {
+  clear: both;
 }

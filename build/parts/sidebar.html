@@ -1,17 +1,26 @@
-<!-- wp:group {"className":"is-style-card sidebar","tagName":"aside","layout":{"type":"default"}} -->
-<aside class="wp-block-group is-style-card sidebar">
-<!-- wp:calendar /-->
+<!-- wp:group {"tagName":"aside","className":"mxs-card sidebar mxs-light-bg","style":{"border":{"radius":"1.5em"},"elements":{"link":{"color":{"text":"var:preset|color|mxs-link-alt"},":hover":{"color":{"text":"var:preset|color|mxs-link-alt-hover"}}},"heading":{"color":{"text":"#808080"}}},"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"1.5rem","bottom":"1.5rem"}}},"backgroundColor":"card","textColor":"card-text","layout":{"type":"default"}} -->
+<aside
+  class="wp-block-group mxs-card sidebar mxs-light-bg has-card-text-color has-card-background-color has-text-color has-background has-link-color"
+  style="
+    border-radius: 1.5em;
+    padding-top: 1.5rem;
+    padding-right: var(--wp--preset--spacing--40);
+    padding-bottom: 1.5rem;
+    padding-left: var(--wp--preset--spacing--40);
+  "
+>
+  <!-- wp:calendar /-->
 
-<!-- wp:heading {"level":3} -->
-<h3>Latest Posts</h3>
-<!-- /wp:heading -->
+  <!-- wp:heading {"level":3} -->
+  <h3 class="wp-block-heading">Latest Posts</h3>
+  <!-- /wp:heading -->
 
-<!-- wp:latest-posts {"displayAuthor":true,"displayPostDate":true} /-->
+  <!-- wp:latest-posts {"displayAuthor":true,"displayPostDate":true} /-->
 
-<!-- wp:heading {"level":3} -->
-<h3>Categories</h3>
-<!-- /wp:heading -->
+  <!-- wp:heading {"level":3} -->
+  <h3 class="wp-block-heading">Categories</h3>
+  <!-- /wp:heading -->
 
-<!-- wp:categories {"showHierarchy":true,"showPostCounts":true} /-->
+  <!-- wp:categories {"showHierarchy":true,"showPostCounts":true} /-->
 </aside>
 <!-- /wp:group -->

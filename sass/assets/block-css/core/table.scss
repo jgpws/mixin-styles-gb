@@ -1,38 +1,88 @@
 /* ---- Table block ---- */
 
-.wp-block-table thead {
-	border-bottom: 2px solid var(--white-12pcnt);
+.wp-block-table {
+  table {
+    background-color: var(--wp--custom--color--opacity-6-bg);
+    border: 1px solid var(--wp--custom--color--opacity-12-bg);
+    margin: 0 auto;
+  }
+
+  thead {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.125);
+  }
+
+  th,
+  td {
+    border: 1px solid var(--wp--custom--color--opacity-12-bg);
+    padding: 0.5em;
+  }
+
+  tfoot {
+    border-top: 2px solid rgba(255, 255, 255, 0.125);
+  }
+
+  figcaption {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
 }
 
-.wp-block-table tfoot {
-	border-top: 2px solid var(--white-12pcnt);
+.mxs-light-bg {
+  .wp-block-table {
+    table {
+      background-color: rgba(0, 0, 0, 0.0625);
+      color: var(--wp--custom--color--card-fg-dark);
+    }
+
+    thead {
+      border-bottom-color: rgba(0, 0, 0, 0.125);
+    }
+
+    th,
+    td {
+      border-color: var(--medium-gray);
+    }
+
+    tfoot {
+      border-top-color: rgba(0, 0, 0, 0.125);
+    }
+  }
 }
 
-.is-style-card .wp-block-table thead {
-	border-bottom: 2px solid var(--light-gray);
-}
+.mxs-dark-bg {
+  .wp-block-table {
+    table {
+      background-color: rgba(255, 255, 255, 0.0625);
+      color: var(--wp--custom--color--card-fg-light);
+    }
 
-.is-style-card .wp-block-table tfoot {
-	border-top: 2px solid var(--light-gray);
-}
+    thead {
+      border-bottom-color: rgba(255, 255, 255, 0.125);
+    }
 
-.wp-block-table figcaption {
-	margin-top: .5em;
-	margin-bottom: 1em;
+    th,
+    td {
+      border-color: rgba(255, 255, 255, 0.125);
+    }
+
+    tfoot {
+      border-top-color: rgba(255, 255, 255, 0.125);
+    }
+  }
 }
 
 .wp-block-table.is-style-stripes {
-	border-bottom-color: var(--white-12pcnt) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.125);
+
+  table {
+    background-color: transparent;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.0625);
+  }
 }
 
-.wp-block-table.is-style-stripes table {
-	background-color: transparent;
-}
-
-.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
-	background-color: var(--white-6pcnt) !important;
-}
-
-.is-style-card .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
-	background-color: var(--pale-gray) !important;
+.mxs-light-bg .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.0625);
 }

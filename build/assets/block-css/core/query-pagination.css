@@ -6,8 +6,13 @@
   padding: 0.25em 0.5em;
 }
 
-.is-style-card .wp-block-query-pagination {
-  background-color: var(--wp--custom--color--opacity-12-base);
+.wp-block-query-pagination,
+.mxs-dark-bg .wp-block-query-pagination {
+  background-color: rgba(255, 255, 255, 0.125);
+}
+
+.mxs-light-bg .wp-block-query-pagination {
+  background-color: rgba(0, 0, 0, 0.125);
 }
 
 .wp-block-query-pagination > .wp-block-query-pagination-next,

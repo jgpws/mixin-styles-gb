@@ -28,6 +28,9 @@ Choose from nine color styles and seven additional fonts.
 
 == Changelog ==
 
+= 1.3 July 11 2025 =
+Major Update: Even though little has changed about the look, Card styling now uses Block Variations for the design instead of the hard-coded Block Style. New, separate block styles were added for the Group block. Made some refinements to three Style Variations.
+
 = 1.2.2 June 10 2025 =
 Removed ref attributes from the header files. Default nav menu wasn't showing up.
 

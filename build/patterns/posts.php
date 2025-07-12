@@ -7,8 +7,8 @@
  * Viewport Width: 1366
  */
 ?>
-<!-- wp:query {"queryId":13,"query":{"perPage":5,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"tagName":"main","className":"main is-style-card","layout":{"contentSize":null,"type":"constrained"}} -->
-<main class="wp-block-query main is-style-card">
+<!-- wp:query {"queryId":13,"query":{"perPage":5,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"layout":{"contentSize":null,"type":"constrained"}} -->
+<div class="wp-block-query">
 	<!-- wp:query-pagination {"paginationArrow":"chevron","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"layout":{"type":"flex","justifyContent":"center"}} -->
 		<!-- wp:query-pagination-previous /-->
 
@@ -37,5 +37,5 @@
 
 		<!-- wp:query-pagination-next /-->
 	<!-- /wp:query-pagination -->
-</main>
+</div>
 <!-- /wp:query -->

@@ -1,0 +1,11 @@
+.wp-block-pullquote blockquote {
+  background: url(../../images/curlyquotes-translucent-white.png) top left no-repeat;
+  font-style: italic;
+  min-height: 82px;
+  padding-top: 16px;
+  padding-left: 82px !important;
+}
+
+.mxs-light-bg .wp-block-pullquote blockquote {
+  background: url(../../images/curlyquotes-translucent-black.png) top left no-repeat;
+}

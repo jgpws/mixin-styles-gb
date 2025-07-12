@@ -1,4 +1,3 @@
-
 /* ---- Post Title ---- */
 
 .wp-block-post-title a {
@@ -11,13 +10,33 @@
   color: var(--wp--preset--color--foreground);
 }
 
-.is-style-card .wp-block-post-title a {
-  color: var(--medium-gray);
+.mxs-light-bg .wp-block-post-title {
+  a {
+    color: var(--medium-gray);
+
+    &:hover,
+    &:active {
+      color: var(--wp--custom--color--post-title-hover);
+    }
+  }
 }
 
-.is-style-card .wp-block-post-title a:hover,
-.is-style-card .wp-block-post-title a:active {
-  color: var(--wp--custom--color--post-title-hover);
+.mxs-dark-bg .wp-block-post-title {
+  a {
+    color: var(--light-gray);
+
+    &:hover,
+    &:active {
+      color: var(--wp--preset--color--white);
+    }
+  }
+}
+
+.is-style-post-title-no-border,
+.is-style-post-title-no-border-gray {
+  a:where(:not(.wp-element-button)) {
+    border-bottom: transparent;
+  }
 }
 
 @media (min-width: 1366px) {

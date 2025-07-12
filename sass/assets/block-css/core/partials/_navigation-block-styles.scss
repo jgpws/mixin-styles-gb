@@ -72,7 +72,7 @@
   }
 }
 
-.is-style-card .is-style-tabs .wp-block-navigation__submenu-icon {
+.mxs-light-bg .is-style-tabs .wp-block-navigation__submenu-icon {
   color: currentColor;
 }
 
@@ -82,7 +82,7 @@
     background-color: var(--wp--custom--color--opacity-12-bg);
     border-radius: 16px 16px 0 0;
   }
-  
+
   .wp-block-navigation__container > .wp-block-page-list {
     background-color: transparent;
   }
@@ -100,6 +100,14 @@
     background-color: var(--wp--custom--color--hover-bg);
     background-image: none;
   }
+}
+
+.mxs-light-bg .is-style-wide-tab .wp-block-navigation__container {
+  background-color: rgba(0, 0, 0, 0.125);
+}
+
+.mxs-dark-bg .is-style-wide-tab .wp-block-navigation__container {
+  background-color: rgba(255, 255, 255, 0.125);
 }
 
 .is-style-wide-tab.is-vertical .wp-block-navigation__container {

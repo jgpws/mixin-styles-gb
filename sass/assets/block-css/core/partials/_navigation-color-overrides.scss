@@ -47,12 +47,12 @@ $navColorsDefault: (
   "Yellow": "accent-5",
   "Khaki": "accent-6",
   "Tan": "accent-7",
-  "Sandstone": "accent-8"
+  "Sandstone": "accent-8",
 );
 
 @each $title, $colorValue in $navColorsDefault {
   /* Accent Color- #{$title} */
-  
+
   /* Navigation block (Custom nav menu) CSS */
   .is-style-tabs.has-#{$colorValue}-background-color
     .wp-block-navigation__responsive-container-open {
@@ -63,7 +63,7 @@ $navColorsDefault: (
     .wp-block-navigation__responsive-container.is-menu-open {
     background-color: var(--wp--preset--color--#{$colorValue});
   }
-  
+
   .has-child
     .wp-block-navigation__submenu-container.has-#{$colorValue}-background-color {
     background-color: var(--wp--preset--color--#{$colorValue});
@@ -75,29 +75,35 @@ $navColorsDefault: (
     .wp-block-navigation__submenu-container.has-#{$colorValue}-color {
     color: var(--wp--preset--color--#{$colorValue});
   }
-  
-  .is-style-tabs.has-#{$colorValue}-background-color .wp-block-navigation-item__content,
+
+  .is-style-tabs.has-#{$colorValue}-background-color
+    .wp-block-navigation-item__content,
   .is-style-wide-tab.has-#{$colorValue}-background-color
     .wp-block-navigation-item__content:focus,
   .is-style-wide-tab.has-#{$colorValue}-background-color
     .wp-block-navigation-item__content:hover {
     background-color: var(--wp--preset--color--#{$colorValue});
   }
-  
+
   /* Page List block CSS */
   .has-#{$colorValue}-background-color .wp-block-page-list .has-child ul {
     background-color: var(--wp--preset--color--#{$colorValue});
   }
-  
+
   .has-#{$colorValue}-color .wp-block-page-list .has-child ul {
     color: var(--wp--preset--color--#{$colorValue});
   }
-  
+
   .is-style-tabs .has-#{$colorValue}-color .wp-block-page-list .has-child ul a,
-  .is-style-wide-tab .has-#{$colorValue}-color .wp-block-page-list .has-child ul a {
+  .is-style-wide-tab
+    .has-#{$colorValue}-color
+    .wp-block-page-list
+    .has-child
+    ul
+    a {
     color: var(--wp--preset--color--#{$colorValue});
   }
-  
+
   @media (min-width: 600px) {
     .wp-block-navigation__responsive-container
       .wp-block-navigation-link.has-#{$colorValue}-color {

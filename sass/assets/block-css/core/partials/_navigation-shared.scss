@@ -1,14 +1,4 @@
 /* Shared styles */
-.is-style-wide-tab .is-menu-open .wp-block-navigation__container,
-.is-style-wide-tab.has-background
-  .is-menu-open
-  .wp-block-navigation__container {
-  background-color: transparent;
-}
-
-.is-style-card .is-style-wide-tab .wp-block-navigation__container {
-  background-color: var(--wp--custom--color--opacity-12-base);
-}
 
 .is-style-tabs,
 .is-style-wide-tab {

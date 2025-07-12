@@ -74,6 +74,11 @@ function mixin_styles_gb_editor_assets() {
 }
 add_action( 'enqueue_block_editor_assets', 'mixin_styles_gb_editor_assets' );
 
+function mixin_styles_group_contrast_script() { 
+  wp_enqueue_script( 'mixin-styles-gb-contrast-script', get_theme_file_uri( 'assets/js/mixin-styles-gb-contrast.js' ), array(), filemtime( get_template_directory() . '/assets/js/mixin-styles-gb-contrast.js' ), true );
+}
+add_action( 'enqueue_block_assets', 'mixin_styles_group_contrast_script' );
+
 function mixin_styles_gb_scripts() {
   // Stylesheets
   wp_enqueue_style( 'mixin-styles-gb-style', get_stylesheet_uri() );
@@ -108,7 +113,7 @@ function mixin_styles_gb_enqueue_block_styles() {
 	
 	foreach ( $block_namespaces as $block_namespace ) {
 	
-		$block_styles = glob( dirname( __FILE__ ) . '/assets/block-css/' . $block_namespace . '/*.min.css' );
+		$block_styles = glob( dirname( __FILE__ ) . '/assets/block-css/' . $block_namespace . '/*.css' );
 		$block_styles = array_map(
 			function( $styles_path ) { return basename( $styles_path, '.min.css' ); },
 			$block_styles

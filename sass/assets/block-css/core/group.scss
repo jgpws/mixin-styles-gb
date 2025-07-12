@@ -1,0 +1,36 @@
+.is-style-group-outline {
+  border: 1px solid var(--wp--custom--color--opacity-25-bg);
+
+  .mxs-light-bg & {
+    border-color: rgba(0, 0, 0, 0.25);
+  }
+
+  .msx-dark-bg & {
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+.is-style-group-shadow-soft {
+  box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.125);
+}
+
+.is-style-group-shadow {
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.is-style-group-shadow-backlight {
+  box-shadow: 0px -12px 24px rgba(255, 255, 255, 0.5),
+    0px 12px 24px rgba(255, 255, 255, 0.5);
+}
+
+.is-style-group-outline,
+.is-style-group-shadow-soft,
+.is-style-group-shadow,
+.is-style-group-shadow-backlight {
+  .wp-block-post-content & {
+    padding-top: var(--wp--style--root--padding-top);
+    padding-right: var(--wp--style--root--padding-right);
+    padding-bottom: var(--wp--style--root--padding-bottom);
+    padding-left: var(--wp--style--root--padding-left);
+  }
+}
