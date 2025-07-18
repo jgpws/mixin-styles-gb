@@ -5,7 +5,7 @@ Tags: block-patterns, block-styles, blog, custom-colors, custom-menu, featured-i
 Requires at least: 6.5
 Requires PHP: 7.4
 Tested up to: 6.7
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,6 +27,9 @@ The theme offers four header styles including two with hero images.
 Choose from nine color styles and seven additional fonts.
 
 == Changelog ==
+
+= 1.3.1 July 17 2025 =
+CSS fixes for the Cover block; CSS fix for link underline (border) in dark mode.
 
 = 1.3 July 11 2025 =
 Major Update: Even though little has changed about the look, Card styling now uses Block Variations for the design instead of the hard-coded Block Style. New, separate block styles were added for the Group block. Made some refinements to three Style Variations.

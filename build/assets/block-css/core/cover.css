@@ -44,10 +44,22 @@
   margin-right: -1.5em;
   margin-top: calc((1.5em + var(--wp--style--root--padding-top)) * -1);
 }
+.mxs-card .header-hero-title-inside .wp-block-cover:not(.is-style-rounded):not(.is-style-rounded-full).alignfull {
+  margin: 0;
+}
 
 .header-hero .wp-block-cover.is-style-rounded,
 .header-hero .wp-block-cover.is-style-rounded-full {
   margin: 0 1.5em;
+}
+
+.mxs-card .wp-block-cover.alignfull {
+  margin-left: 0;
+  margin-right: 0;
+}
+.mxs-card .wp-block-cover.is-style-rounded.alignfull, .mxs-card .wp-block-cover.is-style-rounded-full.alignfull {
+  margin-left: var(--wp--style--root--padding-left);
+  margin-right: var(--wp--style--root--padding-right);
 }
 
 /* Color overrides */

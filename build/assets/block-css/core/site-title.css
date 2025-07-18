@@ -18,6 +18,10 @@
   color: var(--wp--preset--color--foreground);
 }
 
+.is-light .wp-block-site-title a:where(:not(.wp-element-button)) {
+  color: var(--dark-gray);
+}
+
 .is-light .wp-block-site-title a:where(:not(.wp-element-button)):hover,
 .is-light .wp-block-site-title a:where(:not(.wp-element-button)):focus {
   color: var(--wp--preset--color--black);

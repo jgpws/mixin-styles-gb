@@ -25,6 +25,7 @@
   }
 
   caption {
+    background-color: var(--wp--preset--color--secondary);
     color: var(--wp--custom--color--card-fg-dark);
   }
 
@@ -61,7 +62,7 @@
 }
 
 .wp-calendar-nav {
-  background-color: var(--almost-white);
+  background-color: var(--wp--preset--color--secondary);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   display: flex;

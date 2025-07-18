@@ -67,7 +67,7 @@ h4,
 h5,
 h6 {
   color: var(--wp--custom--color--heading-fg);
-  text-shadow: var(--wp--custom--text--shadow-small);
+  text-shadow: var(--wp--custom--text--shadow-small); 
 }
 
 .mxs-dark-bg h1,
@@ -190,7 +190,7 @@ hr,
 
 .mxs-dark-bg hr,
 .mxs-dark-bg .wp-block-separator:not(.is-style-dots) {
-  border-bottom-color: var(--white-12pcnt);
+  border-bottom-color: rgba(255, 255, 255, 0.125);
 }
 
 figcaption,
@@ -231,7 +231,7 @@ figcaption,
 }
 
 .mxs-dark-bg a {
-  border-bottom-color: var(--white-12pcnt);
+  border-bottom-color: rgba(255, 255, 255, 0.125);
 }
 
 .mxs-light-bg input:focus,
@@ -328,7 +328,7 @@ figcaption,
 }
 
 .mxs-dark-bg .sticky {
-  border-color: var(--white-25pcnt);
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 @media (min-width: 1366px) {
