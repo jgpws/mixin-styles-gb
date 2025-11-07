@@ -67,7 +67,7 @@ h4,
 h5,
 h6 {
   color: var(--wp--custom--color--heading-fg);
-  text-shadow: var(--wp--custom--text--shadow-small); 
+  text-shadow: var(--wp--custom--text--shadow-small);
 }
 
 .mxs-dark-bg h1,
@@ -132,12 +132,9 @@ form {
   margin-bottom: 1em;
 }
 
-input {
-  background: var(--wp--custom--gradient--dark-to-light);
-}
-
+input,
 textarea {
-  background: var(--medium-gray-gradient-top);
+  background: var(--wp--custom--gradient--dark-to-light);
 }
 
 input,

@@ -28,6 +28,9 @@ Choose from nine color styles and seven additional fonts.
 
 == Changelog ==
 
+= 1.3.2 July 29 2025 =
+Added content Group blocks to each of the Columns variations; changed gradient for text area elements (style variations).
+
 = 1.3.1 July 17 2025 =
 CSS fixes for the Cover block; CSS fix for link underline (border) in dark mode.
 

@@ -53,6 +53,15 @@ wp.domReady(() => {
           className: "content",
           width: "85%",
         },
+        [
+          [
+            "core/group",
+            {
+              tagName: "main",
+              className: "mxs-no-card main",
+            },
+          ],
+        ],
       ],
       [
         "core/column",
@@ -92,6 +101,15 @@ wp.domReady(() => {
           className: "content",
           width: "85%",
         },
+        [
+          [
+            "core/group",
+            {
+              tagName: "main",
+              className: "mxs-no-card main",
+            },
+          ],
+        ],
       ],
       [
         "core/column",
@@ -116,7 +134,23 @@ wp.domReady(() => {
       className: "no-sidebar",
       isStackedOnMobile: false,
     },
-    innerBlocks: [["core/column", { width: "100%" }]],
+    innerBlocks: [
+      [
+        "core/column",
+        {
+          width: "100%",
+        },
+        [
+          [
+            "core/group",
+            {
+              tagName: "main",
+              className: "mxs-no-card main",
+            },
+          ],
+        ],
+      ],
+    ],
     isActive: ["className"],
   });
 

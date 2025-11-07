@@ -197,11 +197,6 @@ a.wp-block-navigation-item__content {
   border: transparent;
 }
 
-/*.wp-block-cover {
-  margin-left: -1.5em;
-  margin-right: -1.5em;
-  width: calc(100% + 3em);
-}*/
 .wp-block-cover.is-style-rounded,
 .wp-block-cover.is-style-rounded-full {
   margin-left: var(--wp--style--root--padding-left);
