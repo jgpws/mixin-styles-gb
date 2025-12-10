@@ -28,6 +28,9 @@ Choose from nine color styles and seven additional fonts.
 
 == Changelog ==
 
+= 1.4.0 December 2025 =
+Added two new button styles- flat and disappearing; added new nav styles; two new header templates, etc.
+
 = 1.3.2 July 29 2025 =
 Added content Group blocks to each of the Columns variations; changed gradient for text area elements (style variations).
 

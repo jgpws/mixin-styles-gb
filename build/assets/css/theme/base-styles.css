@@ -102,17 +102,18 @@ caption {
   padding: 0.25em;
 }
 
-.mxs-light-bg a {
-  border-bottom-color: var(--wp--custom--color--opacity-12-base);
+.mxs-light-bg a:where(:not(.wp-element-button)) {
+  border-bottom-color: rgba(0, 0, 0, 0.125);
 }
 
-.mxs-dark-bg a {
+.mxs-dark-bg a:where(:not(.wp-element-button)) {
+  border-bottom-color: rgba(255, 255, 255, 0.125);
   color: var(--wp--preset--color--mxs-link);
-}
 
-.mxs-dark-bg a:hover,
-.mxs-dark-bg a:active {
-  color: var(--wp--preset--color--mxs-link-hover);
+  &:hover,
+  &:active {
+    color: var(--wp--preset--color--mxs-link-hover);
+  }
 }
 
 pre {
@@ -225,10 +226,6 @@ figcaption,
 .wp-caption,
 .is-layout-constrained .wp-caption {
   max-width: 100%;
-}
-
-.mxs-dark-bg a {
-  border-bottom-color: rgba(255, 255, 255, 0.125);
 }
 
 .mxs-light-bg input:focus,
@@ -348,6 +345,7 @@ figcaption,
 .wp-block-post-content .post-page-numbers {
   border: 1px solid;
   border-radius: 0.5em;
+  font-size: 1rem;
   height: 3em;
   padding: 0.75em;
   width: 3em;
@@ -364,7 +362,7 @@ figcaption,
     rgba(128, 128, 128, 0.75) 100%
   );
   background-color: var(--almost-white);
-  border-color: var(--darker-gray);
+  border-color: rgba(0, 0, 0, 0.5);
   color: var(--darker-gray);
   font-weight: bold;
   text-decoration: none;
@@ -385,4 +383,8 @@ a.more-link {
 .wp-smiley {
   margin: 0;
   padding: 0;
+}
+
+input.adminbar-input {
+  background-image: none;
 }

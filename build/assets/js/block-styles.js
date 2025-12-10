@@ -1,6 +1,16 @@
 /* Block styles */
 
 wp.domReady(() => {
+  wp.blocks.registerBlockStyle("core/button", [
+    {
+      name: "flat",
+      label: __("Flat Style", "mixin-styles-gb"),
+    },
+    {
+      name: "disappearing",
+      label: __("Disappearing", "mixin-styles-gb"),
+    },
+  ]);
   wp.blocks.registerBlockStyle("core/cover", [
     {
       name: "default",
@@ -49,6 +59,14 @@ wp.domReady(() => {
     {
       name: "wide-tab",
       label: __("Wide Tab", "mixin-styles-gb"),
+    },
+    {
+      name: "flat-nav",
+      label: __("Flat Style", "mixin-styles-gb"),
+    },
+    {
+      name: "plain",
+      label: __("Plain"),
     },
   ]);
 

@@ -13,7 +13,7 @@
 	<div class="wp-block-group mxs-title-panel">
 		<!-- wp:site-title /-->
 
-		<!-- wp:site-tagline {"textColor":"white"} /-->
+		<!-- wp:site-tagline /-->
 	</div>
 	<!-- /wp:group -->
 

@@ -4,7 +4,7 @@
 .wp-site-blocks {
   margin: 0 auto;
   max-width: none;
-  overflow-x: hidden;
+  overflow-x: clip;
 
   .page-template-page-header-left & {
     overflow-x: visible;
@@ -320,6 +320,10 @@
     grid-column: 1 / 2;
   }
 
+  .mxs-header .wp-block-navigation.is-style-flat-nav {
+    grid-column: 1 / 3;
+  }
+
   .header-hero .wp-block-navigation {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
@@ -442,4 +446,9 @@ img.aligncenter {
 .mxs-card .alignfull {
   margin-left: calc(var(--wp--style--root--padding-left) * -1);
   margin-right: calc(var(--wp--style--root--padding-right) * -1);
+}
+
+/* Miscellaneous */
+.observed-element + .main {
+  margin-block-start: 0;
 }

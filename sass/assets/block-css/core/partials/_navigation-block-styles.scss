@@ -135,3 +135,66 @@
   border-radius: 0;
   padding: 0.25em 0.5em;
 }
+
+/* Flat Style */
+:root
+  :where(.is-style-flat-nav.wp-block-navigation:not(.is-responsive):not(.wp-block-navigation__container)) {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.wp-block-navigation.is-style-flat-nav:not(.is-responsive) {
+  .wp-block-navigation__container {
+    background-color: transparent !important;
+  }
+
+  .wp-block-page-list {
+    background-color: transparent;
+  }
+}
+
+.is-style-flat-nav:not(.is-responsive):not(.wp-block-navigation__container) {
+  background-color: var(--wp--preset--color--tertiary);
+  color: var(--wp--custom--color--tab-fg);
+}
+
+.is-style-flat-nav:not(.has-background)
+  .wp-block-navigation__responsive-container.is-menu-open {
+  background-color: var(--wp--preset--color--secondary);
+}
+
+@media (max-width: 600px) {
+  .wp-block-navigation.is-style-flat-nav.is-responsive {
+    background-color: transparent !important;
+  }
+}
+
+@media (min-width: 600px) {
+  :root :where(.is-style-flat-nav:not(.wp-block-navigation__container)) {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  .wp-block-navigation.is-style-flat-nav:has(.always-shown) {
+    background: transparent !important;
+  }
+
+  .is-style-flat-nav
+    .wp-block-navigation__responsive-container:not(.is-menu-open.is-menu-open) {
+    background-color: transparent !important;
+  }
+
+  .is-style-flat-nav.is-responsive .wp-block-navigation__container {
+    background-color: transparent !important;
+  }
+
+  .is-style-flat-nav:not(.has-text-color) .wp-block-navigation-item__content {
+    color: var(--wp--custom--color--tab-fg);
+  }
+}

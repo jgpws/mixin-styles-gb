@@ -1,0 +1,28 @@
+/* ---- Animations ---- */
+.scale-up {
+  transform: scaleY(0);
+}
+
+.scale-down {
+  transform: scaleY(100%);
+}
+
+.scale-up,
+.scale-down {
+  transform-origin: top;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mxs-slide-down-header {
+    transition: 200ms ease-in-out;
+  }
+}
+/* Overrides */
+.mxs-slide-down-header:has(.wp-block-navigation__responsive-container.is-menu-open).scale-up, .mxs-slide-down-header:has(.wp-block-navigation__responsive-container.is-menu-open).scale-down {
+  transform: none;
+  transition: none;
+}
+
+.no-transition {
+  transition: none;
+}

@@ -6,12 +6,13 @@
   "scripts": {
     "sass-dev": "sass --embed-sources --watch --update --style=expanded sass/assets:build/assets",
     "sass-prod": "sass --no-source-map sass/assets/:build/assets",
+    "autoprefix": "postcss build/*.css --use autoprefixer -d build/ --watch",
     "minifyBlockCSS": "cleancss --batch --batch-suffix '.min' build/assets/block-css/**/*.css !build/assets/block-css/**/*.min.css",
     "minifyCSS": "cleancss --batch --batch-suffix '.min' build/assets/css/**/*.css !build/assets/css/**/*.min.css",
     "minifyEdOverrides": "cleancss -o build/assets/css/editor-overrides.min.css build/assets/css/editor-overrides.css",
     "remove-sourcemaps": "find ./build/assets -name '*.map' -delete",
     "serve": "browser-sync start --proxy 'localhost/wordpress/' --files 'build/templates' 'sass'",
-    "develop": "concurrently 'npm:sass-dev' 'npm:serve' --kill-others",
+    "develop": "concurrently 'npm:sass-dev' 'npm:autoprefix' 'npm:serve' --kill-others",
     "produce": "concurrently 'npm:sass-prod' 'npm:minifyBlockCSS' 'npm:minifyCSS' 'npm:minifyEdOverrides' 'npm:remove-sourcemaps'"
   },
   "repository": {
@@ -31,6 +32,9 @@
     "sass": "^1.62.1"
   },
   "dependencies": {
-    "clean-css-cli": "^5.6.2"
+    "autoprefixer": "^10.4.22",
+    "clean-css-cli": "^5.6.2",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1"
   }
 }

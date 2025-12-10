@@ -1,5 +1,5 @@
 /* ---- Navigation block color overrides ---- */
-.wp-site-blocks .wp-block-navigation.has-background {
+.wp-site-blocks .wp-block-navigation:not(.is-style-flat-nav).has-background {
   background-color: transparent !important;
 }
 
@@ -60,6 +60,8 @@ $navColorsDefault: (
   }
 
   .has-#{$colorValue}-background-color
+    .wp-block-navigation__responsive-container.is-menu-open,
+  .is-style-flat-nav.has-#{$colorValue}-background-color
     .wp-block-navigation__responsive-container.is-menu-open {
     background-color: var(--wp--preset--color--#{$colorValue});
   }

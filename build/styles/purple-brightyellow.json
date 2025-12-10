@@ -237,8 +237,10 @@
     },
     "custom": {
       "color": {
+        "border": "rgba(130, 11, 187, 0.5)",
         "tab-fg": "#191919",
-        "accent-3-fg": "#000000"
+        "accent-3-fg": "#000000",
+        "flat-button-fg": "#ffffff"
       },
       "gradient": {
         "light-to-dark": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(248, 254, 3, 0.5) 100%)",
