@@ -20,6 +20,9 @@
   background-color: var(--wp--preset--color--secondary);
   background-image: var(--white-to-black-gradient);
 }
+.is-style-outline .wp-block-button__link:not(.has-text-color):hover, .is-style-outline .wp-block-button__link:not(.has-text-color):focus, .is-style-outline .wp-block-button__link:not(.has-text-color):active {
+  color: #000000;
+}
 .mxs-light-bg .is-style-outline .wp-block-button__link:not(.has-text-color) {
   color: var(--wp--custom--color--card-fg-dark);
 }

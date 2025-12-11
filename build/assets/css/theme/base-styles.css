@@ -109,11 +109,11 @@ caption {
 .mxs-dark-bg a:where(:not(.wp-element-button)) {
   border-bottom-color: rgba(255, 255, 255, 0.125);
   color: var(--wp--preset--color--mxs-link);
+}
 
-  &:hover,
-  &:active {
-    color: var(--wp--preset--color--mxs-link-hover);
-  }
+.mxs-dark-bg a:where(:not(.wp-element-button)):hover,
+.mxs-dark-bg a:where(:not(.wp-element-button)):active {
+  color: var(--wp--preset--color--mxs-link-hover);
 }
 
 pre {
