@@ -28,6 +28,9 @@ Choose from nine color styles and seven additional fonts.
 
 == Changelog ==
 
+= 1.4.2 December 2025 =
+Adjusted CSS in backend for Gallery block.
+
 = 1.4.1 December 11 2025 =
 Fixed Navigation CSS when Overlay mode is turned off.
 

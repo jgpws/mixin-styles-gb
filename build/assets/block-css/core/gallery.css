@@ -5,7 +5,8 @@
   margin-bottom: 2em;
 }
 
-.wp-block-gallery .wp-block-image > a {
+.wp-block-gallery .wp-block-image > a,
+.wp-block-gallery .wp-block-image > div > a {
   border-bottom: transparent !important;
   padding-bottom: 0 !important;
 }
