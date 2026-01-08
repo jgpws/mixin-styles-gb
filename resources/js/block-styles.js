@@ -1,6 +1,9 @@
 /* Block styles */
 
 wp.domReady(() => {
+  // For Internationalization.
+  const { __ } = wp.i18n;
+
   wp.blocks.registerBlockStyle("core/button", [
     {
       name: "flat",

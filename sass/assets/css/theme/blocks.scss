@@ -62,9 +62,15 @@
   }
 }
 
+.is-layout-flex > :is(.mxs-logo-nav-container) {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mxs-slide-down-header {
   .mxs-header {
     background-color: var(--wp--preset--color--background);
+    color: var(--wp--preset--color--foreground);
   }
 
   &:has(.mxs-card) {
@@ -95,6 +101,11 @@
     .mxs-button-panel {
       flex-basis: 50% !important;
     }
+  }
+
+  .mxs-logo-nav-container .is-layout-flex > :is(.is-responsive) {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .wp-block-navigation.is-responsive {

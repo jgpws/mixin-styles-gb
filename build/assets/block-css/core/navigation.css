@@ -73,8 +73,12 @@
     margin-bottom: -1em;
   }
 }
-.mxs-thin-header .wp-block-navigation:not(.has-text-color) .wp-block-navigation-item__content.wp-block-navigation-item__content {
-  color: var(--wp--custom--color--tab-fg);
+.mxs-light-bg.mxs-thin-header .wp-block-navigation:not(.has-text-color) .wp-block-navigation-item__content.wp-block-navigation-item__content {
+  color: var(--wp--custom--color--card-fg-dark);
+}
+
+.mxs-dark-bg.mxs-thin-header .wp-block-navigation:not(.has-text-color) .wp-block-navigation-item__content.wp-block-navigation-item__content {
+  color: var(--wp--custom--color--card-fg-light);
 }
 
 @media (min-width: 768px) {
@@ -434,6 +438,11 @@ a.wp-block-navigation-item__content,
   background-image: none;
 }
 
+.mxs-light-bg.mxs-thin-header .is-style-wide-tab .wp-block-navigation__container,
+.mxs-dark-bg.mxs-thin-header .is-style-wide-tab .wp-block-navigation__container {
+  background-color: transparent;
+}
+
 .mxs-light-bg .is-style-wide-tab .wp-block-navigation__container {
   background-color: rgba(0, 0, 0, 0.125);
 }
@@ -502,8 +511,17 @@ a.wp-block-navigation-item__content,
   .is-style-flat-nav.is-responsive .wp-block-navigation__container {
     background-color: transparent !important;
   }
-  .is-style-flat-nav:not(.has-text-color) .wp-block-navigation-item__content {
-    color: var(--wp--custom--color--tab-fg);
+  .mxs-light-bg.is-style-flat-nav .wp-block-navigation__submenu-icon {
+    color: var(--wp--custom--color--card-fg-dark);
+  }
+  .mxs-dark-bg.is-style-flat-nav .wp-block-navigation__submenu-icon {
+    color: var(--wp--custom--color--card-fg-light);
+  }
+  .mxs-light-bg.is-style-flat-nav:not(.has-text-color) .wp-block-navigation-item {
+    color: var(--wp--custom--color--card-fg-dark);
+  }
+  .mxs-dark-bg.is-style-flat-nav:not(.has-text-color) .wp-block-navigation-item__content {
+    color: var(--wp--custom--color--card-fg-light);
   }
 }
 /* Shared styles */
@@ -583,22 +601,17 @@ a.wp-block-navigation-item__content,
 }
 
 .is-style-tabs:not(.has-text-color) .wp-block-navigation__submenu-container .wp-block-navigation-item__content,
-.is-style-wide-tab:not(.has-text-color) .wp-block-navigation__submenu-container .wp-block-navigation-item__content,
-.is-style-flat-nav:not(.has-text-color) .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+.is-style-wide-tab:not(.has-text-color) .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
   color: var(--wp--preset--color--black);
 }
 .is-style-tabs:not(.has-text-color) .wp-block-navigation__submenu-container .wp-block-navigation-item__content:focus, .is-style-tabs:not(.has-text-color) .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover,
 .is-style-wide-tab:not(.has-text-color) .wp-block-navigation__submenu-container .wp-block-navigation-item__content:focus,
-.is-style-wide-tab:not(.has-text-color) .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover,
-.is-style-flat-nav:not(.has-text-color) .wp-block-navigation__submenu-container .wp-block-navigation-item__content:focus,
-.is-style-flat-nav:not(.has-text-color) .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover {
+.is-style-wide-tab:not(.has-text-color) .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover {
   color: var(--wp--custom--color--hover-fg);
 }
 .is-style-tabs:not(.has-text-color) .is-menu-open .wp-block-navigation__submenu-container .wp-block-navigation-item__content:focus, .is-style-tabs:not(.has-text-color) .is-menu-open .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover,
 .is-style-wide-tab:not(.has-text-color) .is-menu-open .wp-block-navigation__submenu-container .wp-block-navigation-item__content:focus,
-.is-style-wide-tab:not(.has-text-color) .is-menu-open .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover,
-.is-style-flat-nav:not(.has-text-color) .is-menu-open .wp-block-navigation__submenu-container .wp-block-navigation-item__content:focus,
-.is-style-flat-nav:not(.has-text-color) .is-menu-open .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover {
+.is-style-wide-tab:not(.has-text-color) .is-menu-open .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover {
   color: var(--wp--preset--color--black);
 }
 
@@ -654,11 +667,10 @@ a.wp-block-navigation-item__content,
   border-radius: 10px 0 0 10px;
 }
 
-.mxs-thin-header .wp-block-navigation .wp-block-navigation__submenu-icon,
+/*.mxs-thin-header .wp-block-navigation .wp-block-navigation__submenu-icon,
 .is-style-flat-nav.wp-block-navigation .wp-block-navigation__submenu-icon {
   color: var(--wp--custom--color--tab-fg);
-}
-
+}*/
 /* ---- Navigation block color overrides ---- */
 .wp-site-blocks .wp-block-navigation:not(.is-style-flat-nav).has-background {
   background-color: transparent !important;
@@ -719,6 +731,10 @@ a.wp-block-navigation-item__content,
   background-color: var(--wp--preset--color--accent-1);
 }
 
+.is-style-flat-nav.has-accent-1-background-color .wp-block-navigation__submenu-container {
+  background-color: var(--wp--preset--color--accent-1);
+}
+
 /* Page List block CSS */
 .has-accent-1-background-color .wp-block-page-list .has-child ul {
   background-color: var(--wp--preset--color--accent-1);
@@ -761,6 +777,10 @@ a.wp-block-navigation-item__content,
 .is-style-tabs.has-accent-2-background-color .wp-block-navigation-item__content,
 .is-style-wide-tab.has-accent-2-background-color .wp-block-navigation-item__content:focus,
 .is-style-wide-tab.has-accent-2-background-color .wp-block-navigation-item__content:hover {
+  background-color: var(--wp--preset--color--accent-2);
+}
+
+.is-style-flat-nav.has-accent-2-background-color .wp-block-navigation__submenu-container {
   background-color: var(--wp--preset--color--accent-2);
 }
 
@@ -809,6 +829,10 @@ a.wp-block-navigation-item__content,
   background-color: var(--wp--preset--color--accent-3);
 }
 
+.is-style-flat-nav.has-accent-3-background-color .wp-block-navigation__submenu-container {
+  background-color: var(--wp--preset--color--accent-3);
+}
+
 /* Page List block CSS */
 .has-accent-3-background-color .wp-block-page-list .has-child ul {
   background-color: var(--wp--preset--color--accent-3);
@@ -851,6 +875,10 @@ a.wp-block-navigation-item__content,
 .is-style-tabs.has-accent-4-background-color .wp-block-navigation-item__content,
 .is-style-wide-tab.has-accent-4-background-color .wp-block-navigation-item__content:focus,
 .is-style-wide-tab.has-accent-4-background-color .wp-block-navigation-item__content:hover {
+  background-color: var(--wp--preset--color--accent-4);
+}
+
+.is-style-flat-nav.has-accent-4-background-color .wp-block-navigation__submenu-container {
   background-color: var(--wp--preset--color--accent-4);
 }
 
@@ -899,6 +927,10 @@ a.wp-block-navigation-item__content,
   background-color: var(--wp--preset--color--accent-5);
 }
 
+.is-style-flat-nav.has-accent-5-background-color .wp-block-navigation__submenu-container {
+  background-color: var(--wp--preset--color--accent-5);
+}
+
 /* Page List block CSS */
 .has-accent-5-background-color .wp-block-page-list .has-child ul {
   background-color: var(--wp--preset--color--accent-5);
@@ -941,6 +973,10 @@ a.wp-block-navigation-item__content,
 .is-style-tabs.has-accent-6-background-color .wp-block-navigation-item__content,
 .is-style-wide-tab.has-accent-6-background-color .wp-block-navigation-item__content:focus,
 .is-style-wide-tab.has-accent-6-background-color .wp-block-navigation-item__content:hover {
+  background-color: var(--wp--preset--color--accent-6);
+}
+
+.is-style-flat-nav.has-accent-6-background-color .wp-block-navigation__submenu-container {
   background-color: var(--wp--preset--color--accent-6);
 }
 
@@ -989,6 +1025,10 @@ a.wp-block-navigation-item__content,
   background-color: var(--wp--preset--color--accent-7);
 }
 
+.is-style-flat-nav.has-accent-7-background-color .wp-block-navigation__submenu-container {
+  background-color: var(--wp--preset--color--accent-7);
+}
+
 /* Page List block CSS */
 .has-accent-7-background-color .wp-block-page-list .has-child ul {
   background-color: var(--wp--preset--color--accent-7);
@@ -1031,6 +1071,10 @@ a.wp-block-navigation-item__content,
 .is-style-tabs.has-accent-8-background-color .wp-block-navigation-item__content,
 .is-style-wide-tab.has-accent-8-background-color .wp-block-navigation-item__content:focus,
 .is-style-wide-tab.has-accent-8-background-color .wp-block-navigation-item__content:hover {
+  background-color: var(--wp--preset--color--accent-8);
+}
+
+.is-style-flat-nav.has-accent-8-background-color .wp-block-navigation__submenu-container {
   background-color: var(--wp--preset--color--accent-8);
 }
 
@@ -1082,3 +1126,5 @@ a.wp-block-navigation-item__content,
     color: var(--wp--preset--color--text-light);
   }
 }
+
+/*# sourceMappingURL=navigation.css.map */

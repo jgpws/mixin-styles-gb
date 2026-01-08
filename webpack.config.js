@@ -12,7 +12,27 @@ module.exports = {
   ...defaultConfig,
   ...{
     entry: {
-      "js/editor": path.resolve(process.cwd(), "resources/js", "editor.js"),
+      editor: path.resolve(process.cwd(), "resources/js", "editor.js"),
+      "block-styles": path.resolve(
+        process.cwd(),
+        "resources/js",
+        "block-styles.js",
+      ),
+      "block-variations": path.resolve(
+        process.cwd(),
+        "resources/js",
+        "block-variations.js",
+      ),
+      "mixin-styles-gb-scripts": path.resolve(
+        process.cwd(),
+        "resources/js",
+        "mixin-styles-gb-scripts.js",
+      ),
+      "mixin-styles-gb-contrast": path.resolve(
+        process.cwd(),
+        "resources/js",
+        "mixin-styles-gb-contrast.js",
+      ),
     },
     plugins: [
       // Include WP's plugin config.

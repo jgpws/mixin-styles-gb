@@ -1,3 +1,7 @@
+/******/ (() => { // webpackBootstrap
+/*!*************************************************!*\
+  !*** ./resources/js/mixin-styles-gb-scripts.js ***!
+  \*************************************************/
 /**
  * File mixin-style-gb-scripts.js.
  *
@@ -11,12 +15,9 @@
      */
 
     const stickyHeader = document.querySelector(".mxs-slide-down-header");
-    const mainContent = document.querySelectorAll(
-      ".mxs-slide-down-header + .content-sidebar .main, .mxs-slide-down-header + .sidebar-content .main, .mxs-slide-down-header + .no-sidebar .main",
-    );
-
-    const onIntersect = (entries) => {
-      entries.forEach((entry) => {
+    const mainContent = document.querySelectorAll(".mxs-slide-down-header + .content-sidebar .main, .mxs-slide-down-header + .sidebar-content .main, .mxs-slide-down-header + .no-sidebar .main");
+    const onIntersect = entries => {
+      entries.forEach(entry => {
         //console.log(entry);
         stickyHeader.classList.add("scale-up", "no-transition");
         if (entry.isIntersecting) {
@@ -30,12 +31,9 @@
         }
       });
     };
-
     const observer = new IntersectionObserver(onIntersect);
-
-    mainContent.forEach((content) => observer.observe(content));
+    mainContent.forEach(content => observer.observe(content));
   }
-
   function removeBordersFromNavWithButtonOnly() {
     /**
      * Temporary fix until CSS :has has wide browser support.
@@ -45,11 +43,8 @@
 
     // Check for the width of the screen
     var screenWidth = window.matchMedia("(min-width: 600px)");
-    let el = document.querySelector(
-        ".wp-block-navigation__responsive-container-open.always-shown",
-      ),
+    let el = document.querySelector(".wp-block-navigation__responsive-container-open.always-shown"),
       elParent = null;
-
     if (screenWidth.matches) {
       //console.log('Screen width is greater than 600px');
 
@@ -60,13 +55,14 @@
       }
     }
   }
-
   window.addEventListener("load", () => {
     slideDownHeader();
     removeBordersFromNavWithButtonOnly();
   });
-
   window.addEventListener("resize", () => {
     removeBordersFromNavWithButtonOnly();
   });
 })();
+/******/ })()
+;
+//# sourceMappingURL=mixin-styles-gb-scripts.js.map

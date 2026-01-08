@@ -1,14 +1,13 @@
+/******/ (() => { // webpackBootstrap
+/*!**************************************************!*\
+  !*** ./resources/js/mixin-styles-gb-contrast.js ***!
+  \**************************************************/
 (function () {
   //console.log("Contrast script is loaded");
 
-  const elements = document.querySelectorAll(
-    ".wp-block-group.mxs-card, .mxs-thin-header, .wp-block-navigation:not(.wp-block-navigation__container).is-style-flat-nav",
-  );
-
-  elements.forEach((element) => {
-    const computedBgColor = window
-      .getComputedStyle(element)
-      .getPropertyValue("background");
+  const elements = document.querySelectorAll(".wp-block-group.mxs-card, .mxs-thin-header, .wp-block-navigation:not(.wp-block-navigation__container).is-style-flat-nav");
+  elements.forEach(element => {
+    const computedBgColor = window.getComputedStyle(element).getPropertyValue("background");
 
     //console.log(element);
     //console.log(computedBgColor);
@@ -21,7 +20,6 @@
 
     // Convert returned string of computedBgColor to an array
     const rgbStrToArray = computedBgColor.match(/\d+/g).map(Number);
-
     function getContrastYIQ() {
       const r = rgbStrToArray[0];
       const g = rgbStrToArray[1];
@@ -36,7 +34,9 @@
         return;
       }
     }
-
     element.classList.add(getContrastYIQ());
   });
 })();
+/******/ })()
+;
+//# sourceMappingURL=mixin-styles-gb-contrast.js.map
