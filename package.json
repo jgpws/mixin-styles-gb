@@ -4,6 +4,8 @@
   "description": "WordPress block theme",
   "main": "index.js",
   "scripts": {
+    "start": "wp-scripts start --webpack-src-dir=resources --output-path=build/assets/js",
+    "build": "wp-scripts build --webpack-src-dir=resources --output-path=build/assets/js",
     "sass-dev": "sass --embed-sources --watch --update --style=expanded sass/assets:build/assets",
     "sass-prod": "sass --no-source-map sass/assets/:build/assets",
     "autoprefix": "postcss build/*.css --use autoprefixer -d build/ --watch",
@@ -26,12 +28,16 @@
   },
   "homepage": "https://github.com/jgpws/mixin-styles-gb#readme",
   "devDependencies": {
+    "@wordpress/scripts": "^31.1.0",
     "browser-sync": "^2.29.3",
     "concurrently": "^8.0.1",
+    "path": "^0.12.7",
     "renamer": "^4.0.0",
-    "sass": "^1.62.1"
+    "sass": "^1.62.1",
+    "webpack-remove-empty-scripts": "^1.1.1"
   },
   "dependencies": {
+    "@wordpress/data": "^10.37.0",
     "autoprefixer": "^10.4.22",
     "clean-css-cli": "^5.6.2",
     "postcss": "^8.5.6",

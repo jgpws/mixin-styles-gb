@@ -87,6 +87,11 @@ $navColorsDefault: (
     background-color: var(--wp--preset--color--#{$colorValue});
   }
 
+  .is-style-flat-nav.has-#{$colorValue}-background-color
+    .wp-block-navigation__submenu-container {
+    background-color: var(--wp--preset--color--#{$colorValue});
+  }
+
   /* Page List block CSS */
   .has-#{$colorValue}-background-color .wp-block-page-list .has-child ul {
     background-color: var(--wp--preset--color--#{$colorValue});

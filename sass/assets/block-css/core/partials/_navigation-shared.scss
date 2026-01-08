@@ -102,8 +102,7 @@
 }
 
 .is-style-tabs:not(.has-text-color),
-.is-style-wide-tab:not(.has-text-color),
-.is-style-flat-nav:not(.has-text-color) {
+.is-style-wide-tab:not(.has-text-color) {
   .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
     color: var(--wp--preset--color--black);
 
@@ -177,7 +176,7 @@
   }
 }
 
-.mxs-thin-header .wp-block-navigation .wp-block-navigation__submenu-icon,
+/*.mxs-thin-header .wp-block-navigation .wp-block-navigation__submenu-icon,
 .is-style-flat-nav.wp-block-navigation .wp-block-navigation__submenu-icon {
   color: var(--wp--custom--color--tab-fg);
-}
+}*/
