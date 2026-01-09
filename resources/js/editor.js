@@ -73,7 +73,7 @@ function Edit(props) {
   );
 }
 
-// Add a filter for BlockEdit to render only our
+// Add a filter for BlockEdit to render only our Inspector Controls
 addFilter(
   "editor.BlockEdit",
   "mixin-styles-gb/add-light-dark-bg-class",

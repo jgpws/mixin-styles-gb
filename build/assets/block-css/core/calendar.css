@@ -1,3 +1,6 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./resources/scss/block-css/core/calendar.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
 /* ---- Calendar ---- */
 .wp-block-calendar a,
 .mxs-dark-bg .wp-block-calendar a {
@@ -49,15 +52,12 @@
 .mxs-dark-bg .wp-block-calendar table:where(:not(.has-text-color)) th {
   border-color: var(--medium-gray);
 }
-
 .mxs-light-bg .wp-block-calendar caption {
   color: var(--wp--preset--color--foreground);
 }
-
 .mxs-dark-bg .wp-block-calendar caption {
   color: var(--wp--custom--color--card-fg-dark);
 }
-
 .wp-calendar-nav {
   background-color: var(--wp--preset--color--secondary);
   border-bottom-left-radius: 16px;
@@ -69,16 +69,13 @@
   padding: 0.25em;
   width: 100%;
 }
-
 .sidebar .wp-block-calendar:first-child {
   margin-top: 0;
 }
-
 .mxs-light-bg caption,
 .mxs-light-bg .wp-calendar-nav {
   background-color: var(--wp--preset--color--background);
 }
-
 .mxs-light-bg .wp-calendar-nav a,
 .sidebar.mxs-light-bg .wp-calendar-nav a {
   border-bottom: transparent;
@@ -89,3 +86,5 @@
 .sidebar.mxs-light-bg .wp-calendar-nav a:active {
   color: var(--wp--preset--color--mxs-link-hover);
 }
+
+/*# sourceMappingURL=calendar.css.map*/

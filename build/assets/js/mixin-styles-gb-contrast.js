@@ -5,11 +5,12 @@
 (function () {
   //console.log("Contrast script is loaded");
 
-  const elements = document.querySelectorAll(".wp-block-group.mxs-card, .mxs-thin-header, .wp-block-navigation:not(.wp-block-navigation__container).is-style-flat-nav");
+  const elements = document.querySelectorAll("body, .mxs-contrasting-color, .wp-block-navigation:not(.wp-block-navigation__container).is-style-flat-nav");
   elements.forEach(element => {
     const computedBgColor = window.getComputedStyle(element).getPropertyValue("background");
 
     //console.log(element);
+    //console.log(document.body === element);
     //console.log(computedBgColor);
 
     // If `computedBgColor` does not match a digit for an element,
@@ -25,11 +26,22 @@
       const g = rgbStrToArray[1];
       const b = rgbStrToArray[2];
       const yiq = (r * 299 + g * 587 + b * 114) / 1000;
-      if (yiq >= 128) {
-        return "mxs-light-bg";
-      } else if (yiq <= 128) {
-        element.classList.remove("mxs-light-bg");
-        return "mxs-dark-bg";
+      if (yiq > 128) {
+        if (document.body === element) {
+          element.classList.remove("mxs-dark-theme-bg");
+          return "mxs-light-theme-bg";
+        } else {
+          element.classList.remove("mxs-dark-bg");
+          return "mxs-light-bg";
+        }
+      } else if (yiq < 128) {
+        if (document.body === element) {
+          element.classList.remove("mxs-light-theme-bg");
+          return "mxs-dark-theme-bg";
+        } else {
+          element.classList.remove("mxs-light-bg");
+          return "mxs-dark-bg";
+        }
       } else {
         return;
       }

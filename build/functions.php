@@ -44,9 +44,9 @@ if ( ! function_exists( 'mixin_styles_gb_setup' ) ) :
      * Enqueue editor styles.
      */
 		add_editor_style( array(
-      './assets/css/theme/base-styles.min.css',
-      './assets/css/theme/layout.min.css',
-      './assets/css/theme/blocks.min.css',
+      './assets/css/theme/base-styles.css',
+      './assets/css/theme/layout.css',
+      './assets/css/theme/blocks.css',
       './assets/css/editor-overrides.css',
     ) );
   }
@@ -77,12 +77,17 @@ function mixin_styles_gb_editor_assets() {
 add_action( 'enqueue_block_editor_assets', 'mixin_styles_gb_editor_assets' );
 
 function mixin_styles_gb_scripts() {
+  $base_style_asset = include get_parent_theme_file_path( 'assets/css/theme/base-styles.asset.php' );
+  $layout_style_asset = include get_parent_theme_file_path( 'assets/css/theme/layout.asset.php' );
+  $blocks_style_asset = include get_parent_theme_file_path( 'assets/css/theme/blocks.asset.php' );
+  $animations_style_asset = include get_parent_theme_file_path( 'assets/css/theme/animations.asset.php' );
+
   // Stylesheets
   wp_enqueue_style( 'mixin-styles-gb-style', get_stylesheet_uri() );
-  wp_enqueue_style( 'mixin-styles-gb-base', get_theme_file_uri( '/assets/css/theme/base-styles.min.css' ), array(), filemtime( get_template_directory() . '/assets/css/theme/base-styles.css' ) );
-  wp_enqueue_style( 'mixin-styles-gb-layout', get_theme_file_uri( '/assets/css/theme/layout.min.css' ), array(), filemtime( get_template_directory() . '/assets/css/theme/layout.css' ) );
-  wp_enqueue_style( 'mixin-styles-gb-blocks', get_theme_file_uri( '/assets/css/theme/blocks.css' ), array(), filemtime( get_template_directory() . '/assets/css/theme/blocks.css' ) );
-  wp_enqueue_style( 'mixin-styles-gb-animations', get_theme_file_uri( '/assets/css/theme/animations.css' ), array(), filemtime( get_template_directory() . '/assets/css/theme/animations.css' ) );
+  wp_enqueue_style( 'mixin-styles-gb-base', get_theme_file_uri( '/assets/css/theme/base-styles.css' ), $base_style_asset['dependencies'], $base_style_asset['version'] );
+  wp_enqueue_style( 'mixin-styles-gb-layout', get_theme_file_uri( '/assets/css/theme/layout.css' ), $layout_style_asset['dependencies'], $layout_style_asset['version'] );
+  wp_enqueue_style( 'mixin-styles-gb-blocks', get_theme_file_uri( '/assets/css/theme/blocks.css' ), $blocks_style_asset['dependencies'], $blocks_style_asset['version'] );
+  wp_enqueue_style( 'mixin-styles-gb-animations', get_theme_file_uri( '/assets/css/theme/animations.css' ), $animations_style_asset['dependencies'], $animations_style_asset['version'] );
   
   // Scripts
   wp_enqueue_script( 'mixin-styles-gb-scripts', get_theme_file_uri( 'assets/js/mixin-styles-gb-scripts.js' ), array(), filemtime( get_template_directory() . '/assets/js/mixin-styles-gb-scripts.js' ), true );

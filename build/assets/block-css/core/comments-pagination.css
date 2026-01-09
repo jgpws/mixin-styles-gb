@@ -1,3 +1,6 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./resources/scss/block-css/core/comments-pagination.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
 /* ---- Comments pagination -----*/
 .wp-block-comments-pagination {
   align-items: center;
@@ -38,7 +41,6 @@
 .wp-block-comments-pagination > .wp-block-comments-pagination-previous {
   border: 1px solid transparent;
 }
-
 .mxs-light-bg .wp-block-comments-pagination a,
 .mxs-light-bg .wp-block-comments-pagination a:focus,
 .mxs-light-bg .wp-block-comments-pagination a:hover,
@@ -50,7 +52,6 @@
 .mxs-light-bg .wp-block-comments-pagination a:active {
   border-bottom-color: rgba(0, 0, 0, 0.75);
 }
-
 .mxs-dark-bg .wp-block-comments-pagination a,
 .mxs-dark-bg .wp-block-comments-pagination a:focus,
 .mxs-dark-bg .wp-block-comments-pagination a:hover,
@@ -62,40 +63,35 @@
 .mxs-dark-bg .wp-block-comments-pagination a:active {
   border-bottom-color: rgba(255, 255, 255, 0.75);
 }
-
 .wp-block-comments-pagination-numbers {
   color: var(--almost-white);
   display: flex;
 }
-
 .mxs-light-bg .wp-block-comments-pagination-numbers {
   color: var(--almost-black);
 }
-
 .mxs-dark-bg .wp-block-comments-pagination-numbers {
   color: var(--almost-white);
 }
-
 .page-numbers {
   min-width: 44px;
   min-height: 44px;
 }
-
 .page-numbers,
 a.page-numbers {
   padding: 8px;
 }
-
 .wp-block-comments-pagination .page-numbers,
 .wp-block-comments-pagination .page-numbers:hover,
 .wp-block-comments-pagination .page-numbers:focus,
 .wp-block-comments-pagination .page-numbers:active {
   border-bottom: transparent;
 }
-
 @media (min-width: 768px) {
   .wp-block-comments-pagination {
     flex-direction: row;
     justify-content: space-between;
   }
 }
+
+/*# sourceMappingURL=comments-pagination.css.map*/

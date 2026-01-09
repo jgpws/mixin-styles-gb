@@ -1,0 +1,64 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./resources/scss/block-css/core/table.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+/* ---- Table block ---- */
+.wp-block-table table {
+  background-color: var(--wp--custom--color--opacity-6-bg);
+  border: 1px solid var(--wp--custom--color--opacity-12-bg);
+  margin: 0 auto;
+}
+.wp-block-table thead {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.125);
+}
+.wp-block-table th,
+.wp-block-table td {
+  border: 1px solid var(--wp--custom--color--opacity-12-bg);
+  padding: 0.5em;
+}
+.wp-block-table tfoot {
+  border-top: 2px solid rgba(255, 255, 255, 0.125);
+}
+.wp-block-table figcaption {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+.mxs-light-bg .wp-block-table table {
+  background-color: rgba(0, 0, 0, 0.0625);
+  color: var(--wp--custom--color--card-fg-dark);
+}
+.mxs-light-bg .wp-block-table thead {
+  border-bottom-color: rgba(0, 0, 0, 0.125);
+}
+.mxs-light-bg .wp-block-table th,
+.mxs-light-bg .wp-block-table td {
+  border-color: var(--medium-gray);
+}
+.mxs-light-bg .wp-block-table tfoot {
+  border-top-color: rgba(0, 0, 0, 0.125);
+}
+.mxs-dark-bg .wp-block-table table {
+  background-color: rgba(255, 255, 255, 0.0625);
+  color: var(--wp--custom--color--card-fg-light);
+}
+.mxs-dark-bg .wp-block-table thead {
+  border-bottom-color: rgba(255, 255, 255, 0.125);
+}
+.mxs-dark-bg .wp-block-table th,
+.mxs-dark-bg .wp-block-table td {
+  border-color: rgba(255, 255, 255, 0.125);
+}
+.mxs-dark-bg .wp-block-table tfoot {
+  border-top-color: rgba(255, 255, 255, 0.125);
+}
+.wp-block-table.is-style-stripes {
+  border-bottom-color: rgba(255, 255, 255, 0.125);
+}
+.wp-block-table.is-style-stripes table {
+  background-color: transparent;
+}
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.0625);
+}
+.mxs-light-bg .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.0625);
+}

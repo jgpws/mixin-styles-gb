@@ -1,0 +1,149 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./resources/scss/block-css/core/post-featured-image.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+/* ---- Featured Image block ---- */
+.wp-block-post-featured-image,
+.wp-block-post-featured-image.alignwide img,
+.wp-block-post-featured-image.alignfull img {
+  max-width: 300px;
+}
+.wp-block-post-featured-image.is-style-medium,
+.wp-block-post-featured-image.is-style-medium.alignwide img,
+.wp-block-post-featured-image.is-style-medium.alignfull img {
+  max-width: 450px;
+}
+.wp-block-post-featured-image.is-style-full-width,
+.wp-block-post-featured-image.is-style-full-width img {
+  max-width: none;
+}
+.wp-block-post-featured-image.is-style-full-width {
+  float: none !important;
+}
+.wp-block-post-featured-image.is-style-default.alignwide, .wp-block-post-featured-image.is-style-default.alignfull,
+.wp-block-post-featured-image.is-style-medium.alignwide,
+.wp-block-post-featured-image.is-style-medium.alignfull {
+  background-color: var(--wp--custom--color--opacity-12-bg);
+}
+.mxs-light-bg .wp-block-post-featured-image.is-style-default.alignwide, .mxs-light-bg .wp-block-post-featured-image.is-style-default.alignfull,
+.mxs-light-bg .wp-block-post-featured-image.is-style-medium.alignwide,
+.mxs-light-bg .wp-block-post-featured-image.is-style-medium.alignfull {
+  background-color: var(--black-12pcnt);
+}
+.mxs-dark-bg .wp-block-post-featured-image.is-style-default.alignwide, .mxs-dark-bg .wp-block-post-featured-image.is-style-default.alignfull,
+.mxs-dark-bg .wp-block-post-featured-image.is-style-medium.alignwide,
+.mxs-dark-bg .wp-block-post-featured-image.is-style-medium.alignfull {
+  background-color: var(--white-12pcnt);
+}
+.wp-block-post-featured-image.alignfull img {
+  border-radius: 0;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.wp-block-post-featured-image a {
+  border: none;
+  padding-bottom: 0;
+}
+.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim {
+  border-radius: 16px;
+}
+/* Alignments */
+.wp-block-post-featured-image.alignleft {
+  margin: 0 0 1em 1em;
+}
+.wp-block-post-featured-image.alignright {
+  margin: 0 1em 1em 0;
+}
+.wp-block-post-featured-image.alignwide {
+  max-width: 1024px;
+}
+.wp-block-post-featured-image.alignfull {
+  max-width: none;
+}
+.wp-block-post-featured-image.alignwide, .wp-block-post-featured-image.is-style-default.alignwide, .wp-block-post-featured-image.is-style-medium.alignwide, .wp-block-post-featured-image.alignfull {
+  margin-right: auto;
+  margin-left: auto;
+}
+.wp-block-post-featured-image.is-style-default.alignfull, .wp-block-post-featured-image.is-style-medium.alignfull {
+  margin-right: 0;
+  margin-left: 0;
+}
+.page .wp-block-post-featured-image.alignleft,
+.single .wp-block-post-featured-image.alignleft {
+  margin-right: var(--wp--style--root--padding-left);
+}
+.page .wp-block-post-featured-image.alignright,
+.single .wp-block-post-featured-image.alignright {
+  margin-left: var(--wp--style--root--padding-right);
+}
+.page .wp-block-post-featured-image.is-style-full-width, .page .wp-block-post-featured-image.is-style-full-width.alignleft, .page .wp-block-post-featured-image.is-style-full-width.alignright,
+.single .wp-block-post-featured-image.is-style-full-width,
+.single .wp-block-post-featured-image.is-style-full-width.alignleft,
+.single .wp-block-post-featured-image.is-style-full-width.alignright {
+  margin-right: var(--wp--style--root--padding-left);
+  margin-left: var(--wp--style--root--padding-right);
+  max-width: calc(100% - 3rem);
+}
+.page .wp-block-post-featured-image img,
+.single .wp-block-post-featured-image img {
+  max-height: 600px;
+}
+@media (min-width: 1366px) {
+  .wp-block-post-featured-image.alignleft {
+    margin-right: 20%;
+  }
+  .wp-block-post-featured-image.alignright {
+    margin-left: 20%;
+  }
+  .wp-block-post-featured-image.alignwide {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  .wp-block-post-featured-image.alignfull {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .wp-block-post-featured-image.is-style-default.alignwide, .wp-block-post-featured-image.is-style-medium.alignwide {
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  .blog .wp-block-post-featured-image.alignleft {
+    margin-right: 0;
+  }
+  .blog .wp-block-post-featured-image.alignright {
+    margin-left: 0;
+  }
+  .page .wp-block-post-featured-image.alignleft,
+  .single .wp-block-post-featured-image.alignleft {
+    margin-right: 20%;
+  }
+  .page .wp-block-post-featured-image.alignright,
+  .single .wp-block-post-featured-image.alignright {
+    margin-left: 20%;
+  }
+  .page .wp-block-post-featured-image:not(.is-style-full-width),
+  .single .wp-block-post-featured-image:not(.is-style-full-width) {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .sticky .wp-block-post-featured-image.alignleft {
+    margin-right: calc(10% - 1em);
+  }
+  .sticky .wp-block-post-featured-image.alignright {
+    margin-left: calc(10% - 1em);
+  }
+  .sticky .wp-block-post-featured-image.alignwide {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .sticky .wp-block-post-featured-image.alignfull {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .sticky .wp-block-post-featured-image.is-style-full-width {
+    margin-right: calc(10% - 1em);
+    margin-left: calc(10% - 1em);
+    max-width: calc(90% - 2em);
+  }
+}

@@ -1,3 +1,6 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./resources/scss/block-css/core/comment-template.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
 .wp-block-comment-template ol {
   padding-left: 1rem;
 }
@@ -5,6 +8,7 @@
 .is-style-card .wp-block-comments a {
   color: var(--wp--preset--color--link-alt);
 }
+
 .is-style-card .wp-block-comments a:hover, .is-style-card .wp-block-comments a:focus {
   color: var(--wp--preset--color--link-alt-hover);
 }
@@ -15,3 +19,5 @@
   color: var(--wp--custom--color--card-fg-dark);
   padding: 0.5em;
 }
+
+/*# sourceMappingURL=comment-template.css.map*/

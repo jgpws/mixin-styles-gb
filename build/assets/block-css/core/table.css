@@ -1,3 +1,6 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./resources/scss/block-css/core/table.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
 /* ---- Table block ---- */
 .wp-block-table table {
   background-color: var(--wp--custom--color--opacity-6-bg);
@@ -19,7 +22,6 @@
   margin-top: 0.5em;
   margin-bottom: 1em;
 }
-
 .mxs-light-bg .wp-block-table table {
   background-color: rgba(0, 0, 0, 0.0625);
   color: var(--wp--custom--color--card-fg-dark);
@@ -34,7 +36,6 @@
 .mxs-light-bg .wp-block-table tfoot {
   border-top-color: rgba(0, 0, 0, 0.125);
 }
-
 .mxs-dark-bg .wp-block-table table {
   background-color: rgba(255, 255, 255, 0.0625);
   color: var(--wp--custom--color--card-fg-light);
@@ -49,7 +50,6 @@
 .mxs-dark-bg .wp-block-table tfoot {
   border-top-color: rgba(255, 255, 255, 0.125);
 }
-
 .wp-block-table.is-style-stripes {
   border-bottom-color: rgba(255, 255, 255, 0.125);
 }
@@ -59,7 +59,8 @@
 .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
   background-color: rgba(255, 255, 255, 0.0625);
 }
-
 .mxs-light-bg .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.0625);
 }
+
+/*# sourceMappingURL=table.css.map*/

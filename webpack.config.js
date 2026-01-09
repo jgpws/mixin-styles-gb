@@ -1,38 +1,81 @@
 // WordPress webpack config.
 const defaultConfig = require("@wordpress/scripts/config/webpack.config");
+const glob = require("glob");
+const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 // Plugins.
 const RemoveEmptyScriptsPlugin = require("webpack-remove-empty-scripts");
 
 // Utilities
 const path = require("path");
+const { getWebpackEntryPoints } = require("@wordpress/scripts/utils/config");
+
+// Find all SCSS files in the resources/block-css directory
+const blockScssFiles = glob
+  .sync("./resources/scss/block-css/core/*.scss")
+  .reduce((acc, file) => {
+    // Create a name for the entry point (e.g., 'global' for 'global.scss')
+    const entryName = path.basename(file, path.extname(file));
+    // Prefixing with 'block-css/core' tells webpack to output to build/assets/block-css/core.
+    acc[`block-css/core/${entryName}`] = file;
+    return acc;
+  }, {});
 
 // Add any new entry points by extending the webpack config.
 module.exports = {
   ...defaultConfig,
   ...{
     entry: {
-      editor: path.resolve(process.cwd(), "resources/js", "editor.js"),
-      "block-styles": path.resolve(
+      // JavaScript
+      "js/editor": path.resolve(process.cwd(), "resources/js", "editor.js"),
+      "js/block-styles": path.resolve(
         process.cwd(),
         "resources/js",
         "block-styles.js",
       ),
-      "block-variations": path.resolve(
+      "js/block-variations": path.resolve(
         process.cwd(),
         "resources/js",
         "block-variations.js",
       ),
-      "mixin-styles-gb-scripts": path.resolve(
+      "js/mixin-styles-gb-scripts": path.resolve(
         process.cwd(),
         "resources/js",
         "mixin-styles-gb-scripts.js",
       ),
-      "mixin-styles-gb-contrast": path.resolve(
+      "js/mixin-styles-gb-contrast": path.resolve(
         process.cwd(),
         "resources/js",
         "mixin-styles-gb-contrast.js",
       ),
+      // Sass
+      "css/theme/base-styles": path.resolve(
+        process.cwd(),
+        "resources/scss/theme",
+        "base-styles.scss",
+      ),
+      "css/theme/layout": path.resolve(
+        process.cwd(),
+        "resources/scss/theme",
+        "layout.scss",
+      ),
+      "css/theme/blocks": path.resolve(
+        process.cwd(),
+        "resources/scss/theme",
+        "blocks.scss",
+      ),
+      "css/theme/animations": path.resolve(
+        process.cwd(),
+        "resources/scss/theme",
+        "animations.scss",
+      ),
+      "css/editor-overrides": path.resolve(
+        process.cwd(),
+        "resources/scss",
+        "editor-overrides.scss",
+      ),
+      ...getWebpackEntryPoints(),
+      ...blockScssFiles,
     },
     plugins: [
       // Include WP's plugin config.
@@ -42,6 +85,22 @@ module.exports = {
       // set it after WP has generated its `*.asset.php` file.
       new RemoveEmptyScriptsPlugin({
         stage: RemoveEmptyScriptsPlugin.STAGE_AFTER_PROCESS_PLUGINS,
+      }),
+
+      // BrowserSync
+      new BrowserSyncPlugin({
+        proxy: "localhost/wordpress", // Your local WP dev URL
+        files: [
+          "build/assets/css/**/*.css",
+          "build/assets/block-css/**/*.css",
+          "build/assets/js/*.js",
+          "build/patterns/*.php",
+          "build/templates/*.html",
+          "build/parts/*.html",
+        ],
+        notify: false,
+        // Port to access the synced site
+        port: 3000,
       }),
     ],
   },

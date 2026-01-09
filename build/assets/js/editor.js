@@ -219,7 +219,7 @@ function Edit(props) {
   });
 }
 
-// Add a filter for BlockEdit to render only our
+// Add a filter for BlockEdit to render only our Inspector Controls
 (0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_0__.addFilter)("editor.BlockEdit", "mixin-styles-gb/add-light-dark-bg-class", (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigherOrderComponent)(BlockEdit => {
   return props => {
     const {

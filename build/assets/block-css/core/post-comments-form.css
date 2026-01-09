@@ -1,3 +1,6 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./resources/scss/block-css/core/post-comments-form.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
 /* ---- Post Comments form ---- */
 #author,
 #email,
@@ -5,7 +8,6 @@
 #comment {
   margin: 0;
 }
-
 .comment-form-comment,
 .comment-form-author,
 .comment-form-email,
@@ -13,26 +15,21 @@
   display: flex;
   flex-direction: column;
 }
-
 #commentform label {
   font-weight: bold;
   color: var(--medium-gray);
   width: 100%;
 }
-
 #commentform p {
   clear: both;
 }
-
 #cancel-comment-reply-link {
   margin-left: 0.5em;
 }
-
 .form-allowed-tags {
   clear: both;
   padding-top: 1em;
 }
-
 @media (min-width: 600px) {
   .comment-form-comment,
   .comment-form-author,
@@ -54,3 +51,5 @@
     flex-basis: 33%;
   }
 }
+
+/*# sourceMappingURL=post-comments-form.css.map*/
