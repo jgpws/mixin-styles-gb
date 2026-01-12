@@ -413,13 +413,13 @@
               "fontFamily": "Jura",
               "fontStyle": "normal",
               "fontWeight": "400",
-              "src": "file:./assets/fonts/jura/jura-400-normal.woff2"
+              "src": "file:./build/assets/fonts/jura/jura-400-normal.woff2"
             },
             {
               "fontFamily": "Jura",
               "fontStyle": "normal",
               "fontWeight": "700",
-              "src": "file:./assets/fonts/jura/jura-700-normal.woff2"
+              "src": "file:./build/assets/fonts/jura/jura-700-normal.woff2"
             }
           ],
           "fontFamily": "Jura, sans-serif",
@@ -433,7 +433,7 @@
               "fontStyle": "normal",
               "fontWeight": "400",
               "src": [
-                "file:./assets/fonts/source-code-pro/source-code-pro-400-normal.woff2"
+                "file:./build/assets/fonts/source-code-pro/source-code-pro-400-normal.woff2"
               ]
             },
             {
@@ -441,7 +441,7 @@
               "fontStyle": "normal",
               "fontWeight": "700",
               "src": [
-                "file:./assets/fonts/source-code-pro/source-code-pro-700-normal.woff2"
+                "file:./build/assets/fonts/source-code-pro/source-code-pro-700-normal.woff2"
               ]
             }
           ],
@@ -456,7 +456,7 @@
               "fontStyle": "normal",
               "fontWeight": "400",
               "src": [
-                "file:./assets/fonts/source-sans-3/source-sans-3-400-normal.woff2"
+                "file:./build/assets/fonts/source-sans-3/source-sans-3-400-normal.woff2"
               ]
             },
             {
@@ -464,7 +464,7 @@
               "fontStyle": "normal",
               "fontWeight": "700",
               "src": [
-                "file:./assets/fonts/source-sans-3/source-sans-3-700-normal.woff2"
+                "file:./build/assets/fonts/source-sans-3/source-sans-3-700-normal.woff2"
               ]
             },
             {
@@ -472,7 +472,7 @@
               "fontStyle": "normal",
               "fontWeight": "900",
               "src": [
-                "file:./assets/fonts/source-sans-3/source-sans-3-900-normal.woff2"
+                "file:./build/assets/fonts/source-sans-3/source-sans-3-900-normal.woff2"
               ]
             },
             {
@@ -480,7 +480,7 @@
               "fontStyle": "italic",
               "fontWeight": "400",
               "src": [
-                "file:./assets/fonts/source-sans-3/source-sans-3-400-italic.woff2"
+                "file:./build/assets/fonts/source-sans-3/source-sans-3-400-italic.woff2"
               ]
             }
           ],
@@ -494,25 +494,33 @@
               "fontFamily": "Poppins",
               "fontStyle": "normal",
               "fontWeight": "400",
-              "src": ["file:./assets/fonts/poppins/poppins-400-normal.woff2"]
+              "src": [
+                "file:./build/assets/fonts/poppins/poppins-400-normal.woff2"
+              ]
             },
             {
               "fontFamily": "Poppins",
               "fontStyle": "normal",
               "fontWeight": "700",
-              "src": ["file:./assets/fonts/poppins/poppins-700-normal.woff2"]
+              "src": [
+                "file:./build/assets/fonts/poppins/poppins-700-normal.woff2"
+              ]
             },
             {
               "fontFamily": "Poppins",
               "fontStyle": "italic",
               "fontWeight": "400",
-              "src": ["file:./assets/fonts/poppins/poppins-400-italic.woff2"]
+              "src": [
+                "file:./build/assets/fonts/poppins/poppins-400-italic.woff2"
+              ]
             },
             {
               "fontFamily": "Poppins",
               "fontStyle": "italic",
               "fontWeight": "700",
-              "src": ["file:./assets/fonts/poppins/poppins-700-italic.woff2"]
+              "src": [
+                "file:./build/assets/fonts/poppins/poppins-700-italic.woff2"
+              ]
             }
           ],
           "fontFamily": "Poppins, sans-serif",
@@ -526,7 +534,7 @@
               "fontStyle": "normal",
               "fontWeight": "400",
               "src": [
-                "file:./assets/fonts/playfair-display/playfair-display-400-normal.woff2"
+                "file:./build/assets/fonts/playfair-display/playfair-display-400-normal.woff2"
               ]
             },
             {
@@ -534,7 +542,7 @@
               "fontStyle": "normal",
               "fontWeight": "700",
               "src": [
-                "file:./assets/fonts/playfair-display/playfair-display-700-normal.woff2"
+                "file:./build/assets/fonts/playfair-display/playfair-display-700-normal.woff2"
               ]
             },
             {
@@ -542,7 +550,7 @@
               "fontStyle": "italic",
               "fontWeight": "400",
               "src": [
-                "file:./assets/fonts/playfair-display/playfair-display-400-italic.woff2"
+                "file:./build/assets/fonts/playfair-display/playfair-display-400-italic.woff2"
               ]
             },
             {
@@ -550,7 +558,7 @@
               "fontStyle": "italic",
               "fontWeight": "700",
               "src": [
-                "file:./assets/fonts/playfair-display/playfair-display-700-italic.woff2"
+                "file:./build/assets/fonts/playfair-display/playfair-display-700-italic.woff2"
               ]
             }
           ],
@@ -565,7 +573,7 @@
               "fontStyle": "normal",
               "fontWeight": "400",
               "src": [
-                "file:./assets/fonts/eb-garamond/eb-garamond-400-normal.woff2"
+                "file:./build/assets/fonts/eb-garamond/eb-garamond-400-normal.woff2"
               ]
             },
             {
@@ -573,7 +581,7 @@
               "fontStyle": "normal",
               "fontWeight": "700",
               "src": [
-                "file:./assets/fonts/eb-garamond/eb-garamond-700-normal.woff2"
+                "file:./build/assets/fonts/eb-garamond/eb-garamond-700-normal.woff2"
               ]
             },
             {
@@ -581,7 +589,7 @@
               "fontStyle": "italic",
               "fontWeight": "400",
               "src": [
-                "file:./assets/fonts/eb-garamond/eb-garamond-400-italic.woff2"
+                "file:./build/assets/fonts/eb-garamond/eb-garamond-400-italic.woff2"
               ]
             },
             {
@@ -589,7 +597,7 @@
               "fontStyle": "italic",
               "fontWeight": "700",
               "src": [
-                "file:./assets/fonts/eb-garamond/eb-garamond-700-italic.woff2"
+                "file:./build/assets/fonts/eb-garamond/eb-garamond-700-italic.woff2"
               ]
             }
           ],
@@ -604,7 +612,7 @@
               "fontStyle": "normal",
               "fontWeight": "400",
               "src": [
-                "file:./assets/fonts/noticia-text/noticia-text-400-normal.woff2"
+                "file:./build/assets/fonts/noticia-text/noticia-text-400-normal.woff2"
               ]
             },
             {
@@ -612,7 +620,7 @@
               "fontStyle": "normal",
               "fontWeight": "700",
               "src": [
-                "file:./assets/fonts/noticia-text/noticia-text-700-normal.woff2"
+                "file:./build/assets/fonts/noticia-text/noticia-text-700-normal.woff2"
               ]
             },
             {
@@ -620,7 +628,7 @@
               "fontStyle": "italic",
               "fontWeight": "400",
               "src": [
-                "file:./assets/fonts/noticia-text/noticia-text-400-italic.woff2"
+                "file:./build/assets/fonts/noticia-text/noticia-text-400-italic.woff2"
               ]
             },
             {
@@ -628,7 +636,7 @@
               "fontStyle": "italic",
               "fontWeight": "700",
               "src": [
-                "file:./assets/fonts/noticia-text/noticia-text-700-italic.woff2"
+                "file:./build/assets/fonts/noticia-text/noticia-text-700-italic.woff2"
               ]
             }
           ],
@@ -643,7 +651,7 @@
               "fontStyle": "normal",
               "fontWeight": "400",
               "src": [
-                "file:./assets/fonts/birthstone/birthstone-400-normal.woff2"
+                "file:./build/assets/fonts/birthstone/birthstone-400-normal.woff2"
               ]
             }
           ],
