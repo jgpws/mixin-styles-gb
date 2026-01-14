@@ -78,6 +78,11 @@
     }
   }
 
+  .wp-block-navigation.is-style-default:has(.always-shown) {
+    border-top: transparent;
+    border-bottom: transparent;
+  }
+
   .wp-block-navigation.wp-block-navigation__container:not(.is-style-tabs):not(
       .is-style-wide-tab
     ).is-responsive {

@@ -6,16 +6,12 @@
   "scripts": {
     "start": "wp-scripts start --webpack-src-dir=resources --output-path=build/assets",
     "build": "wp-scripts build --webpack-src-dir=resources --output-path=build/assets",
-    "sass-dev": "sass --embed-sources --watch --update --style=expanded sass/assets:build/assets",
-    "sass-prod": "sass --no-source-map sass/assets/:build/assets",
+    "postbuild": "npm run copy-dist",
     "autoprefix": "postcss build/*.css --use autoprefixer -d build/ --watch",
-    "minifyBlockCSS": "cleancss --batch --batch-suffix '.min' build/assets/block-css/**/*.css !build/assets/block-css/**/*.min.css",
-    "minifyCSS": "cleancss --batch --batch-suffix '.min' build/assets/css/**/*.css !build/assets/css/**/*.min.css",
-    "minifyEdOverrides": "cleancss -o build/assets/css/editor-overrides.min.css build/assets/css/editor-overrides.css",
-    "remove-sourcemaps": "find ./build/assets -name '*.map' -delete",
-    "serve": "browser-sync start --proxy 'localhost/wordpress/' --files 'build/templates' 'sass'",
-    "develop": "concurrently 'npm:sass-dev' 'npm:autoprefix' 'npm:serve' --kill-others",
-    "produce": "concurrently 'npm:sass-prod' 'npm:minifyBlockCSS' 'npm:minifyCSS' 'npm:minifyEdOverrides' 'npm:remove-sourcemaps'"
+    "clean-dist": "shx rm -rf dist",
+    "copy-dist-folders": "shx mkdir -p dist && shx cp -r build resources styles parts patterns templates dist",
+    "copy-dist-files": "shx mkdir -p dist && shx cp -r *.php style.css theme.json LICENSE readme.txt screenshot.png package.json webpack.config.js dist",
+    "copy-dist": "concurrently 'npm:clean-dist' 'npm:copy-dist-folders' 'npm:copy-dist-files'"
   },
   "repository": {
     "type": "git",
@@ -35,6 +31,7 @@
     "path": "^0.12.7",
     "renamer": "^4.0.0",
     "sass": "^1.62.1",
+    "shx": "^0.4.0",
     "webpack-remove-empty-scripts": "^1.1.1"
   },
   "dependencies": {

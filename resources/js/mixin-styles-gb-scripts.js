@@ -63,10 +63,10 @@
 
   window.addEventListener("load", () => {
     slideDownHeader();
-    removeBordersFromNavWithButtonOnly();
+    //removeBordersFromNavWithButtonOnly();
   });
 
-  window.addEventListener("resize", () => {
+  /*window.addEventListener("resize", () => {
     removeBordersFromNavWithButtonOnly();
-  });
+  });*/
 })();
