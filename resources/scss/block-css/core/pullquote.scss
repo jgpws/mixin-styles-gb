@@ -1,17 +1,58 @@
 .wp-block-pullquote {
   blockquote {
-    background: url(../../../images/curlyquotes-translucent-white.png) top left
-      no-repeat;
     font-style: italic;
     min-height: 82px;
     padding-top: 16px;
     padding-left: 82px !important;
   }
+
+  &.is-style-element-outline {
+    border: 1px solid;
+  }
+
+  &.is-style-element-shadow-soft {
+    box-shadow: 6px 6px 24px var(--black-12pcnt);
+  }
+
+  &.is-style-element-shadow {
+    box-shadow: 6px 6px 12px var(--black-25pcnt);
+  }
+
+  &.is-style-element-shadow-backlight {
+    box-shadow:
+      0px -6px 12px var(--white-50pcnt),
+      0px 6px 12px var(--white-50pcnt);
+  }
+
+  &.is-style-element-outline,
+  &.is-style-element-shadow-soft,
+  &.is-style-element-shadow,
+  &.is-style-element-shadow-backlight {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
-.mxs-light-bg .wp-block-pullquote {
-  blockquote {
-    background: url(../../../images/curlyquotes-translucent-black.png) top left
-      no-repeat;
+.wp-block-pullquote {
+  .mxs-dark-theme-bg &,
+  .mxs-light-theme-bg .mxs-dark-bg & {
+    &.is-style-element-outline {
+      border-color: var(--white-25pcnt);
+    }
+
+    blockquote {
+      background: url(../../../images/curlyquotes-translucent-white.png) top left no-repeat;
+    }
+  }
+
+  .mxs-light-theme-bg &,
+  .mxs-dark-theme-bg .mxs-light-bg & {
+    &.is-style-element-outline {
+      border-color: var(--black-25pcnt);
+    }
+
+    blockquote {
+      background: url(../../../images/curlyquotes-translucent-black.png) top left no-repeat;
+    }
   }
 }

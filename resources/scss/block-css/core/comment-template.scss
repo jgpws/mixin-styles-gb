@@ -2,19 +2,37 @@
   padding-left: 1rem;
 }
 
-.is-style-card .wp-block-comments a {
-  color: var(--wp--preset--color--link-alt);
+.wp-block-comments input[type="submit"] {
+  border-radius: 0.5em;
+}
 
-  &:hover,
-  &:focus {
-    color: var(--wp--preset--color--link-alt-hover);
+.wp-block-comments {
+  .mxs-dark-theme-bg .mxs-light-bg & {
+    a {
+      color: var(--wp--preset--color--mxs-link-alt);
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--wp--preset--color--mxs-link-alt-hover);
+    }
+  }
+
+  .mxs-light-theme-bg .mxs-dark-bg & {
+    a {
+      color: var(--wp--preset--color--mxs-link);
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--wp--preset--color--mxs-link-hover);
+    }
+  }
+
+  .mxs-dark-theme-bg &,
+  .mxs-light-theme-bg .mxs-dark-bg & {
+    input[type="submit"] {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
   }
 }
-
-.wp-block-comments input[type="submit"] {
-  border: 1px solid var(--wp--preset--color--background);
-  border-radius: 0.5em;
-  color: var(--wp--custom--color--card-fg-dark);
-  padding: 0.5em;
-}
-

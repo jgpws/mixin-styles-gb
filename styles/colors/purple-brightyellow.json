@@ -1,18 +1,18 @@
 {
-  "version": 2,
-  "title": "Blue/Orange",
+  "version": 3,
+  "title": "Purple/Bright Yellow",
   "settings": {
     "color": {
       "palette": [
         {
-          "slug": "background",
-          "color": "#2040c0",
-          "name": "Background"
+          "slug": "base",
+          "color": "#820bbb",
+          "name": "Base"
         },
         {
-          "slug": "foreground",
+          "slug": "contrast",
           "color": "#ffffff",
-          "name": "Foreground"
+          "name": "Contrast"
         },
         {
           "color": "#f5f5f5",
@@ -26,37 +26,47 @@
         },
         {
           "slug": "primary",
-          "color": "#2040c0",
+          "color": "#820bbb",
           "name": "Primary"
         },
         {
+          "slug": "primary-semitransparent",
+          "color": "rgb(130 11 187 / 0.5)",
+          "name": "Primary (Semi-Transparent)"
+        },
+        {
+          "slug": "complementary-semitransparent",
+          "color": "rgb(248 254 3 / 0.5)",
+          "name": "Complementary (Semi-Transparent)"
+        },
+        {
           "slug": "secondary",
-          "color": "#d1d9f9",
+          "color": "#efb7fb",
           "name": "Secondary"
         },
         {
           "slug": "tertiary",
-          "color": "#ffb704",
+          "color": "#f8fe03",
           "name": "Tertiary"
         },
         {
           "slug": "mxs-link",
-          "color": "#c9effa",
+          "color": "#d5c9f8",
           "name": "Link"
         },
         {
           "slug": "mxs-link-hover",
-          "color": "#c5aff3",
+          "color": "#fec8e5",
           "name": "Link Hover"
         },
         {
           "slug": "mxs-link-alt",
-          "color": "#0f90b5",
+          "color": "#4317bf",
           "name": "Link Alt"
         },
         {
           "slug": "mxs-link-alt-hover",
-          "color": "#511dc1",
+          "color": "#d90274",
           "name": "Link Alt Hover"
         }
       ],
@@ -67,14 +77,14 @@
           "name": "Gray"
         },
         {
-          "slug": "orange",
-          "gradient": "linear-gradient(to bottom, #ffffff 0%, #ffb704 100%)",
-          "name": "Orange"
+          "slug": "bright-yellow",
+          "gradient": "linear-gradient(to bottom, #ffffff 0%, #f8fe03 100%)",
+          "name": "Bright Yellow"
         },
         {
-          "slug": "teal",
-          "gradient": "linear-gradient(to bottom, #ffffff 0%, #0d7f9f 100%)",
-          "name": "Teal"
+          "slug": "magenta",
+          "gradient": "linear-gradient(to bottom, #ffffff 0%, #cd00cd 100%)",
+          "name": "Magenta"
         },
         {
           "slug": "violet",
@@ -89,28 +99,28 @@
           "palette": [
             {
               "slug": "accent-1",
-              "color": "#0d7f9f",
-              "name": "Teal (Accent 1)"
+              "color": "#2040c0",
+              "name": "Blue (Accent 1)"
             },
             {
               "slug": "accent-2",
-              "color": "#4811ae",
-              "name": "Violet (Accent 2)"
+              "color": "#cd00cd",
+              "name": "Magenta (Accent 2)"
             },
             {
               "slug": "accent-3",
-              "color": "#c9effa",
-              "name": "Light Teal (Accent 3)"
+              "color": "#d5c9f8",
+              "name": "Pale Blue (Accent 3)"
             },
             {
               "slug": "accent-4",
-              "color": "#c5aff3",
-              "name": "Light Violet (Accent 4)"
+              "color": "#fec8e5",
+              "name": "Soft Pink (Accent 4)"
             },
             {
               "slug": "accent-5",
-              "color": "#ffb704",
-              "name": "Orange (Accent 5)"
+              "color": "#f8fe03",
+              "name": "Bright Yellow (Accent 5)"
             },
             {
               "slug": "text-dark",
@@ -126,28 +136,28 @@
           "gradients": [
             {
               "slug": "translucent-1",
-              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(13, 127, 159, 0.5) 100%)",
-              "name": "Teal (Translucent 1)"
+              "gradient": "linear-gradient(to bottom, rgb(255 255 255 / 0.5) 0%, rgb(32 64 192 / 0.5) 100%)",
+              "name": "Blue (Translucent 1)"
             },
             {
               "slug": "translucent-2",
-              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(72, 17, 174, 0.5) 100%)",
-              "name": "Violet (Translucent 2)"
+              "gradient": "linear-gradient(to bottom, rgb(255 255 255 / 0.5) 0%, rgb(205 0 205 / 0.5) 100%)",
+              "name": "Magenta (Translucent 2)"
             },
             {
               "slug": "translucent-3",
-              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(201, 239, 250, 0.5) 100%)",
-              "name": "Light Teal (Translucent 3)"
+              "gradient": "linear-gradient(to bottom, rgb(255 255 255 / 0.5) 0%, rgb(207 217 249 / 0.5) 100%)",
+              "name": "Pale Blue (Translucent 3)"
             },
             {
               "slug": "translucent-4",
-              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(197, 175, 243, 0.5) 100%)",
-              "name": "Light Violet (Translucent 4)"
+              "gradient": "linear-gradient(to bottom, rgb(255 255 255 / 0.5) 0%, rgb(254 200 229 / 0.5) 100%)",
+              "name": "Soft Pink (Translucent 4)"
             },
             {
               "slug": "translucent-5",
-              "gradient": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 183, 4, 0.5) 100%)",
-              "name": "Orange (Translucent 5)"
+              "gradient": "linear-gradient(to bottom, rgb(255 255 255 / 0.5) 0%, rgb(248 254 3 / 0.5) 100%)",
+              "name": "Bright Yellow (Translucent 5)"
             }
           ]
         }
@@ -157,28 +167,28 @@
           "palette": [
             {
               "slug": "accent-1",
-              "color": "#0d7f9f",
-              "name": "Teal (Accent 1)"
+              "color": "#2040c0",
+              "name": "Blue (Accent 1)"
             },
             {
               "slug": "accent-2",
-              "color": "#4811ae",
-              "name": "Violet (Accent 2)"
+              "color": "#cd00cd",
+              "name": "Magenta (Accent 2)"
             },
             {
               "slug": "accent-3",
-              "color": "#ffb704",
-              "name": "Orange (Accent 3)"
+              "color": "#f8fe03",
+              "name": "Bright Yellow (Accent 3)"
             },
             {
               "slug": "accent-4",
-              "color": "#c9effa",
-              "name": "Light Teal (Accent 4)"
+              "color": "#d5c9f8",
+              "name": "Pale Blue (Accent 4)"
             },
             {
               "slug": "accent-5",
-              "color": "#c5aff3",
-              "name": "Light Violet (Accent 5)"
+              "color": "#fec8e5",
+              "name": "Soft Pink (Accent 5)"
             },
             {
               "slug": "text-dark",
@@ -198,23 +208,28 @@
           "palette": [
             {
               "slug": "accent-1",
-              "color": "#0d7f9f",
-              "name": "Teal (Accent 1)"
+              "color": "#2040c0",
+              "name": "Blue (Accent 1)"
             },
             {
               "slug": "accent-2",
-              "color": "#4811ae",
-              "name": "Violet (Accent 2)"
+              "color": "#cd00cd",
+              "name": "Magenta (Accent 2)"
             },
             {
               "slug": "accent-3",
-              "color": "#c9effa",
-              "name": "Light Teal (Accent 3)"
+              "color": "#d5c9f8",
+              "name": "Pale Blue (Accent 3)"
             },
             {
               "slug": "accent-4",
-              "color": "#c5aff3",
-              "name": "Light Violet (Accent 4)"
+              "color": "#fec8e5",
+              "name": "Soft Pink (Accent 4)"
+            },
+            {
+              "slug": "accent-5",
+              "color": "#f8fe03",
+              "name": "Bright Yellow (Accent 5)"
             },
             {
               "slug": "text-dark",
@@ -228,18 +243,6 @@
             }
           ]
         }
-      }
-    },
-    "custom": {
-      "color": {
-        "border": "rgba(32, 64, 192, 0.5)",
-        "tab-fg": "#191919",
-        "accent-3-fg": "#000000",
-        "flat-button-fg": "#ffffff"
-      },
-      "gradient": {
-        "light-to-dark": "linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 183, 4, 0.5) 100%)",
-        "dark-to-light": "linear-gradient(to bottom, rgba(255, 183, 4, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%)"
       }
     }
   }

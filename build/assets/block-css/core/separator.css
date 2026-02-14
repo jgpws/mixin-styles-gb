@@ -12,5 +12,11 @@
   border-bottom-width: 2px;
   width: 80%;
 }
+.mxs-light-theme-bg .wp-block-separator:not(.is-style-dots), .mxs-dark-theme-bg .mxs-light-bg .wp-block-separator:not(.is-style-dots) {
+  border-bottom: 2px solid var(--black-12pcnt);
+}
+.mxs-dark-theme-bg .wp-block-separator:not(.is-style-dots), .mxs-light-theme-bg .mxs-dark-bg .wp-block-separator:not(.is-style-dots) {
+  border-bottom: 2px solid var(--white-12pcnt);
+}
 
 /*# sourceMappingURL=separator.css.map*/

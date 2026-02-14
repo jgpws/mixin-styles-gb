@@ -34,35 +34,9 @@
     const observer = new IntersectionObserver(onIntersect);
     mainContent.forEach(content => observer.observe(content));
   }
-  function removeBordersFromNavWithButtonOnly() {
-    /**
-     * Temporary fix until CSS :has has wide browser support.
-     * Removes the borders from .wp-block-navigation
-     * when the child button has class .always-shown.
-     */
-
-    // Check for the width of the screen
-    var screenWidth = window.matchMedia("(min-width: 600px)");
-    let el = document.querySelector(".wp-block-navigation__responsive-container-open.always-shown"),
-      elParent = null;
-    if (screenWidth.matches) {
-      //console.log('Screen width is greater than 600px');
-
-      if (el) {
-        elParent = el.parentNode;
-        elParent.style.borderTop = "0px solid transparent";
-        elParent.style.borderBottom = "0px solid transparent";
-      }
-    }
-  }
   window.addEventListener("load", () => {
     slideDownHeader();
-    //removeBordersFromNavWithButtonOnly();
   });
-
-  /*window.addEventListener("resize", () => {
-    removeBordersFromNavWithButtonOnly();
-  });*/
 })();
 /******/ })()
 ;

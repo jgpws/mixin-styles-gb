@@ -49,7 +49,7 @@ input[type="week"],
 select,
 textarea {
   background-color: var(--almost-white);
-  border: 1px solid var(--wp--custom--color--border);
+  border: 1px solid var(--wp--preset--color--primary-semitransparent);
   border-radius: 0.5em;
 }
 
@@ -78,12 +78,8 @@ textarea.editor-post-title__input:focus {
 /* */
 
 /* Navigation / Header Navigation */
-.wp-block-navigation__responsive-container.is-menu-open
-  .wp-block-navigation__responsive-container-content
-  .wp-block-navigation__container,
-.wp-block-navigation__responsive-container.is-menu-open
-  .wp-block-navigation__responsive-container-content
-  .wp-block-navigation__submenu-container,
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container,
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container,
 .wp-block-navigation,
 .wp-block-navigation .wp-block-page-list,
 .wp-block-navigation__container.is-layout-flex,
@@ -133,41 +129,20 @@ a.wp-block-navigation-item__content {
   border-top-right-radius: 0;
 }
 
-.wp-block-navigation:not(
-    .is-style-flat-nav
-  ).has-background.has-accent-1-background-color,
-.wp-block-navigation:not(
-    .is-style-flat-nav
-  ).has-background.has-accent-2-background-color,
-.wp-block-navigation:not(
-    .is-style-flat-nav
-  ).has-background.has-accent-3-background-color,
-.wp-block-navigation:not(
-    .is-style-flat-nav
-  ).has-background.has-accent-4-background-color,
-.wp-block-navigation:not(
-    .is-style-flat-nav
-  ).has-background.has-accent-5-background-color,
-.wp-block-navigation:not(
-    .is-style-flat-nav
-  ).has-background.has-accent-6-background-color,
-.wp-block-navigation:not(
-    .is-style-flat-nav
-  ).has-background.has-accent-7-background-color,
-.wp-block-navigation:not(
-    .is-style-flat-nav
-  ).has-background.has-accent-8-background-color,
-.wp-block-navigation:not(
-    .is-style-flat-nav
-  ).has-background.has-text-dark-background-color,
-.wp-block-navigation:not(
-    .is-style-flat-nav
-  ).has-background.has-text-light-background-color {
+.wp-block-navigation:not(.is-style-flat-nav).has-background.has-accent-1-background-color,
+.wp-block-navigation:not(.is-style-flat-nav).has-background.has-accent-2-background-color,
+.wp-block-navigation:not(.is-style-flat-nav).has-background.has-accent-3-background-color,
+.wp-block-navigation:not(.is-style-flat-nav).has-background.has-accent-4-background-color,
+.wp-block-navigation:not(.is-style-flat-nav).has-background.has-accent-5-background-color,
+.wp-block-navigation:not(.is-style-flat-nav).has-background.has-accent-6-background-color,
+.wp-block-navigation:not(.is-style-flat-nav).has-background.has-accent-7-background-color,
+.wp-block-navigation:not(.is-style-flat-nav).has-background.has-accent-8-background-color,
+.wp-block-navigation:not(.is-style-flat-nav).has-background.has-text-dark-background-color,
+.wp-block-navigation:not(.is-style-flat-nav).has-background.has-text-light-background-color {
   background-color: transparent !important;
 }
 
 .wp-block-search__button.wp-element-button {
-  background-color: var(--wp--preset--color--tertiary);
   border-width: 1px;
   border-radius: 0.5em;
   color: var(--wp--preset--color--black);
@@ -182,7 +157,7 @@ a.wp-block-navigation-item__content {
 
 .is-style-search-header .wp-block-search__button.wp-element-button {
   background-color: var(--almost-white) !important;
-  border-color: var(--wp--custom--color--border);
+  border-color: var(--wp--preset--color--primary-semitransparent);
   padding: 0.25em 0.5em;
 }
 
@@ -239,6 +214,12 @@ a.wp-block-navigation-item__content {
   border-color: var(--medium-gray);
 }
 
+.wp-block-categories {
+  ul {
+    padding-left: 1rem;
+  }
+}
+
 .wp-block-code {
   border: transparent;
 }
@@ -254,9 +235,10 @@ a.wp-block-navigation-item__content {
   margin: 0 1.5em;
 }
 
-.wp-block-latest-posts li > a {
-  font-family: var(--wp--preset--font-family--eb-garamond);
-  font-size: 1.25rem;
+ul.wp-block-list .wp-block-list-item {
+  > div {
+    display: inline-block;
+  }
 }
 
 .wp-block-pullquote {

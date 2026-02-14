@@ -1,0 +1,91 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Source Sans 3",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFace": [
+            {
+              "fontFamily": "\"Source Sans 3\"",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": ["file:./build/assets/fonts/source-sans-3/source-sans-3-400-normal.woff2"]
+            },
+            {
+              "fontFamily": "\"Source Sans 3\"",
+              "fontStyle": "italic",
+              "fontWeight": "400",
+              "src": ["file:./build/assets/fonts/source-sans-3/source-sans-3-400-italic.woff2"]
+            }
+          ],
+          "fontFamily": "\"Source Sans 3\", sans-serif",
+          "name": "Source Sans 3",
+          "slug": "body"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "\"Source Sans 3\"",
+              "fontStyle": "normal",
+              "fontWeight": "600",
+              "src": ["file:./build/assets/fonts/source-sans-3/source-sans-3-600-normal.woff2"]
+            }
+          ],
+          "fontFamily": "\"Source Sans 3\", sans-serif",
+          "name": "Source Sans 3",
+          "slug": "heading"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "\"Source Sans 3\"",
+              "fontStyle": "normal",
+              "fontWeight": "900",
+              "src": ["file:./build/assets/fonts/source-sans-3/source-sans-3-900-normal.woff2"]
+            }
+          ],
+          "fontFamily": "\"Source Sans 3\", sans-serif",
+          "name": "Source Sans 3",
+          "slug": "title"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var:preset|font-family|body",
+      "fontWeight": "400"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontStyle": "normal",
+          "fontWeight": "600",
+          "fontFamily": "var:preset|font-family|heading"
+        }
+      }
+    },
+    "blocks": {
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|title",
+          "fontStyle": "normal",
+          "fontWeight": "900"
+        }
+      },
+      "core/site-tagline": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|body",
+          "fontSize": "1rem"
+        }
+      },
+      "core/navigation": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|body"
+        }
+      }
+    }
+  }
+}

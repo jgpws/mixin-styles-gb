@@ -7,11 +7,8 @@
   <!-- /wp:column -->
 
   <!-- wp:column {"width":"85%","className":"content-column is-style-default"} -->
-  <div
-    class="wp-block-column content-column is-style-default"
-    style="flex-basis: 85%"
-  >
-    <!-- wp:group {"tagName":"main","className":"mxs-card main mxs-light-bg mxs-contrasting-color","style":{"border":{"radius":"1.5em"},"elements":{"link":{"color":{"text":"var:preset|color|mxs-link-alt"},":hover":{"color":{"text":"var:preset|color|mxs-link-alt-hover"}}},"heading":{"color":{"text":"#808080"}}}},"backgroundColor":"card","textColor":"card-text","layout":{"type":"default"}} -->
+  <div class="wp-block-column content-column is-style-default" style="flex-basis: 85%">
+    <!-- wp:group {"tagName":"main","className":"mxs-card main mxs-light-bg mxs-contrasting-color","style":{"border":{"radius":"1.5em"},"elements":{"link":{"color":{"text":"var:preset|color|mxs-link-alt"},":hover":{"color":{"text":"var:preset|color|mxs-link-alt-hover"}}},"heading":{"color":{"text":"#707070"}}}},"backgroundColor":"card","textColor":"card-text","layout":{"type":"default"}} -->
     <main
       class="wp-block-group mxs-card main mxs-light-bg mxs-contrasting-color has-card-text-color has-card-background-color has-text-color has-background has-link-color"
       style="border-radius: 1.5em"
@@ -19,10 +16,7 @@
       <!-- wp:group {"layout":{"type":"constrained"}} -->
       <div class="wp-block-group">
         <!-- wp:post-title {"level":1} /-->
-
-        <!-- wp:group {"className":"entry-meta","layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"top"}} -->
-        <div class="wp-block-group entry-meta"><!-- wp:post-author /--></div>
-        <!-- /wp:group -->
+        <!-- wp:template-part {"slug":"meta-page"} /-->
       </div>
       <!-- /wp:group -->
 
@@ -50,10 +44,7 @@
               <!-- wp:comment-author-name {"fontSize":"normal"} /-->
 
               <!-- wp:group {"style":{"spacing":{"margin":{"top":"0px","bottom":"0px"}}},"layout":{"type":"flex"}} -->
-              <div
-                class="wp-block-group"
-                style="margin-top: 0px; margin-bottom: 0px"
-              >
+              <div class="wp-block-group" style="margin-top: 0px; margin-bottom: 0px">
                 <!-- wp:comment-date {"fontSize":"small"} /-->
 
                 <!-- wp:comment-edit-link {"fontSize":"small"} /-->

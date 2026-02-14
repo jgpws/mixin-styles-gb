@@ -32,10 +32,7 @@ wp.domReady(() => {
   wp.blocks.registerBlockVariation("core/columns", {
     name: "mixin-styles-gb-content-sidebar",
     title: __("Content, Sidebar", "mixin-styles-gb"),
-    description: __(
-      "This layout is ideal for a content or posts layout, including a right sidebar.",
-      "mixin-styles-gb",
-    ),
+    description: __("This layout is ideal for a content or posts layout, including a right sidebar.", "mixin-styles-gb"),
     icon: contentSidebarIcon,
     scope: ["block", "inserter", "transform"],
     attributes: {
@@ -80,10 +77,7 @@ wp.domReady(() => {
   wp.blocks.registerBlockVariation("core/columns", {
     name: "mixin-styles-gb-sidebar-content",
     title: __("Sidebar, Content", "mixin-styles-gb"),
-    description: __(
-      "This layout is ideal for a content or posts layout, including a left sidebar.",
-      "mixin-styles-gb",
-    ),
+    description: __("This layout is ideal for a content or posts layout, including a left sidebar.", "mixin-styles-gb"),
     icon: sidebarContentIcon,
     scope: ["block", "inserter", "transform"],
     attributes: {
@@ -128,10 +122,7 @@ wp.domReady(() => {
   wp.blocks.registerBlockVariation("core/columns", {
     name: "mixin-styles-gb-no-sidebar",
     title: __("Content, No Sidebar", "mixin-styles-gb"),
-    description: __(
-      "Content or posts layout with no sidebar.",
-      "mixin-styles-gb",
-    ),
+    description: __("Content or posts layout with no sidebar.", "mixin-styles-gb"),
     icon: columnsIcon,
     attributes: {
       className: "no-sidebar",
@@ -160,10 +151,7 @@ wp.domReady(() => {
   wp.blocks.registerBlockVariation("core/group", {
     name: "mixin-styles-gb-card",
     title: __("Card Style", "mixin-styles-gb"),
-    description: __(
-      "Applies Card styling to the Group block.",
-      "mixin-styles-gb",
-    ),
+    description: __("Applies Card styling to the Group block.", "mixin-styles-gb"),
     scope: ["block", "inserter", "transform"],
     attributes: {
       className: "mxs-card mxs-light-bg mxs-contrasting-color",
@@ -189,7 +177,7 @@ wp.domReady(() => {
           },
           heading: {
             color: {
-              text: "#808080",
+              text: "#707070",
             },
           },
         },
@@ -201,10 +189,7 @@ wp.domReady(() => {
   wp.blocks.registerBlockVariation("core/group", {
     name: "mixin-styles-gb-card-content",
     title: __("Card Style- Content", "mixin-styles-gb"),
-    description: __(
-      "Applies Card styling to the Group block. This version works with the main content area.",
-      "mixin-styles-gb",
-    ),
+    description: __("Applies Card styling to the Group block. This version works with the main content area.", "mixin-styles-gb"),
     scope: ["inserter", "transform"],
     attributes: {
       tagName: "main",
@@ -231,7 +216,7 @@ wp.domReady(() => {
           },
           heading: {
             color: {
-              text: "#808080",
+              text: "#707070",
             },
           },
         },
@@ -243,10 +228,7 @@ wp.domReady(() => {
   wp.blocks.registerBlockVariation("core/group", {
     name: "mixin-styles-gb-no-card-style",
     title: __("No Card Style", "mixin-styles-gb"),
-    description: __(
-      "Standard Group block with no Card styling.",
-      "mixin-styles-gb",
-    ),
+    description: __("Standard Group block with no Card styling.", "mixin-styles-gb"),
     scope: ["inserter", "transform"],
     attributes: {
       className: "mxs-no-card",
@@ -279,10 +261,7 @@ wp.domReady(() => {
   wp.blocks.registerBlockVariation("core/group", {
     name: "mixin-styles-gb-no-card-content",
     title: __("No Card Style- Content", "mixin-styles-gb"),
-    description: __(
-      "Standard Group block with no Card styling. This version works with the main content area.",
-      "mixin-styles-gb",
-    ),
+    description: __("Standard Group block with no Card styling. This version works with the main content area.", "mixin-styles-gb"),
     scope: ["inserter", "transform"],
     attributes: {
       tagName: "main",

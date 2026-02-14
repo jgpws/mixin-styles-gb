@@ -13,26 +13,20 @@
     height: auto;
     margin-left: 0 !important;
     min-width: 44px;
-    padding-left: 16px;
   }
 
   .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
     background-image: none;
-    background-color: transparent;
     height: auto;
     padding: 0.5em 1em;
   }
 
   .wp-block-navigation__submenu-container .wp-block-navigation-item__content,
-  &.is-vertical
-    .wp-block-navigation__submenu-container
-    .wp-block-navigation-item__content {
+  &.is-vertical .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
     border-radius: 0;
   }
 
-  .has-modal-open
-    .wp-block-navigation__submenu-container
-    .wp-block-navigation-item__content {
+  .has-modal-open .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
     padding: 0.25em 0.5em;
   }
 }
@@ -47,39 +41,20 @@
 .is-style-tabs .wp-block-navigation-item__content,
 .is-style-wide-tab .wp-block-navigation-item__content:focus,
 .is-style-wide-tab .wp-block-navigation-item__content:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.25) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(135deg, rgb(255 255 255 / 0.25) 0%, rgb(255 255 255 / 0) 100%);
   background-color: var(--wp--preset--color--tertiary);
 }
 
 .mxs-thin-header {
-  .is-style-tabs .wp-block-navigation-item__content,
-  .is-style-wide-tab .wp-block-navigation-item__content:focus,
-  .is-style-wide-tab .wp-block-navigation-item__content:hover {
-    border-left: 1px solid;
-    border-top: 1px solid;
-    border-right: 1px solid;
-    border-color: var(--wp--custom--color--border);
-  }
-
   .is-style-wide-tab .wp-block-navigation-item__content {
     border-left: 1px solid transparent;
     border-top: 1px solid transparent;
     border-right: 1px solid transparent;
   }
 
-  .is-style-tabs
-    .wp-block-navigation__submenu-container
-    .wp-block-navigation-item__content,
-  .is-style-wide-tab
-    .wp-block-navigation__submenu-container
-    .wp-block-navigation-item__content:focus,
-  .is-style-wide-tab
-    .wp-block-navigation__submenu-container
-    .wp-block-navigation-item__content:hover {
+  .is-style-tabs .wp-block-navigation__submenu-container .wp-block-navigation-item__content,
+  .is-style-wide-tab .wp-block-navigation__submenu-container .wp-block-navigation-item__content:focus,
+  .is-style-wide-tab .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover {
     border: transparent;
   }
 }
@@ -92,32 +67,18 @@
 }
 
 .is-style-tabs:not(.has-text-color) .wp-block-navigation-item__content,
-.is-style-wide-tab:not(.has-text-color)
-  .wp-block-navigation-item__content:active,
-.is-style-wide-tab:not(.has-text-color)
-  .wp-block-navigation-item__content:focus,
-.is-style-wide-tab:not(.has-text-color)
-  .wp-block-navigation-item__content:hover {
-  color: var(--wp--custom--color--tab-fg);
+.is-style-wide-tab:not(.has-text-color) .wp-block-navigation-item__content:active,
+.is-style-wide-tab:not(.has-text-color) .wp-block-navigation-item__content:focus,
+.is-style-wide-tab:not(.has-text-color) .wp-block-navigation-item__content:hover {
+  color: #000000;
 }
 
 .is-style-tabs:not(.has-text-color),
 .is-style-wide-tab:not(.has-text-color) {
-  .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
-    color: var(--wp--preset--color--black);
-
+  .is-menu-open .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
     &:focus,
     &:hover {
-      color: var(--wp--custom--color--hover-fg);
-    }
-  }
-
-  .is-menu-open
-    .wp-block-navigation__submenu-container
-    .wp-block-navigation-item__content {
-    &:focus,
-    &:hover {
-      color: var(--wp--preset--color--black);
+      color: #000000;
     }
   }
 }
@@ -175,8 +136,3 @@
     border-radius: 10px 0 0 10px;
   }
 }
-
-/*.mxs-thin-header .wp-block-navigation .wp-block-navigation__submenu-icon,
-.is-style-flat-nav.wp-block-navigation .wp-block-navigation__submenu-icon {
-  color: var(--wp--custom--color--tab-fg);
-}*/

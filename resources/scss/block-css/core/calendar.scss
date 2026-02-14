@@ -1,64 +1,20 @@
 /* ---- Calendar ---- */
 
-.wp-block-calendar,
-.mxs-dark-bg .wp-block-calendar {
+.wp-block-calendar {
   a {
     text-decoration: none;
-    color: var(--wp--preset--color--mxs-link-alt);
-
-    &:hover,
-    &:active {
-      color: var(--wp--preset--color--mxs-link-alt-hover);
-    }
   }
 
   table {
-    background-color: var(--pale-gray);
-    border-color: var(--medium-gray);
     margin-left: auto;
     margin-right: auto;
     max-width: 640px;
   }
 
-  table:where(:not(.has-text-color)) {
-    color: var(--wp--custom--color--card-fg-dark);
-  }
-
-  caption {
-    background-color: var(--wp--preset--color--secondary);
-    color: var(--wp--custom--color--card-fg-dark);
-  }
-
-  tbody {
-    color: var(--wp--custom--color--card-fg-dark);
-  }
-
-  td,
   th {
-    border-color: var(--medium-gray);
-  }
-
-  th {
-    background-color: inherit;
-    color: var(--wp--custom--color--card-fg-dark);
     font-weight: bold;
     padding: 0.5em;
   }
-
-  table:where(:not(.has-text-color)) {
-    td,
-    th {
-      border-color: var(--medium-gray);
-    }
-  }
-}
-
-.mxs-light-bg .wp-block-calendar caption {
-  color: var(--wp--preset--color--foreground);
-}
-
-.mxs-dark-bg .wp-block-calendar caption {
-  color: var(--wp--custom--color--card-fg-dark);
 }
 
 .wp-calendar-nav {
@@ -77,20 +33,83 @@
   margin-top: 0;
 }
 
-.mxs-light-bg {
-  caption,
-  .wp-calendar-nav {
-    background-color: var(--wp--preset--color--background);
+.wp-block-calendar {
+  a {
+    color: var(--wp--preset--color--mxs-link-alt);
   }
-}
 
-.mxs-light-bg .wp-calendar-nav a,
-.sidebar.mxs-light-bg .wp-calendar-nav a {
-  border-bottom: transparent;
-  color: var(--wp--preset--color--mxs-link);
+  a:hover,
+  a:active {
+    color: var(--wp--preset--color--mxs-link-alt-hover);
+  }
 
-  &:hover,
-  &:active {
-    color: var(--wp--preset--color--mxs-link-hover);
+  table:where(:not(.has-text-color)),
+  tbody,
+  th {
+    color: var(--darker-gray);
+  }
+
+  td,
+  th {
+    border-color: var(--medium-gray);
+  }
+
+  th {
+    background-color: inherit;
+  }
+
+  .wp-calendar-nav a {
+    border-bottom-color: transparent;
+  }
+
+  .mxs-dark-theme-bg &,
+  .mxs-light-theme-bg .mxs-dark-bg & {
+    table {
+      background-color: var(--pale-gray);
+      border-color: var(--medium-gray);
+    }
+
+    caption {
+      background-color: var(--wp--preset--color--secondary);
+      color: var(--darker-gray);
+    }
+  }
+
+  .mxs-light-theme-bg & {
+    table {
+      background-color: var(--pale-gray);
+    }
+
+    caption,
+    .wp-calendar-nav {
+      background-color: var(--wp--preset--color--secondary);
+    }
+  }
+
+  .mxs-dark-theme-bg .mxs-light-bg &,
+  .mxs-light-theme-bg .mxs-light-bg & {
+    caption,
+    .wp-calendar-nav {
+      background-color: var(--wp--preset--color--base);
+    }
+  }
+
+  .mxs-light-theme-bg &,
+  .mxs-dark-theme-bg .mxs-light-bg & {
+    caption,
+    .wp-calendar-nav {
+      color: var(--wp--preset--color--contrast);
+    }
+
+    .wp-calendar-nav {
+      a {
+        color: var(--wp--preset--color--mxs-link);
+      }
+
+      a:hover,
+      a:active {
+        color: var(--wp--preset--color--mxs-link-hover);
+      }
+    }
   }
 }

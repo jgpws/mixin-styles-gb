@@ -1,0 +1,20 @@
+/* Style Book dark */
+.wp-block-archives,
+.wp-block-categories,
+.wp-block-page-list,
+.wp-block-list {
+  li {
+    list-style-type: none;
+  }
+
+  li::before {
+    content: url(../images/list-bullet-light.svg);
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+}
+
+.wp-block-navigation {
+  border-top: 1px solid var(--white-25pcnt);
+  border-bottom: 1px solid var(--white-25pcnt);
+}

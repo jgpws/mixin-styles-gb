@@ -1,41 +1,43 @@
 /* ---- Post Title ---- */
-
-.wp-block-post-title a {
-  color: var(--wp--custom--color--heading-fg);
-  padding-bottom: 0;
-}
-
-.wp-block-post-title a:hover,
-.wp-block-post-title a:active {
-  color: var(--wp--preset--color--foreground);
-}
-
-.mxs-light-bg .wp-block-post-title {
+.wp-block-post-title {
   a {
-    color: var(--medium-gray);
-
-    &:hover,
-    &:active {
-      color: var(--wp--custom--color--post-title-hover);
-    }
+    padding-bottom: 0;
   }
 }
 
-.mxs-dark-bg .wp-block-post-title {
-  a {
-    color: var(--light-gray);
+.wp-block-post-title {
+  .mxs-dark-theme-bg &,
+  .mxs-light-theme-bg .mxs-dark-bg & {
+    a {
+      color: var(--light-gray);
+    }
 
-    &:hover,
-    &:active {
-      color: var(--wp--preset--color--white);
+    a:hover,
+    a:active {
+      color: var(--wp--preset--color--contrast);
     }
   }
-}
 
-.is-style-post-title-no-border,
-.is-style-post-title-no-border-gray {
-  a:where(:not(.wp-element-button)) {
-    border-bottom: transparent;
+  .mxs-light-theme-bg & {
+    a {
+      color: var(--dark-gray);
+    }
+  }
+
+  .mxs-light-theme-bg .mxs-card.mxs-light-bg &,
+  .mxs-dark-theme-bg .mxs-card.mxs-light-bg & {
+    a {
+      color: var(--medium-gray);
+    }
+  }
+
+  .mxs-light-theme-bg &,
+  .mxs-light-theme-bg .mxs-card.mxs-light-bg &,
+  .mxs-dark-theme-bg .mxs-card.mxs-light-bg & {
+    a:hover,
+    a:active {
+      color: var(--wp--preset--color--primary);
+    }
   }
 }
 

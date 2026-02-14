@@ -87,7 +87,7 @@
 }
 
 .wp-block-column.header-column {
-  background-color: var(--wp--preset--color--background);
+  background-color: var(--wp--preset--color--base);
   padding-left: 1.5em;
   padding-right: 1.5em;
   position: sticky;
@@ -106,14 +106,10 @@
 }
 
 @media (min-width: 782px) {
-  .content-sidebar.wp-block-columns.is-not-stacked-on-mobile
-    > .wp-block-column[style*="flex-basis"],
-  .content-sidebar.wp-block-columns:not(.is-not-stacked-on-mobile)
-    > .wp-block-column[style*="flex-basis"],
-  .sidebar-content.wp-block-columns.is-not-stacked-on-mobile
-    > .wp-block-column[style*="flex-basis"],
-  .sidebar-content.wp-block-columns:not(.is-not-stacked-on-mobile)
-    > .wp-block-column[style*="flex-basis"] {
+  .content-sidebar.wp-block-columns.is-not-stacked-on-mobile > .wp-block-column[style*="flex-basis"],
+  .content-sidebar.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column[style*="flex-basis"],
+  .sidebar-content.wp-block-columns.is-not-stacked-on-mobile > .wp-block-column[style*="flex-basis"],
+  .sidebar-content.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column[style*="flex-basis"] {
     flex-grow: 1;
   }
 
@@ -277,7 +273,7 @@
 
 @media (min-width: 1024px) {
   .mxs-header {
-    grid-template-columns: calc(75% - 0.5em) auto;
+    grid-template-columns: calc(75% - 0.75em) auto;
   }
 
   .header-vertical {
@@ -296,7 +292,7 @@
   }
 
   .mxs-header-searchbar-left {
-    grid-template-columns: auto calc(75% - 0.5em);
+    grid-template-columns: auto calc(75% - 0.75em);
   }
 
   .mxs-header-searchbar-left .mxs-title-panel {
@@ -329,9 +325,7 @@
     grid-row: 3 / 4;
   }
 
-  .site-header
-    > .wp-block-group.mxs-header-searchbar-center
-    .wp-block-navigation {
+  .site-header > .wp-block-group.mxs-header-searchbar-center .wp-block-navigation {
     margin: 1em 0;
   }
 
@@ -343,16 +337,28 @@
 
 @media (min-width: 1366px) {
   .mxs-header {
-    grid-template-columns: calc(85% - 0.5em) auto;
+    grid-template-columns: calc(85% - 1em) auto;
   }
 
   .mxs-header-searchbar-left {
-    grid-template-columns: auto calc(85% - 0.5em);
+    grid-template-columns: auto calc(85% - 1em);
   }
 
   .mxs-header-searchbar-center {
     grid-template-columns: auto var(--wp--style--global--content-size) auto;
   }
+}
+
+/* Sidebar */
+.sidebar.mxs-card {
+  padding-top: 1.5rem;
+  padding-right: var(--wp--preset--spacing--40);
+  padding-bottom: 1.5rem;
+  padding-left: var(--wp--preset--spacing--40);
+}
+
+.sidebar.mxs-no-card {
+  padding-right: var(--wp--preset--spacing--40);
 }
 
 /* Footer */
@@ -362,36 +368,31 @@
 
 /* Navigation */
 @media (min-width: 600px) and (max-width: 1024px) {
-  .page-template-page-header-left
-    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+  .page-template-page-header-left .wp-block-navigation__responsive-container-open:not(.always-shown) {
     display: flex;
   }
 
-  .header-left-columns
-    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(
-      .is-menu-open
-    ) {
+  .header-left-columns .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
     display: none;
   }
 }
 
 @media (min-width: 1024px) {
-  .page-template-page-header-left
-    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+  .page-template-page-header-left .wp-block-navigation__responsive-container-open:not(.always-shown) {
     display: none;
   }
 
-  .header-left-columns
-    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(
-      .is-menu-open
-    ) {
+  .header-left-columns .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
     display: block;
   }
 }
 
 /* Search */
-.is-layout-flow .is-style-search-header {
-  margin-top: 0;
+.is-layout-flow {
+  .is-style-search-header,
+  .is-style-search-header-dark-bg {
+    margin-top: 0;
+  }
 }
 
 .mxs-header .wp-block-search {
@@ -409,9 +410,7 @@
   }
 
   .mxs-header.is-layout-flow > .wp-block-search.alignright,
-  .mxs-header.is-layout-flow
-    > .is-layout-constrained
-    .wp-block-search.alignright {
+  .mxs-header.is-layout-flow > .is-layout-constrained .wp-block-search.alignright {
     grid-column: 1 / 3;
   }
 }

@@ -47,7 +47,7 @@ if ( ! function_exists( 'mixin_styles_gb_setup' ) ) :
       './build/assets/css/theme/base-styles.css',
       './build/assets/css/theme/layout.css',
       './build/assets/css/theme/blocks.css',
-      './build/assets/css/editor-overrides.css',
+      './build/assets/css/editor-overrides.css'
     ) );
   }
 endif;
@@ -63,17 +63,23 @@ function mixin_styles_gb_register_block_pattern_cats() {
    	);
    }
 }
-
 add_action( 'init', 'mixin_styles_gb_register_block_pattern_cats' );
 
 // Block Styles/Variations
 function mixin_styles_gb_editor_assets() {
 	wp_enqueue_script( 'mixin-styles-gb-block-styles', get_theme_file_uri( 'build/assets/js/block-styles.js' ), array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post', 'wp-i18n' ), filemtime( get_template_directory() . '/build/assets/js/block-styles.js' ), true );
 	wp_enqueue_script( 'mixin-styles-gb-block-variations', get_theme_file_uri( 'build/assets/js/block-variations.js' ), array( 'wp-blocks', 'wp-dom-ready', 'wp-element', 'wp-primitives', 'wp-i18n' ), filemtime( get_template_directory() . '/build/assets/js/block-variations.js' ), true );
-}
 
   $script_asset = include get_parent_theme_file_path( 'build/assets/js/editor.asset.php' );
   wp_enqueue_script( 'mixin-styles-gb-editor-scripts', get_parent_theme_file_uri( '/build/assets/js/editor.js' ), $script_asset['dependencies'], $script_asset['version'], true );
+
+  // Create the inline script data
+  $parent_theme_uri = get_template_directory_uri();
+  $data = "const themePath = '{$parent_theme_uri}';";
+
+  // Add the inline script before your main file so the variable is ready
+  wp_add_inline_script( 'mixin-styles-gb-editor-scripts', $data, 'before' );
+}
 add_action( 'enqueue_block_editor_assets', 'mixin_styles_gb_editor_assets' );
 
 function mixin_styles_gb_scripts() {
@@ -90,8 +96,8 @@ function mixin_styles_gb_scripts() {
   wp_enqueue_style( 'mixin-styles-gb-animations', get_theme_file_uri( 'build/assets/css/theme/animations.css' ), $animations_style_asset['dependencies'], $animations_style_asset['version'] );
   
   // Scripts
-  wp_enqueue_script( 'mixin-styles-gb-scripts', get_theme_file_uri( 'build/assets/js/mixin-styles-gb-scripts.js' ), array(), filemtime( get_template_directory() . '/assets/js/mixin-styles-gb-scripts.js' ), true );
-  wp_enqueue_script( 'mixin-styles-gb-contrast-script', get_theme_file_uri( 'build/assets/js/mixin-styles-gb-contrast.js' ), array(), filemtime( get_template_directory() . '/assets/js/mixin-styles-gb-contrast.js' ), true );
+  wp_enqueue_script( 'mixin-styles-gb-scripts', get_theme_file_uri( 'build/assets/js/mixin-styles-gb-scripts.js' ), array(), filemtime( get_template_directory() . '/build/assets/js/mixin-styles-gb-scripts.js' ), true );
+  wp_enqueue_script( 'mixin-styles-gb-contrast-script', get_theme_file_uri( 'build/assets/js/mixin-styles-gb-contrast.js' ), array(), filemtime( get_template_directory() . '/build/assets/js/mixin-styles-gb-contrast.js' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'mixin_styles_gb_scripts' );
 
@@ -142,3 +148,4 @@ function mixin_styles_gb_enqueue_block_styles() {
 }
 
 add_action( 'after_setup_theme', 'mixin_styles_gb_enqueue_block_styles' );
+

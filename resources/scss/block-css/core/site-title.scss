@@ -1,42 +1,55 @@
 /* ---- Site Title ---- */
 
-.wp-block-site-title {
-  color: var(--wp--custom--color--site-title-fg);
-}
-
-.wp-block-site-title a {
-  text-shadow: var(--wp--custom--text--shadow-small);
-
-  .mxs-light-bg & {
-    color: var(--medium-gray);
-  }
-
-  .mxs-dark-bg & {
-    color: var(--light-gray);
-  }
-}
-
-.wp-block-site-title a:where(:not(.wp-element-button)):hover,
-.wp-block-site-title a:where(:not(.wp-element-buttton)):focus {
-  color: var(--wp--preset--color--foreground);
-}
-
-.is-light .wp-block-site-title a:where(:not(.wp-element-button)) {
-  color: var(--dark-gray);
-}
-
-.is-light .wp-block-site-title a:where(:not(.wp-element-button)):hover,
-.is-light .wp-block-site-title a:where(:not(.wp-element-button)):focus {
-  color: var(--wp--preset--color--black);
-}
-
 body .is-layout-flow .wp-block-site-tagline {
   margin-block-start: 0.5rem;
 }
 
+/* Light/Dark Contrast */
+.wp-block-site-title {
+  .mxs-dark-theme-bg &,
+  .mxs-dark-bg & {
+    color: #ffffff;
+
+    a {
+      color: var(--light-gray);
+    }
+  }
+
+  .mxs-light-theme-bg &,
+  .mxs-light-bg & {
+    color: var(--dark-gray);
+
+    a {
+      color: var(--wp--preset--color--primary);
+    }
+  }
+
+  .mxs-light-theme-bg &,
+  .mxs-dark-theme-bg &,
+  .mxs-dark-bg &,
+  .mxs-light-bg & {
+    a:where(:not(.wp-element-button)):hover,
+    a:where(:not(.wp-element-button)):focus {
+      color: var(--wp--preset--color--contrast);
+    }
+  }
+
+  /* For Cover blocks */
+  .is-light & {
+    a:where(:not(.wp-element-button)) {
+      color: var(--dark-gray);
+    }
+
+    a:where(:not(.wp-element-button)):hover,
+    a:where(:not(.wp-element-button)) {
+      color: #000000;
+    }
+  }
+}
+
 .wp-block-site-tagline {
   .mxs-light-bg & {
-    color: var(--wp--preset--color--black);
+    color: var(--almost-black);
   }
 
   .mxs-dark-bg & {

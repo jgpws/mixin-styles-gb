@@ -1,14 +1,10 @@
 (function () {
   //console.log("Contrast script is loaded");
 
-  const elements = document.querySelectorAll(
-    "body, .mxs-contrasting-color, .wp-block-navigation:not(.wp-block-navigation__container).is-style-flat-nav",
-  );
+  const elements = document.querySelectorAll("body, .mxs-contrasting-color, .wp-block-navigation:not(.wp-block-navigation__container).is-style-flat-nav");
 
   elements.forEach((element) => {
-    const computedBgColor = window
-      .getComputedStyle(element)
-      .getPropertyValue("background");
+    const computedBgColor = window.getComputedStyle(element).getPropertyValue("background");
 
     //console.log(element);
     //console.log(document.body === element);

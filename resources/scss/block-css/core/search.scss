@@ -17,17 +17,14 @@
 
 .wp-block-search__input {
   color: var(--wp--preset--color--black);
-  border: 2px solid var(--wp--preset--color--foreground);
+  border: 2px solid var(--wp--preset--color--contrast);
   padding: 0.25em 0.5em;
-
-  .is-style-card & {
-    border-color: var(--wp--custom--color--border);
-  }
 }
 
 .wp-block-search__label {
-  color: var(--wp--preset--color--foreground);
+  color: var(--wp--preset--color--contrast);
   display: inline-block;
+  margin-bottom: 0.25em;
 
   .is-style-card & {
     color: var(--wp--preset--color--black);
@@ -52,6 +49,7 @@
     background: var(--gray-gradient-reversed);
     border: 1px solid var(--almost-white);
     border-radius: 0.5em;
+    padding: 0.25em 0.5em;
   }
 
   .wp-block-search__input,
@@ -71,9 +69,8 @@
 }
 
 .mxs-light-bg .wp-block-search__button-inside .wp-block-search__inside-wrapper,
-.is-style-search-header.wp-block-search__button-inside
-  .wp-block-search__inside-wrapper {
-  border-color: var(--wp--custom--color--border);
+.is-style-search-header.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+  border-color: var(--wp--preset--color--primary-semitransparent);
 }
 
 .is-style-search-header,
@@ -93,7 +90,7 @@
   }
 
   .wp-block-search__button {
-    background: var(--wp--custom--gradient--light-to-dark);
+    background: linear-gradient(to bottom, rgb(255 255 255 / 0.5) 0%, var(--wp--preset--color--complementary-semitransparent) 100%);
     background-color: var(--almost-white);
     color: var(--wp--preset--color--black);
     font-size: 1rem;
@@ -118,9 +115,7 @@
     min-height: auto;
   }
 
-  &.wp-block-search__button-inside
-    .wp-block-search__label
-    ~ .wp-block-search__inside-wrapper {
+  &.wp-block-search__button-inside .wp-block-search__label ~ .wp-block-search__inside-wrapper {
     margin-top: 0;
   }
 
@@ -133,15 +128,22 @@
   background: url(../../../images/spyglass-clipped.svg) top left no-repeat;
   background-color: var(--wp--preset--color--card);
 
+  .wp-block-search__input:focus-visible {
+    outline-color: var(--wp--preset--color--primary);
+  }
+
   .wp-block-search__input,
   .wp-block-search__button {
-    border-color: var(--wp--custom--color--border);
+    border-color: var(--wp--preset--color--primary-semitransparent);
   }
 
   &-dark-bg {
-    background: url(../../../images/spyglass-clipped-white.svg) top left
-      no-repeat;
+    background: url(../../../images/spyglass-clipped-white.svg) top left no-repeat;
     background-color: var(--wp--preset--color--card) !important;
+
+    .wp-block-search__input:focus-visible {
+      outline-color: var(--almost-white);
+    }
 
     .wp-block-search__input,
     .wp-block-search__button {
@@ -174,8 +176,8 @@
   }
 
   > .is-style-search-header.alignright,
-  > .is-style-search-header-dark-bg.alignright {
-    margin-inline-end: 0;
+  > .wp-block-search.is-style-search-header-dark-bg.alignright {
+    margin-inline-end: 0 !important;
   }
 }
 

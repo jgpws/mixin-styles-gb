@@ -1,0 +1,24 @@
+<?php
+/**
+ * Title: Header- Right Searchbar (Default)
+ * Slug: mixin-styles-gb/header-right-searchbar
+ * Categories: header, mixin-styles-gb
+ * Block Types: core/template-part/header
+ * Viewport Width: 1366
+ */
+?>
+<!-- wp:group {"className":"mxs-header","layout":{"inherit":false}} -->
+<div class="wp-block-group mxs-header">
+  <!-- wp:group {"className":"mxs-title-panel","layout":{"type":"default"}} -->
+  <div class="wp-block-group mxs-title-panel">
+    <!-- wp:site-title /-->
+
+    <!-- wp:site-tagline /-->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:search {"label":"Search","placeholder":"Enter Your Query...","buttonText":"Search","buttonPosition":"no-button","align":"right","className":"is-style-search-header"} /-->
+
+  <!-- wp:navigation {"className":"is-style-default","fontSize":"normal","layout":{"type":"flex","orientation":"horizontal","justifyContent":"left"}} /-->
+</div>
+<!-- /wp:group -->

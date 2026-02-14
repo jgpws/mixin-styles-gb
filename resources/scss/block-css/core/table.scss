@@ -2,23 +2,12 @@
 
 .wp-block-table {
   table {
-    background-color: var(--wp--custom--color--opacity-6-bg);
-    border: 1px solid var(--wp--custom--color--opacity-12-bg);
     margin: 0 auto;
-  }
-
-  thead {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.125);
   }
 
   th,
   td {
-    border: 1px solid var(--wp--custom--color--opacity-12-bg);
     padding: 0.5em;
-  }
-
-  tfoot {
-    border-top: 2px solid rgba(255, 255, 255, 0.125);
   }
 
   figcaption {
@@ -27,15 +16,22 @@
   }
 }
 
-.mxs-light-bg {
-  .wp-block-table {
+.mxs-light-bg .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.0625);
+}
+
+/* Contrast colors */
+.wp-block-table {
+  .mxs-light-theme-bg &,
+  .mxs-dark-theme-bg .mxs-light-bg & {
     table {
-      background-color: rgba(0, 0, 0, 0.0625);
-      color: var(--wp--custom--color--card-fg-dark);
+      background-color: var(--black-6pcnt);
+      border: 1px solid var(--black-12pcnt);
+      color: var(--dark-gray);
     }
 
     thead {
-      border-bottom-color: rgba(0, 0, 0, 0.125);
+      border-bottom: 2px solid var(--black-12pcnt);
     }
 
     th,
@@ -44,45 +40,53 @@
     }
 
     tfoot {
-      border-top-color: rgba(0, 0, 0, 0.125);
+      border-top: 2px solid var(--black-12pcnt);
     }
   }
-}
 
-.mxs-dark-bg {
-  .wp-block-table {
+  .mxs-dark-theme-bg &,
+  .mxs-light-theme-bg .mxs-dark-bg & {
     table {
-      background-color: rgba(255, 255, 255, 0.0625);
-      color: var(--wp--custom--color--card-fg-light);
+      background-color: var(--white-6pcnt);
+      border: 1px solid var(--white-12pcnt);
+      color: var(--almost-white);
     }
 
     thead {
-      border-bottom-color: rgba(255, 255, 255, 0.125);
+      border-bottom: 2px solid var(--white-12pcnt);
     }
 
     th,
     td {
-      border-color: rgba(255, 255, 255, 0.125);
+      border-color: var(--white-12pcnt);
     }
 
     tfoot {
-      border-top-color: rgba(255, 255, 255, 0.125);
+      border-top: 2px solid var(--white-12pcnt);
     }
   }
 }
 
 .wp-block-table.is-style-stripes {
-  border-bottom-color: rgba(255, 255, 255, 0.125);
-
   table {
     background-color: transparent;
   }
 
-  tbody tr:nth-child(odd) {
-    background-color: rgba(255, 255, 255, 0.0625);
-  }
-}
+  .mxs-dark-theme-bg &,
+  .mxs-light-theme-bg .mxs-dark-bg & {
+    border-bottom-color: var(--white-12pcnt);
 
-.mxs-light-bg .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0.0625);
+    tbody tr:nth-child(odd) {
+      background-color: var(--white-6pcnt);
+    }
+  }
+
+  .mxs-light-theme-bg &,
+  .mxs-dark-theme-bg .mxs-light-bg & {
+    border-bottom-color: var(--black-6pcnt);
+
+    tbody tr:nth-child(odd) {
+      background-color: var(--black-6pcnt);
+    }
+  }
 }

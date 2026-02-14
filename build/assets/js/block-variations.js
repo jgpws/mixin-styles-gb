@@ -133,7 +133,7 @@ wp.domReady(() => {
           },
           heading: {
             color: {
-              text: "#808080"
+              text: "#707070"
             }
           }
         }
@@ -171,7 +171,7 @@ wp.domReady(() => {
           },
           heading: {
             color: {
-              text: "#808080"
+              text: "#707070"
             }
           }
         }

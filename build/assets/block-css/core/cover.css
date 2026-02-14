@@ -22,16 +22,7 @@
 .wp-block-cover.is-style-rounded-full .wp-block-cover__image-background.has-parallax {
   border-radius: 1em;
 }
-.wp-block-cover.is-style-rounded-full.is-position-top-center .wp-block-cover__inner-container,
-.wp-block-cover.is-style-rounded-full.is-position-bottom-center .wp-block-cover__inner-container {
-  width: 100%;
-}
-.wp-block-cover.is-style-rounded-full.is-position-top-left .wp-block-cover__inner-container,
-.wp-block-cover.is-style-rounded-full.is-position-center-left .wp-block-cover__inner-container,
-.wp-block-cover.is-style-rounded-full.is-position-bottom-left .wp-block-cover__inner-container,
-.wp-block-cover.is-style-rounded-full.is-position-top-right .wp-block-cover__inner-container,
-.wp-block-cover.is-style-rounded-full.is-position-center-right .wp-block-cover__inner-container,
-.wp-block-cover.is-style-rounded-full.is-position-bottom-right .wp-block-cover__inner-container {
+.wp-block-cover.is-style-rounded-full.has-custom-content-position.is-position-top-left .wp-block-cover__inner-container, .wp-block-cover.is-style-rounded-full.has-custom-content-position.is-position-center-left .wp-block-cover__inner-container, .wp-block-cover.is-style-rounded-full.has-custom-content-position.is-position-bottom-left .wp-block-cover__inner-container, .wp-block-cover.is-style-rounded-full.has-custom-content-position.is-position-top-right .wp-block-cover__inner-container, .wp-block-cover.is-style-rounded-full.has-custom-content-position.is-position-center-right .wp-block-cover__inner-container, .wp-block-cover.is-style-rounded-full.has-custom-content-position.is-position-bottom-right .wp-block-cover__inner-container {
   width: 50%;
 }
 .header-hero .wp-block-cover {

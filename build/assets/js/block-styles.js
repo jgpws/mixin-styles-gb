@@ -9,6 +9,25 @@ wp.domReady(() => {
   const {
     __
   } = wp.i18n;
+  const outlineBlocks = ["core/post-template", "core/pullquote"];
+  const outlineStyles = [{
+    name: "element-outline",
+    label: __("Outline", "mixin-styles-gb")
+  }, {
+    name: "element-shadow-soft",
+    label: __("Soft Drop Shadow", "mixin-styles-gb")
+  }, {
+    name: "element-shadow",
+    label: __("Drop Shadow", "mixin-styles-gb")
+  }, {
+    name: "element-shadow-backlight",
+    label: __("Backlight", "mixin-styles-gb")
+  }];
+  outlineBlocks.forEach(blockName => {
+    outlineStyles.forEach(style => {
+      wp.blocks.registerBlockStyle(blockName, style);
+    });
+  });
   wp.blocks.registerBlockStyle("core/button", [{
     name: "flat",
     label: __("Flat Style", "mixin-styles-gb")
@@ -28,17 +47,11 @@ wp.domReady(() => {
     label: __("Rounded- Full Height", "mixin-styles-gb")
   }]);
   wp.blocks.registerBlockStyle("core/group", [{
-    name: "group-outline",
-    label: __("Outline", "mixin-styles-gb")
+    name: "no-decorations",
+    label: __("No Decorations", "mixin-styles-gb")
   }, {
-    name: "group-shadow-soft",
-    label: __("Soft Drop Shadow", "mixin-styles-gb")
-  }, {
-    name: "group-shadow",
-    label: __("Drop Shadow", "mixin-styles-gb")
-  }, {
-    name: "group-shadow-backlight",
-    label: __("Backlight", "mixin-styles-gb")
+    name: "no-decorations-arrow-markers",
+    label: __("No Decorations (With Arrow Markers)", "mixin-styles-gb")
   }]);
   wp.blocks.registerBlockStyle("core/navigation", [{
     name: "default",
@@ -56,10 +69,6 @@ wp.domReady(() => {
   }, {
     name: "plain",
     label: __("Plain")
-  }]);
-  wp.blocks.registerBlockStyle("core/post-title", [{
-    name: "post-title-no-border",
-    label: __("Post Title (No Underline)", "mixin-styles-gb")
   }]);
   wp.blocks.registerBlockStyle("core/post-featured-image", [{
     name: "default",

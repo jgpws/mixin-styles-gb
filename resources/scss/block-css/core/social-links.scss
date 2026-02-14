@@ -1,35 +1,36 @@
 /* ---- Social Links block ---- */
 
 .wp-site-blocks .wp-block-social-links.aligncenter {
-	display: flex;
+  display: flex;
 }
 
 .wp-block-social-links.is-style-semitransparent-light .wp-social-link,
 .wp-block-social-links.is-style-semitransparent-dark .wp-social-link {
-	border-radius: 10px;
+  border-radius: 10px;
 }
 
 .wp-block-social-links.is-style-semitransparent-light .wp-social-link {
-	background-color: rgba(255, 255, 255, 0.5);
-	color: var(--almost-black);
+  background-color: var(--white-50pcnt);
+  color: var(--almost-black);
 }
 
 .wp-block-social-links.is-style-semitransparent-light .wp-social-link:focus,
 .wp-block-social-links.is-style-semitransparent-light .wp-social-link:hover {
-	background-color: rgba(255, 255, 255, 0.75);
+  background-color: var(--white-75pcnt);
 }
 
 .wp-block-social-links.is-style-semitransparent-dark .wp-social-link {
-	background-color: rgba(0, 0, 0, 0.5);
-	color: var(--almost-white);
+  background-color: var(--black-50pcnt);
+  color: var(--almost-white);
 }
 
 .wp-block-social-links.is-style-semitransparent-dark .wp-social-link:focus,
 .wp-block-social-links.is-style-semitransparent-dark .wp-social-link:hover {
-	background-color: rgba(0, 0, 0, 0.75);
+  background-color: var(--black-75pcnt);
 }
 
 .header-vertical .wp-block-social-links {
-	margin: 1rem;
-	align-self: start;
+  margin: 1rem;
+  align-self: start;
 }
+

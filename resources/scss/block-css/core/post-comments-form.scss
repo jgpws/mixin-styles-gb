@@ -1,10 +1,8 @@
 /* ---- Post Comments form ---- */
 
-#author,
-#email,
-#url,
-#comment {
-	margin: 0;
+input:is([name="author"], [name="email"], [name="url"]),
+textarea[name="comment"] {
+  margin: 0;
 }
 
 .comment-form-comment,
@@ -15,14 +13,25 @@
   flex-direction: column;
 }
 
-#commentform label {
-	font-weight: bold;
-	color: var(--medium-gray);
-	width: 100%;
-}
+.comment-form {
+  label {
+    font-weight: bold;
+    width: 100%;
+  }
 
-#commentform p {
-	clear: both;
+  p {
+    clear: both;
+  }
+
+  .mxs-light-theme-bg &,
+  .mxs-dark-theme-bg .mxs-light-bg & {
+    color: var(--dark-gray);
+  }
+
+  .mxs-dark-theme-bg &,
+  .mxs-light-theme-bg .mxs-dark-bg & {
+    color: var(--light-gray);
+  }
 }
 
 #cancel-comment-reply-link {
@@ -30,11 +39,11 @@
 }
 
 .form-allowed-tags {
-	clear: both;
-	padding-top: 1em;
+  clear: both;
+  padding-top: 1em;
 }
 
-@media ( min-width: 600px ) {
+@media (min-width: 600px) {
   .comment-form-comment,
   .comment-form-author,
   .comment-form-email,
@@ -42,19 +51,20 @@
     flex-direction: row;
   }
 
-  #commentform label {
+  .comment-form label {
     flex-basis: 25%;
   }
 }
 
-@media ( min-width: 768px ) {
-  #respond {
-		clear: both;
-	}
+@media (min-width: 768px) {
+  .comment-respond {
+    clear: both;
+  }
 }
 
-@media ( min-width: 1024px ) {
-  #commentform label {
+@media (min-width: 1024px) {
+  .comment-form label {
     flex-basis: 33%;
   }
 }
+

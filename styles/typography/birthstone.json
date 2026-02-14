@@ -1,0 +1,109 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Birthstone (Headings), Jura (Body)",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Birthstone",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": ["file:./build/assets/fonts/birthstone/birthstone-400-normal.woff2"]
+            }
+          ],
+          "fontFamily": "Birthstone, cursive",
+          "name": "Birthstone",
+          "slug": "heading"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Jura",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": "file:./build/assets/fonts/jura/jura-400-normal.woff2"
+            },
+            {
+              "fontFamily": "Jura",
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "src": "file:./build/assets/fonts/jura/jura-700-normal.woff2"
+            }
+          ],
+          "fontFamily": "Jura, sans-serif",
+          "name": "Jura",
+          "slug": "body"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "fontFamily": "var(--wp--preset--font-family--heading)"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontStyle": "normal",
+          "fontSize": "2.5rem"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontStyle": "normal",
+          "fontSize": "2.25rem"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontStyle": "normal",
+          "fontSize": "2rem"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontStyle": "normal",
+          "fontSize": "1.5rem"
+        }
+      },
+      "h5": {
+        "typography": {
+          "fontStyle": "normal",
+          "fontSize": "1.25rem"
+        }
+      },
+      "h6": {
+        "typography": {
+          "fontStyle": "normal",
+          "fontSize": "1rem"
+        }
+      }
+    },
+    "blocks": {
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--heading)",
+          "fontSize": "var(--wp--preset--font-size--mxs-extra-large)"
+        }
+      },
+      "core/site-tagline": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--body)",
+          "fontSize": "1.13rem"
+        }
+      },
+      "core/navigation": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--body)"
+        }
+      }
+    }
+  }
+}

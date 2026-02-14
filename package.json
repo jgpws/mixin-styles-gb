@@ -8,6 +8,7 @@
     "build": "wp-scripts build --webpack-src-dir=resources --output-path=build/assets",
     "postbuild": "npm run copy-dist",
     "autoprefix": "postcss build/*.css --use autoprefixer -d build/ --watch",
+    "format": "wp-scripts format ./resources ./styles **/*.html",
     "clean-dist": "shx rm -rf dist",
     "copy-dist-folders": "shx mkdir -p dist && shx cp -r build resources styles parts patterns templates dist",
     "copy-dist-files": "shx mkdir -p dist && shx cp -r *.php style.css theme.json LICENSE readme.txt screenshot.png package.json webpack.config.js dist",

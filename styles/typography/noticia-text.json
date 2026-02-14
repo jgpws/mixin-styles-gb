@@ -1,0 +1,83 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Noticia Text",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFace": [
+            {
+              "fontFamily": "\"Noticia Text\"",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": ["file:./build/assets/fonts/noticia-text/noticia-text-400-normal.woff2"]
+            },
+            {
+              "fontFamily": "\"Noticia Text\"",
+              "fontStyle": "italic",
+              "fontWeight": "400",
+              "src": ["file:./build/assets/fonts/noticia-text/noticia-text-400-italic.woff2"]
+            }
+          ],
+          "fontFamily": "\"Noticia Text\", serif",
+          "name": "Noticia Text",
+          "slug": "body"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "\"Noticia Text\"",
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "src": ["file:./build/assets/fonts/noticia-text/noticia-text-700-normal.woff2"]
+            },
+            {
+              "fontFamily": "\"Noticia Text\"",
+              "fontStyle": "italic",
+              "fontWeight": "700",
+              "src": ["file:./build/assets/fonts/noticia-text/noticia-text-700-italic.woff2"]
+            }
+          ],
+          "fontFamily": "\"Noticia Text\", serif",
+          "name": "Noticia Text",
+          "slug": "heading"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontStyle": "normal",
+          "fontWeight": "400",
+          "fontFamily": "var:preset|font-family|heading",
+          "letterSpacing": "-0.075rem"
+        }
+      }
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|body"
+    },
+    "blocks": {
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading"
+        }
+      },
+      "core/site-tagline": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|body",
+          "fontSize": "1rem"
+        }
+      },
+      "core/navigation": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|body",
+          "letterSpacing": "-0.05rem"
+        }
+      }
+    }
+  }
+}

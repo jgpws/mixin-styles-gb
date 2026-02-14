@@ -1,0 +1,130 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Poppins",
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Poppins",
+              "fontStyle": "normal",
+              "fontWeight": "300",
+              "src": ["file:./build/assets/fonts/poppins/poppins-300-normal.woff2"]
+            },
+            {
+              "fontFamily": "Poppins",
+              "fontStyle": "normal",
+              "fontWeight": "bold",
+              "src": ["file:./build/assets/fonts/poppins/poppins-500-normal.woff2"]
+            },
+            {
+              "fontFamily": "Poppins",
+              "fontStyle": "italic",
+              "fontWeight": "300",
+              "src": ["file:./build/assets/fonts/poppins/poppins-300-italic.woff2"]
+            },
+            {
+              "fontFamily": "Poppins",
+              "fontStyle": "italic",
+              "fontWeight": "bold",
+              "src": ["file:./build/assets/fonts/poppins/poppins-500-italic.woff2"]
+            }
+          ],
+          "fontFamily": "Poppins, sans-serif",
+          "name": "Poppins",
+          "slug": "body"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Poppins",
+              "fontStyle": "normal",
+              "fontWeight": "bold",
+              "src": ["file:./build/assets/fonts/poppins/poppins-500-normal.woff2"]
+            },
+            {
+              "fontFamily": "Poppins",
+              "fontStyle": "italic",
+              "fontWeight": "bold",
+              "src": ["file:./build/assets/fonts/poppins/poppins-500-italic.woff2"]
+            }
+          ],
+          "fontFamily": "Poppins, sans-serif",
+          "name": "Poppins",
+          "slug": "heading"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var:preset|font-family|body",
+      "lineHeight": "1.6"
+    },
+    "blocks": {
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading"
+        }
+      },
+      "core/site-tagline": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|body",
+          "fontSize": "1rem"
+        }
+      },
+      "core/navigation": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|body",
+          "fontStyle": "normal"
+        }
+      },
+      "core/query-pagination": {
+        "typography": {
+          "fontStyle": "normal"
+        }
+      },
+      "core/post-title": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading",
+          "fontSize": "1.5rem"
+        }
+      },
+      "core/post-author": {
+        "typography": {
+          "fontSize": "0.9rem"
+        }
+      },
+      "core/post-date": {
+        "typography": {
+          "fontSize": "0.9rem"
+        }
+      },
+      "core/post-terms": {
+        "typography": {
+          "fontSize": "0.9rem"
+        }
+      },
+      "core/post-navigation-link": {
+        "typography": {
+          "fontStyle": "normal"
+        }
+      },
+      "core/comments-pagination": {
+        "typography": {
+          "fontStyle": "normal"
+        }
+      }
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontWeight": "bold",
+          "letterSpacing": "-0.025em"
+        }
+      }
+    }
+  }
+}
