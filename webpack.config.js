@@ -37,8 +37,6 @@ module.exports = {
       "css/theme/blocks": path.resolve(process.cwd(), "resources/scss/theme", "blocks.scss"),
       "css/theme/animations": path.resolve(process.cwd(), "resources/scss/theme", "animations.scss"),
       "css/editor-overrides": path.resolve(process.cwd(), "resources/scss", "editor-overrides.scss"),
-      "css/style-book-dark": path.resolve(process.cwd(), "resources/scss", "style-book-dark.scss"),
-      "css/style-book-light": path.resolve(process.cwd(), "resources/scss", "style-book-light.scss"),
       ...getWebpackEntryPoints(),
       ...blockScssFiles,
     },
