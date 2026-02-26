@@ -13,6 +13,8 @@
 
       const computedBgColor = window.getComputedStyle(node).getPropertyValue("background");
 
+      //console.log(node);
+      //console.log(document.body === node);
       //console.log(computedBgColor);
 
       // If `computedBgColor` does not match a digit for an element,

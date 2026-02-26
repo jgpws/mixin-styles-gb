@@ -92,7 +92,7 @@ function mixin_styles_gb_scripts() {
   
   // Scripts
   wp_enqueue_script( 'mixin-styles-gb-scripts', get_theme_file_uri( 'build/assets/js/mixin-styles-gb-scripts.js' ), array(), filemtime( get_template_directory() . '/build/assets/js/mixin-styles-gb-scripts.js' ), true );
-  wp_enqueue_script( 'mixin-styles-gb-contrast-script', get_theme_file_uri( 'build/assets/js/mixin-styles-gb-contrast.js' ), array( 'wp-blocks', 'wp-element', 'wp-compose', 'wp-hooks' ), filemtime( get_template_directory() . '/build/assets/js/mixin-styles-gb-contrast.js' ), true );
+  wp_enqueue_script( 'mixin-styles-gb-contrast-script', get_theme_file_uri( 'build/assets/js/mixin-styles-gb-contrast.js' ), array(), filemtime( get_template_directory() . '/build/assets/js/mixin-styles-gb-contrast.js' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'mixin_styles_gb_scripts' );
 
@@ -100,13 +100,6 @@ add_action( 'wp_enqueue_scripts', 'mixin_styles_gb_scripts' );
  * Enqueue per block stylesheets.
  * see Exploring Per-Block Stylesheets in Block Themes by Nick Diego
  * https://wpengine.com/builders/per-block-stylesheets/
- *
- * For development purposes, please remove the .min part of each .css reference in both foreach statements.
- * This is in order to see changes made to the theme.
- * Run 'npm run develop' on the command line from the location
- * the theme is installed to make css/JavaScript changes.
- * Then run 'npm run produce' to re-minify each file.
- * Afterwards, restore the .min prefix in each foreach statement.
  */
 function mixin_styles_gb_enqueue_block_styles() {
 	
@@ -124,7 +117,8 @@ function mixin_styles_gb_enqueue_block_styles() {
 			$block_styles
 		);
 		
-		foreach ( $block_styles as $block_style ) {
+    foreach ( $block_styles as $block_style ) {
+      $style_asset = include get_parent_theme_file_path( 'build/assets/block-css/' . $block_namespace . '/' . $block_style . '.asset.php');
 			
 			wp_enqueue_block_style(
 				/*
@@ -135,7 +129,8 @@ function mixin_styles_gb_enqueue_block_styles() {
 				array(
 					'handle' => 'mixin-styles-gb-' . $block_namespace . '-' . $block_style . '-styles',
 					'src' => get_theme_file_uri( 'build/assets/block-css/' . $block_namespace . '/' . $block_style . '.css' ),
-					'path' => get_theme_file_uri( 'build/assets/block-css/' . $block_namespace . '/' . $block_style . '.css' ),
+          'path' => get_theme_file_uri( 'build/assets/block-css/' . $block_namespace . '/' . $block_style . '.css' ),
+          'ver' => $style_asset['version'],
 				),
 			);
 		}
