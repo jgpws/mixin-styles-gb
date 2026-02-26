@@ -81,17 +81,6 @@
 }
 
 /* Navigation- submenu general */
-.wp-block-navigation:not(.has-text-color) .wp-block-navigation__submenu-container {
-  .wp-block-navigation-item__content {
-    .mxs-light-theme-bg &,
-    .mxs-light-bg &,
-    .mxs-dark-theme-bg &,
-    .mxs-dark-bg & {
-      color: var(--almost-black);
-    }
-  }
-}
-
 .wp-block-navigation .wp-block-navigation__submenu-container {
   .wp-block-navigation-item__content:active,
   .wp-block-navigation-item__content:focus,

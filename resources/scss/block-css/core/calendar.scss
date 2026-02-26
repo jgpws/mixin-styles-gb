@@ -62,6 +62,17 @@
     border-bottom-color: transparent;
   }
 
+  .mxs-card.mxs-dark-bg & {
+    a {
+      color: var(--wp--preset--color--mxs-link-alt) !important;
+    }
+
+    a:hover,
+    a:active {
+      color: var(--wp--preset--color--mxs-link-alt-hover) !important;
+    }
+  }
+
   .mxs-dark-theme-bg &,
   .mxs-light-theme-bg .mxs-dark-bg & {
     table {

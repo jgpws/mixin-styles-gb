@@ -55,6 +55,24 @@ pre {
   --monospace-font: "Source Code Pro", monospace;
 }
 
+/* General color overrides */
+.mxs-card.mxs-dark-bg {
+  color: var(--almost-white);
+
+  .entry-meta,
+  .wp-block-post-excerpt,
+  .wp-block-post-content,
+  &.sidebar {
+    a:where(:not(.wp-element-button)) {
+      color: var(--wp--preset--color--mxs-link);
+
+      &:hover {
+        color: var(--wp--preset--color--mxs-link-hover);
+      }
+    }
+  }
+}
+
 /* Standard tags / Some blocks */
 :is(h1, h2, h3, h4, h5, h6) {
   text-shadow: var(--wp--custom--text--shadow-small);

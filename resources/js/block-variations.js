@@ -154,7 +154,7 @@ wp.domReady(() => {
     description: __("Applies Card styling to the Group block.", "mixin-styles-gb"),
     scope: ["block", "inserter", "transform"],
     attributes: {
-      className: "mxs-card mxs-light-bg mxs-contrasting-color",
+      className: "mxs-card",
       layout: {
         type: "default",
       },
@@ -193,7 +193,7 @@ wp.domReady(() => {
     scope: ["inserter", "transform"],
     attributes: {
       tagName: "main",
-      className: "mxs-card main mxs-light-bg mxs-contrasting-color",
+      className: "mxs-card main",
       layout: {
         type: "default",
       },

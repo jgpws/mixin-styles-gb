@@ -50,6 +50,13 @@
 .wp-block-calendar .wp-calendar-nav a {
   border-bottom-color: transparent;
 }
+.mxs-card.mxs-dark-bg .wp-block-calendar a {
+  color: var(--wp--preset--color--mxs-link-alt) !important;
+}
+.mxs-card.mxs-dark-bg .wp-block-calendar a:hover,
+.mxs-card.mxs-dark-bg .wp-block-calendar a:active {
+  color: var(--wp--preset--color--mxs-link-alt-hover) !important;
+}
 .mxs-dark-theme-bg .wp-block-calendar table, .mxs-light-theme-bg .mxs-dark-bg .wp-block-calendar table {
   background-color: var(--pale-gray);
   border-color: var(--medium-gray);

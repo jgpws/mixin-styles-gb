@@ -53,23 +53,6 @@ wp.domReady(() => {
     name: "no-decorations-arrow-markers",
     label: __("No Decorations (With Arrow Markers)", "mixin-styles-gb")
   }]);
-  wp.blocks.registerBlockStyle("core/navigation", [{
-    name: "default",
-    label: __("Default", "mixin-styles-gb"),
-    isDefault: true
-  }, {
-    name: "tabs",
-    label: __("Tabs", "mixin-styles-gb")
-  }, {
-    name: "wide-tab",
-    label: __("Wide Tab", "mixin-styles-gb")
-  }, {
-    name: "flat-nav",
-    label: __("Flat Style", "mixin-styles-gb")
-  }, {
-    name: "plain",
-    label: __("Plain")
-  }]);
   wp.blocks.registerBlockStyle("core/post-featured-image", [{
     name: "default",
     label: __("Thumbnail- 300px", "mixin-styles-gb"),

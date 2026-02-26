@@ -26,11 +26,11 @@ module.exports = {
   ...{
     entry: {
       // JavaScript
-      "js/editor": path.resolve(process.cwd(), "resources/js", "editor.js"),
       "js/block-styles": path.resolve(process.cwd(), "resources/js", "block-styles.js"),
       "js/block-variations": path.resolve(process.cwd(), "resources/js", "block-variations.js"),
       "js/mixin-styles-gb-scripts": path.resolve(process.cwd(), "resources/js", "mixin-styles-gb-scripts.js"),
       "js/mixin-styles-gb-contrast": path.resolve(process.cwd(), "resources/js", "mixin-styles-gb-contrast.js"),
+      "js/mixin-styles-gb-editor-contrast": path.resolve(process.cwd(), "resources/js", "mixin-styles-gb-editor-contrast.js"),
       // Sass
       "css/theme/base-styles": path.resolve(process.cwd(), "resources/scss/theme", "base-styles.scss"),
       "css/theme/layout": path.resolve(process.cwd(), "resources/scss/theme", "layout.scss"),
@@ -65,7 +65,7 @@ module.exports = {
           // Prevents the plugin from reloading on every webpack finish.
           reload: false,
           // Allows injection for CSS files
-          injectCss: true,
+          injectChanges: true,
         },
       ),
     ],

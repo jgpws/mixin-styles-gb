@@ -48,6 +48,20 @@ pre {
   --medium-gray-gradient-top: linear-gradient(to bottom, rgb(128 128 128 / 0.75) 0%, rgb(128 128 128 / 0.75) 12%, rgb(255 255 255 / 0) 100%);
   --monospace-font: "Source Code Pro", monospace;
 }
+/* General color overrides */
+.mxs-card.mxs-dark-bg {
+  color: var(--almost-white);
+}
+.mxs-card.mxs-dark-bg .entry-meta a:where(:not(.wp-element-button)),
+.mxs-card.mxs-dark-bg .wp-block-post-excerpt a:where(:not(.wp-element-button)),
+.mxs-card.mxs-dark-bg .wp-block-post-content a:where(:not(.wp-element-button)), .mxs-card.mxs-dark-bg.sidebar a:where(:not(.wp-element-button)) {
+  color: var(--wp--preset--color--mxs-link);
+}
+.mxs-card.mxs-dark-bg .entry-meta a:where(:not(.wp-element-button)):hover,
+.mxs-card.mxs-dark-bg .wp-block-post-excerpt a:where(:not(.wp-element-button)):hover,
+.mxs-card.mxs-dark-bg .wp-block-post-content a:where(:not(.wp-element-button)):hover, .mxs-card.mxs-dark-bg.sidebar a:where(:not(.wp-element-button)):hover {
+  color: var(--wp--preset--color--mxs-link-hover);
+}
 /* Standard tags / Some blocks */
 :is(h1, h2, h3, h4, h5, h6) {
   text-shadow: var(--wp--custom--text--shadow-small);

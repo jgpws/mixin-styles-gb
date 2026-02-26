@@ -275,6 +275,26 @@ ul.wp-block-list .wp-block-list-item {
 }
 /* */
 
+/* Style Book overrides */
+.edit-site-style-book__example {
+  ul li {
+    list-style-type: none;
+  }
+
+  ul li::before {
+    margin-right: 0.5rem;
+    vertical-align: middle;
+
+    .mxs-dark-theme-bg & {
+      content: url(../images/list-bullet-light.svg);
+    }
+
+    .mxs-light-theme-bg & {
+      content: url(../images/list-bullet-dark.svg);
+    }
+  }
+}
+
 /* Alignments */
 .wp-block-cover.is-style-rounded,
 .wp-block-cover.is-style-rounded-full {
