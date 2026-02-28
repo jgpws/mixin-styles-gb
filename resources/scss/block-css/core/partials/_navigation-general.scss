@@ -108,17 +108,6 @@
   }
 }
 
-ul.wp-block-navigation__container {
-  /* ul chaining needed to override WP nav block code */
-  padding: 0.25em 0.5em;
-
-  /* Undo link marker styling for in-page navigation */
-  li::before {
-    content: "" !important;
-    margin-right: 0;
-  }
-}
-
 .wp-block-navigation-item__content {
   text-decoration: none !important;
 }
@@ -126,6 +115,22 @@ ul.wp-block-navigation__container {
 a.wp-block-navigation-item__content,
 .mxs-light-bg a.wp-block-navigation-item__content {
   border-bottom: transparent;
+}
+
+// Undo arrow styling in Navigation menu page list
+.wp-block-navigation .wp-block-page-list {
+  li::before {
+    margin-right: 0;
+  }
+
+  .mxs-light-theme-bg &,
+  .mxs-dark-theme-bg .mxs-light-bg &,
+  .mxs-dark-theme-bg &,
+  .mxs-light-theme-bg .mxs-dark-bg & {
+    li::before {
+      content: "";
+    }
+  }
 }
 
 /* Navigation- modal menu */

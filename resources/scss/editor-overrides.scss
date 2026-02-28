@@ -277,20 +277,38 @@ ul.wp-block-list .wp-block-list-item {
 
 /* Style Book overrides */
 .edit-site-style-book__example {
-  ul li {
-    list-style-type: none;
-  }
-
-  ul li::before {
-    margin-right: 0.5rem;
-    vertical-align: middle;
-
+  .wp-block-navigation {
     .mxs-dark-theme-bg & {
-      content: url(../images/list-bullet-light.svg);
+      border-top: 1px solid var(--white-25pcnt);
+      border-bottom: 1px solid var(--white-25pcnt);
     }
 
     .mxs-light-theme-bg & {
-      content: url(../images/list-bullet-dark.svg);
+      border-top: 1px solid var(--black-25pcnt);
+      border-bottom: 1px solid var(--black-25pcnt);
+    }
+  }
+
+  .wp-block-archives,
+  .wp-block-categories,
+  .wp-block-list,
+  .wp-block-page-list,
+  .wp-block-rss {
+    li {
+      list-style-type: none;
+    }
+
+    li::before {
+      margin-right: 0.5rem;
+      vertical-align: middle;
+
+      .mxs-dark-theme-bg & {
+        content: url(../images/list-bullet-light.svg);
+      }
+
+      .mxs-light-theme-bg & {
+        content: url(../images/list-bullet-dark.svg);
+      }
     }
   }
 }

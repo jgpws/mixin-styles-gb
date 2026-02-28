@@ -28,7 +28,10 @@ Choose from nine color styles and seven additional fonts.
 
 == Changelog ==
 
-= 1.5.0 December 2025 =
+= 1.5.1 February 27 2025 =
+CSS fixes for certain list based blocks; removed source map from style.css file.
+
+= 1.5.0 February 26 2025 =
 * Disclosure: AI tools (Google Gemini) were used for assistance in the mixin-styles-gb-editor-contrast.js script. AI was used for the logic that matches the frontend contrast script.
 Added automatic dark and light background contrast styles for the Site Editor to match the frontend; made the new Thin Header and Flat block styles compatible with the contrast script; re-organized font typesets, color schemes; adjusted CSS in backend for Gallery block; 
 

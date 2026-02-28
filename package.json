@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "wp-scripts start --webpack-src-dir=resources --output-path=build/assets",
-    "build": "wp-scripts build --webpack-src-dir=resources --output-path=build/assets",
+    "build": "wp-scripts build --webpack-src-dir=resources --output-path=build/assets --webpack-devtool=false",
     "postbuild": "npm run copy-dist",
     "autoprefix": "postcss build/*.css --use autoprefixer -d build/ --watch",
     "format": "wp-scripts format ./resources ./styles **/*.html",

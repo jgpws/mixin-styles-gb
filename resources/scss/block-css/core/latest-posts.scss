@@ -11,12 +11,6 @@
   }
 }
 
-ul.wp-block-latest-posts li::before {
-  content: " " !important;
-  margin-right: 0;
-  vertical-align: baseline;
-}
-
 .wp-block-latest-posts__post-title {
   border-bottom-color: transparent !important;
   display: inline-block;
