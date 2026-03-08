@@ -118,7 +118,7 @@ a.wp-block-navigation-item__content,
 }
 
 // Undo arrow styling in Navigation menu page list
-.wp-block-navigation .wp-block-page-list {
+.wp-block-navigation ul.wp-block-page-list {
   li::before {
     margin-right: 0;
   }
@@ -259,7 +259,7 @@ a.wp-block-navigation-item__content,
   }
 
   .wp-block-navigation:not(.has-background) & {
-    background-color: var(--wp--preset--color--secondary) !important;
+    background-color: var(--wp--preset--color--secondary);
     color: var(--wp--preset--color--black);
   }
 

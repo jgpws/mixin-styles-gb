@@ -143,6 +143,18 @@
 }
 
 .mxs-thin-header.mxs-dark-bg {
+  @media (min-width: 600px) {
+    .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+      color: var(--almost-black);
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: var(--almost-white);
+      }
+    }
+  }
+
   .wp-block-navigation.is-style-tabs:not(.has-text-color) .wp-block-navigation-item__content {
     color: #000000;
   }

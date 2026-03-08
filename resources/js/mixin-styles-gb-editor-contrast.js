@@ -10,7 +10,9 @@ const { subscribe } = wp.data;
   function editorContrastLogic(element, options = { target: "both" }) {
     const computedBgColor = element.ownerDocument.defaultView.getComputedStyle(element).backgroundColor;
 
-    if (element.classList.contains("main")) {
+    //console.log(element);
+
+    /*if (element.classList.contains("main")) {
       console.log("Main background color:", computedBgColor);
     }
 
@@ -20,7 +22,7 @@ const { subscribe } = wp.data;
 
     if (element.classList.contains("sidebar")) {
       console.log("Sidebar background color:", computedBgColor);
-    }
+    }*/
 
     // If `computedBgColor` does not match a digit for an element,
     // return (don't execute the getContrastYIQ function for that element).
@@ -58,7 +60,6 @@ const { subscribe } = wp.data;
     }
 
     if (options.target === "body" || options.target === "both") {
-      //console.log("Background detected:", computedBgColor);
       const bodyEl = element.ownerDocument.body;
 
       bodyEl.classList.remove("mxs-light-theme-bg", "mxs-dark-theme-bg");
@@ -66,8 +67,6 @@ const { subscribe } = wp.data;
 
       return bodyClass;
     }
-
-    //console.log(element);
   } // ends editorContrastLogic
 
   /* Body class plugin */
@@ -129,7 +128,7 @@ const { subscribe } = wp.data;
       if (!styleBookDoc || !styleBookDoc.body) return;
 
       if (styleBookDoc && styleBookDoc.body && styleBookDoc.body.innerHTML.trim() !== "" && editorContrastLogic) {
-        console.log("Style Book document ready!");
+        //console.log("Style Book document ready!");
 
         //styleBookDoc.body.classList.add("mxs-dark-theme-bg"); // Mark as handled
         editorContrastLogic(styleBookDoc.body, { target: "body" });

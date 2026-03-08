@@ -28,24 +28,26 @@
   }
 }
 
-.is-style-no-decorations .entry-content,
-.sidebar.is-style-no-decorations,
-.footer .is-style-no-decorations {
-  ul {
+.is-style-no-decorations {
+  .wp-block-archives,
+  .wp-block-categories,
+  ul.wp-block-list,
+  .wp-block-page-list,
+  .wp-block-rss {
     padding-left: 2rem;
-  }
 
-  ul ul {
-    padding-left: 1rem;
-  }
+    ul {
+      padding-left: 1rem;
+    }
 
-  ul li {
-    list-style-type: disc;
-  }
+    li {
+      list-style-type: disc;
+    }
 
-  ul li::before {
-    content: "" !important;
-    margin-right: auto;
-    vertical-align: baseline;
+    li::before {
+      content: "" !important;
+      margin-right: auto;
+      vertical-align: baseline;
+    }
   }
 }
