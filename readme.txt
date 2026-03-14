@@ -2,9 +2,9 @@
 
 Contributors: jgpws
 Tags: block-patterns, block-styles, blog, custom-colors, custom-menu, featured-images, full-site-editing, left-sidebar, one-column, right-sidebar, sticky-post, two-columns, wide-blocks
-Requires at least: 6.5
+Requires at least: 6.6
 Requires PHP: 7.4
-Tested up to: 6.7
+Tested up to: 6.9
 Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -27,6 +27,9 @@ The theme offers four header styles including two with hero images.
 Choose from nine color styles and seven additional fonts.
 
 == Changelog ==
+
+= 1.5.3 March 12 2026 =
+Adjusted some colors in theme.json and style files slightly. This was to avoid duplicate color values.
 
 = 1.5.2 March 07 2026 =
 CSS bug fixes to remove default list styling from Navigation block with Flat Nav style; fixes for submenus in Thin Header (pattern).
@@ -124,6 +127,11 @@ Added screenshot image credits to readme.txt.
 
 = 1.0.1 April 11 2022 =
 Brought the theme up to standards with the latest block editor (WordPress 5.9); added new patterns and block styles.
+
+== License ==
+
+Mixin' Styles- GB WordPress Theme, Copyright 2021-2026 Jason G. Designs
+Mixin' Styles- GB is distributed under the terms of the GNU GPL
 
 == Credits ==
 

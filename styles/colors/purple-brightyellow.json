@@ -11,33 +11,23 @@
         },
         {
           "slug": "contrast",
-          "color": "#ffffff",
+          "color": "#f5f5f5",
           "name": "Contrast"
         },
         {
-          "color": "#f5f5f5",
+          "color": "#f7f7f7",
           "name": "Card Background",
           "slug": "card"
         },
         {
-          "color": "#191919",
+          "color": "#171717",
           "name": "Card Foreground",
           "slug": "card-text"
         },
         {
           "slug": "primary",
-          "color": "#820bbb",
+          "color": "#8f0cce",
           "name": "Primary"
-        },
-        {
-          "slug": "primary-semitransparent",
-          "color": "rgb(130 11 187 / 0.5)",
-          "name": "Primary (Semi-Transparent)"
-        },
-        {
-          "slug": "complementary-semitransparent",
-          "color": "rgb(248 254 3 / 0.5)",
-          "name": "Complementary (Semi-Transparent)"
         },
         {
           "slug": "secondary",
@@ -48,6 +38,16 @@
           "slug": "tertiary",
           "color": "#f8fe03",
           "name": "Tertiary"
+        },
+        {
+          "slug": "primary-semitransparent",
+          "color": "rgb(143 12 206 / 0.5)",
+          "name": "Primary (Semi-Transparent)"
+        },
+        {
+          "slug": "complementary-semitransparent",
+          "color": "rgb(248 254 3 / 0.5)",
+          "name": "Complementary (Semi-Transparent)"
         },
         {
           "slug": "mxs-link",

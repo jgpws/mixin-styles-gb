@@ -293,17 +293,17 @@
           "slug": "contrast"
         },
         {
-          "color": "#f5f5f5",
+          "color": "#f7f7f7",
           "name": "Card Background",
           "slug": "card"
         },
         {
-          "color": "#191919",
+          "color": "#171717",
           "name": "Card Foreground",
           "slug": "card-text"
         },
         {
-          "color": "#191919",
+          "color": "#181818",
           "name": "Primary",
           "slug": "primary"
         },

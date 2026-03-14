@@ -11,16 +11,11 @@
         },
         {
           "slug": "contrast",
-          "color": "#ffffff",
+          "color": "#f5f5f5",
           "name": "Contrast"
         },
         {
-          "slug": "primary",
-          "color": "#cd00cd",
-          "name": "Primary"
-        },
-        {
-          "color": "#f5f5f5",
+          "color": "#f7f7f7",
           "name": "Card Background",
           "slug": "card"
         },
@@ -28,6 +23,11 @@
           "color": "#191919",
           "name": "Card Foreground",
           "slug": "card-text"
+        },
+        {
+          "slug": "primary",
+          "color": "#e100e1",
+          "name": "Primary"
         },
         {
           "slug": "secondary",
@@ -41,7 +41,7 @@
         },
         {
           "slug": "primary-semitransparent",
-          "color": "rgb(205 0 205 / 0.5)",
+          "color": "rgb(225 0 225 / 0.5)",
           "name": "Primary (Semi-Transparent)"
         },
         {
