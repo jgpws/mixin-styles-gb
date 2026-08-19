@@ -5,7 +5,7 @@ Tags: block-patterns, block-styles, blog, custom-colors, custom-menu, featured-i
 Requires at least: 6.6
 Requires PHP: 7.4
 Tested up to: 6.9
-Stable tag: 1.3
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,6 +27,12 @@ The theme offers four header styles including two with hero images.
 Choose from nine color styles and seven additional fonts.
 
 == Changelog ==
+
+= 1.5.5 July 09 2026 =
+FATAL PHP BUG FIX: Using build tools, I forgot to include the inc/block-styles.php file in final build, breaking the theme. Please update immediately.
+
+= 1.5.4 July 05 2026 =
+Theme home page address change.
 
 = 1.5.3 March 12 2026 =
 Adjusted some colors in theme.json and style files slightly. This was to avoid duplicate color values.
